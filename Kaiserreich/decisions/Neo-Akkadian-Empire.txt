@@ -1,0 +1,68 @@
+political_decisions = {
+	reclaim_akkad_mccloudist = {
+		potential = {
+			tag = MCL
+			war = no
+			NOT = {
+				has_global_flag = mccloudists_gain_foothold
+				has_global_flag = pahrlovists_gain_foothold
+			}
+		}
+		allow = {
+			MCL = {
+				all_core = {
+					owned_by = MCL
+				}
+			}
+			NOT = {
+				exists = PAH
+				exists = IRQ
+			}
+			prestige = 45
+		}
+		effect = {
+			prestige = 900
+			capital = 926
+			set_global_flag = mccloudists_gain_foothold
+			MCL = {
+				all_core = {
+					remove_core = IRQ
+					remove_core = PAH
+				}
+			}
+		}
+	}
+	reclaim_akkad_pahrlovist = {
+		potential = {
+			tag = PAH
+			war = no
+			NOT = {
+				has_global_flag = mccloudists_gain_foothold
+				has_global_flag = pahrlovists_gain_foothold
+			}
+		}
+		allow = {
+			PAH = {
+				all_core = {
+					owned_by = PAH
+				}
+			}
+			NOT = {
+				exists = MCL
+				exists = IRQ
+			}
+			prestige = 45
+		}
+		effect = {
+			prestige = 900
+			capital = 926
+			set_global_flag = pahrlovists_gain_foothold
+			PAH = {
+				all_core = {
+					remove_core = IRQ
+					remove_core = MCL
+				}
+			}
+		}
+	}
+}

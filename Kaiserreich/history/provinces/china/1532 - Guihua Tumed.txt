@@ -1,0 +1,13 @@
+owner = IMN
+controller = IMN
+add_core = CHI
+add_core = IMN
+add_core = MGL
+trade_goods = coal
+life_rating = 32
+1927.1.1 = {
+	owner = CHI
+	controller = CHI
+	remove_core = IMN
+	remove_core = MGL
+}

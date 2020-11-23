@@ -1,0 +1,80 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "GenericBattlecruiser"
+		actorfile = "gfx\anims\Battlecruiser.xac"
+		retargeting = no
+		scale = 2.2
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\ShipAttackA.xsm"
+		}
+	}
+
+	EMFXActorType = {
+		name = "GenericCarrier"
+		actorfile = "gfx\anims\Carrier.xac"
+		retargeting = no
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\ShipAttackA.xsm"
+		}
+	}
+
+	EMFXActorType = {
+		name = "GenericDestroyer"
+		actorfile = "gfx\anims\Destroyer.xac"
+		retargeting = no
+		scale = 2.0
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\ShipBigIdle.xsm"
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\ShipAttackA.xsm"
+		}
+	}
+
+	EMFXActorType = {
+		name = "GenericSubmarine"
+		actorfile = "gfx\anims\Submarine.xac"
+		scale = 1.5
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\SubmarineMove.xsm"
+		}
+		animation = {
+			name = "move"
+			file = "gfx\anims\SubmarineMove.xsm"
+		}
+		animation = {
+			name = "attack"
+			file = "gfx\anims\SubmarineMove.xsm"
+		}
+	}
+}

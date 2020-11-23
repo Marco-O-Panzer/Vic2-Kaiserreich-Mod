@@ -1,0 +1,12 @@
+owner = NEW
+controller = NEW
+add_core = NEW
+add_core = CAN
+naval_base = 2
+trade_goods = fish
+life_rating = 35
+colonial = 2
+1934.1.1 = {
+	owner = ENG
+	controller = ENG
+}

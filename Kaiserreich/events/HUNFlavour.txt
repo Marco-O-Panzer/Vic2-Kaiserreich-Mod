@@ -1,0 +1,152 @@
+### The Austrians make Demands! ###
+
+country_event = {
+       id = 40160
+       title = "The Austrians make Demands!"
+       desc  = "HUN-KUK-DEM"
+       picture = "budapest_burning"
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = HUN
+	       OR = {
+	       	has_global_flag = kuk_ask_intervene
+		has_global_flag = kuk_kill_all
+		}
+       }
+
+       option = {
+			name = "How dare they! Indepndence NOW!"
+			prestige = 10
+			government = democracy
+			KUK = {
+				release_vassal = HUN
+				break_alliance = HUN
+			}
+			set_global_flag = hun_assembly_rebel
+			clr_global_flag = kuk_ask_intervene
+			ai_chance = {
+				factor = 85
+			}
+       }
+
+       option = {
+			name = "Yes master!"
+			prestige = -5
+			add_country_modifier = {
+				name = rev_in_hun
+				duration = 3650                  
+			}
+			clr_global_flag = kuk_ask_intervene
+			ai_chance = {
+				factor = 15
+			}
+       }
+}
+																	
+### The Austrians do Nothing! ###
+
+country_event = {
+       id = 40161
+       title = "The Austrians do Nothing!"
+       desc  = "HUN-KUK-NOT"                                   
+       picture = "budapest_burning"                     
+       fire_only_once = yes
+
+       trigger = {
+	       tag = HUN
+	       has_global_flag = kuk_do_nothing
+       }
+
+       option = {
+			name = "This won't end well..."
+			prestige = 10
+			add_country_modifier = {
+				name = rev_in_hun
+				duration = 1825
+			}												
+			clr_global_flag = kuk_ask_intervene
+			clr_global_flag = kuk_do_nothing
+       }
+}    
+
+### Consulate Attacked! ###
+
+country_event = {
+       id = 40167
+       title = "Consulate Attacked!"
+       desc  = "HUN-TRUB"                                   
+       picture = "budapest_burning"                     
+       fire_only_once = yes
+
+       trigger = {
+	       tag = HUN
+	       KUK = {
+		is_greater_power = no
+		}
+       }
+
+       option = {
+			name = "What will the Kaiser do?"
+       }
+}  
+
+### Austrian 'Compensation' ###
+
+country_event = {
+       id = 40164
+       title = "Austrian 'Compensation'"
+       desc  = "The Austrians have offered us £50,000 in what they call 'compensation' if we agree to return to our status as a member of the federation. You've got to be joking right? ... Right?"                              
+       picture = "austria_hungary"                     
+       fire_only_once = yes
+
+       trigger = {
+	       tag = HUN
+	       has_global_flag = kuk_compensate_hun
+       }
+
+       option = {
+			name = "How is that a joke?"
+			prestige = -25
+			clr_global_flag = kuk_compensate_hun
+			money = 50000
+			KUK = {
+				create_vassal = HUN
+			}
+			ai_chance = {
+				factor = 10
+			}
+			relation = {
+				who = KUK
+				value = 200
+			} 											
+       }
+       option = {
+			name = "Scum, we shall fight!"
+			prestige = 5
+			clr_global_flag = kuk_compensate_hun
+			set_global_flag = kuk_invade_hun
+			add_country_modifier = {
+				name = rev_in_hun
+				duration = 3650
+			}			
+	    		war = {
+				name = "The Austro-Hungarian War"
+				target = KUK
+				attacker_goal = {
+					casus_belli = become_independent
+				}
+				defender_goal = {
+					casus_belli = make_puppet
+				}
+			}									
+
+			ai_chance = {
+				factor = 90
+			}
+			relation = {
+				who = KUK
+				value = 200
+			} 											
+       }
+}     

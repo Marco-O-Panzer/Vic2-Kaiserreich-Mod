@@ -1,0 +1,10 @@
+owner = USA
+controller = USA
+add_core = TEX
+trade_goods = cattle
+life_rating = 35	
+add_core = USA
+1935.1.1 = {
+	owner = TEX
+	controller = TEX
+}

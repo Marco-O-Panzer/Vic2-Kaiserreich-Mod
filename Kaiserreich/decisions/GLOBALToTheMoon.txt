@@ -1,0 +1,26 @@
+political_decisions = {
+        attempt_moon_landing = {
+		picture = "moon-earth"
+                potential = {
+			is_greater_power = yes
+			NOT = { has_global_flag = Moon_Is_Landed }
+			NOT = { has_country_flag = moon_landing_in_progress}
+			has_country_flag = has_space_program
+			year = 1960
+			
+		}
+                allow = {
+			money = 1000000
+			spaceflight_capability = 1
+			}
+
+          	effect = {
+			prestige = 10
+			set_country_flag = moon_landing_in_progress
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

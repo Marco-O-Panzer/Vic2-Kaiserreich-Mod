@@ -1,0 +1,27 @@
+political_decisions = {
+        ITA_form_FIT = {
+		picture = "das_zivilgesetzbuch"
+		fire_only_once = yes
+		
+
+                potential = {
+			NOT = {has_global_flag = ita_restore_order}
+			has_global_flag = ITA_civil_war
+			tag = ITA
+			year = 1923
+		}
+
+                allow = {
+			NOT = {
+			    exists = FIT
+			}
+                }
+          effect = {
+		set_global_flag = ita_restore_order
+		change_tag = ITA
+		capital = 749
+		prestige = 5
+		money = 10000
+		}
+	}
+}

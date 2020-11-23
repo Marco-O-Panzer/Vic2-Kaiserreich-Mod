@@ -1,0 +1,15 @@
+owner = RIF
+controller = RIF
+add_core = SPA
+trade_goods = fish
+life_rating = 35
+1927.6.6 = {
+	owner = SPA
+	controller = SPA
+}
+1939.1.1 = {
+	owner = SPF
+	controller = SPF
+	add_core = SPF
+	remove_core = SPA
+}

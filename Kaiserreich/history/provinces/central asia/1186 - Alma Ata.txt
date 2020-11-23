@@ -1,0 +1,5 @@
+owner = RUS
+controller = RUS
+add_core = KOK
+trade_goods = oil
+life_rating = 35

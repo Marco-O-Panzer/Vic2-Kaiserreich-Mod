@@ -1,0 +1,11 @@
+owner = USA
+controller = USA
+add_core = USA
+naval_base = 1
+trade_goods = fish
+life_rating = 20
+colonial = 2
+1935.1.1 = {
+	owner = CAN
+	controller = CAN
+}

@@ -1,0 +1,6 @@
+owner = KUK
+controller = KUK
+add_core = AUS
+add_core = KUK
+trade_goods = grain
+life_rating = 35

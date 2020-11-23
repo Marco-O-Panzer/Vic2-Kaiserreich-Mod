@@ -1,0 +1,92 @@
+army = {
+	name = "Swedish Army"
+	location = 322
+	regiment = {
+		name= "Svea Livgarde"
+		type = guard
+		home = 322
+	}
+
+	regiment = {
+		name= "1. Artilleribrigaden"
+		type = artillery
+		home = 324
+	}
+
+	regiment = {
+		name= "1.Infanteribrigaden"
+		type = infantry
+		home = 322
+	}
+
+	regiment = {
+		name= "2.Infanteribrigaden"
+		type = infantry
+		home = 332
+	}
+
+	regiment = {
+		name= "3.Infanteribrigaden"
+		type = infantry
+		home = 329
+	}
+
+	regiment = {
+		name= "4.Infanteribrigaden"
+		type = infantry
+		home = 323
+	}
+
+	regiment = {
+		name= "5.Infanteribrigaden"
+		type = engineer
+		home = 330
+	}
+
+	regiment = {
+		name= "1. Dragonenbrigaden"
+		type = dragoon
+		home = 317
+	}
+}
+	
+navy = {
+	name = "Swedish Fleet"
+	location = 322
+	ship = {
+		name= "Karl XIV Johan"
+		type = cruiser
+	}
+	ship = {
+		name= "Prins Oskar"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Josephine"
+		type = frigate
+	}
+
+	ship = {
+		name= "Nörrköping"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 322
+	ship = {
+		name= "1st Transport Squadron"
+		type = steam_transport
+	}
+	ship = {
+		name= "2nd Transport Squadron"
+		type = steam_transport
+	}
+	ship = {
+		name= "3rd Transport Squadron"
+		type = steam_transport
+	}
+}

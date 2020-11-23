@@ -1,0 +1,84 @@
+political_decisions = {
+	found_the_bbc = {
+		potential = {
+			tag = ENG
+			year = 1922
+			NOT = { year = 1930}
+			money = 100000
+			NOT = {
+				has_country_flag = we_are_live_from_london
+			}
+		}
+
+		allow = {
+			money = 100000
+		}
+
+		effect = {
+			prestige = 20
+			money = -100000
+			add_country_modifier = {
+				name = bbc_modifier
+				duration = -1
+			}
+			any_country = {
+				relation = {
+					who = THIS
+					value = 5
+				}
+			}
+			any_pop = {
+				militancy = -0.5
+			}
+			set_country_flag = we_are_live_from_london
+		}
+	}
+	end_of_uk = {
+		potential = {
+			tag = ENG
+			NOT = {
+				exists = ENL
+				has_global_flag = end_of_uk
+			}
+			SCO = {
+				all_core = {
+					NOT = {
+						owned_by = ENG
+					}
+				}
+			}
+			WLS = {
+				all_core = {
+					NOT = {
+						owned_by = ENG
+					}
+				}
+			}
+		}
+		allow = {
+			SCO = {
+				NOT = {
+					is_vassal_of = ENG
+				}
+			}
+			WLS = {
+				NOT = {
+					is_vassal_of = ENG
+				}
+			}
+		}
+		effect = {
+			set_global_flag = end_of_uk
+			SCO = {
+				all_core = {
+					remove_core = ENG
+				}
+			}
+			WLS = {
+				all_core = {
+					remove_core = ENG
+				}
+			}
+		}
+	}
+}

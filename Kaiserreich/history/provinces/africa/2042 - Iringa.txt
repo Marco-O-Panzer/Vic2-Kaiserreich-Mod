@@ -1,0 +1,5 @@
+owner = GER
+controller = GER
+trade_goods = tobacco
+colonial = 2
+life_rating = 15

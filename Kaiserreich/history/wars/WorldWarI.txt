@@ -1,0 +1,47 @@
+name = "World War 1"
+
+1914.8.1 = {
+	add_attacker = GER
+	add_attacker = AUS
+	add_attacker = BUL
+	add_attacker = TUR
+	add_attacker = MIA
+
+	add_defender = ENG
+	add_defender = POR
+	add_defender = JAP
+	add_defender = CAN
+	add_defender = BRJ
+	add_defender = NEP
+	add_defender = BHU
+	add_defender = AST
+	add_defender = NZL
+	add_defender = USA
+	add_defender = YEM
+	add_defender = OMA
+	add_defender = FRA
+	add_defender = ITA
+}
+
+1917.9.1 = {
+	rem_attacker = GER
+	rem_attacker = AUS
+	rem_attacker = BUL
+	rem_attacker = TUR
+	rem_attacker = MIA
+
+	rem_defender = ENG
+	rem_defender = POR
+	rem_defender = JAP
+	rem_defender = CAN
+	rem_defender = BRJ
+	rem_defender = NEP
+	rem_defender = BHU
+	rem_defender = AST
+	rem_defender = NZL
+	rem_defender = USA
+	rem_defender = YEM
+	rem_defender = OMA
+	rem_defender = FRA
+	rem_defender = ITA
+}

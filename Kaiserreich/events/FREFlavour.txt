@@ -1,0 +1,142 @@
+### Bonaparte Takes Command ###
+
+country_event = {
+       id = 40076
+       title = "Bonaparte Takes Command!"
+       fire_only_once = yes
+       picture = "napoleon_returned"
+       desc = "Sir, we have established control in Marseille and can begin marching north at your command - the fascists are not going to go without a fight."
+
+       trigger = {
+               tag = FRE
+	       has_global_flag = french_civil_war
+       }
+
+       option = {
+              name = "Ok. We march North!"
+	      government = absolute_monarchy
+       }
+}
+
+### French Civil War - Flee to a Colony? ###
+
+country_event = {
+	id = 40080
+	title = "Retreat to a Colony"
+	fire_only_once = yes
+	major = yes
+	desc = "After a few horrible defeats, the Bonapartist divisions have been nearly wiped out. Anti-Bonapartist forces have already captured the temporary Bonapartist capital. We must flee to a colony."
+
+	trigger = {
+		tag = FRE
+		exists = FRE
+		war = yes
+		war_with = FRA
+		national_provinces_occupied = 0.35
+		has_global_flag = french_civil_war
+		OR = {
+			1380 = {
+				is_capital = no
+			}
+		}
+	}
+
+	option = {
+		name = "Flee to French Indochina"
+		ai_chance = {
+			factor = 100
+		}
+		end_war = FRA
+		capital = 1380
+		FRA = {
+			any_owned = {
+				limit = {
+					continent = asia
+				}
+				secede_province = FRE
+				add_core = FRE
+			}
+			country_event = 40077
+		}
+		any_owned = {
+			limit = {
+				NOT = {
+					continent = asia
+				}
+			}
+			secede_province = FRA
+		}
+	}
+}
+
+### French Civil War - Bonapartist Victory! ###
+
+country_event = {
+       id = 40078
+       title = "Bonapartist Victory!"
+       fire_only_once = yes
+       major = yes
+       desc = "We have won! The military governers are dead or have fled, fearing Bonaparte's wrath! France is jubilant about our success and the world trembles in awe at our advances. Viva la France!"
+
+       trigger = {
+               tag = FRE
+	       has_global_flag = french_civil_war
+	       NOT = {has_global_flag = fre_won_civil_war}
+       }
+
+       option = {
+              name = "... then onto Brussels!"
+	      prestige = 10
+	      capital = 425
+	      clr_global_flag = french_civil_war
+		set_global_flag = fre_won_civil_war
+		FRA = {
+			all_core = {
+				add_core = FRE
+			}
+		}
+		FRE = {
+			all_core = {
+				remove_core = FRA
+			}
+		}
+       }
+}
+
+### End of The 4th Empire ###
+
+country_event = {
+       id = 40107
+       title = "End of the 4th Empire"
+       fire_only_once = yes
+       major = yes
+       desc = "Alas, with the monarchy obsolete any illusions of the Fourth Empire have quickly disappeared and we are now but meagre France again."
+
+       trigger = {
+               tag = FRE
+		has_global_flag = fre_won_civil_war
+	       NOT = { 
+			OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+			}
+		}
+      }
+
+       option = {
+              name = "It is over."
+	      change_tag = FRA
+		FRE = {
+			all_core = {
+				add_core = FRA
+			}
+		}
+		FRA = {
+			all_core = {
+				remove_core = FRE
+			}
+		}
+       }
+}
+

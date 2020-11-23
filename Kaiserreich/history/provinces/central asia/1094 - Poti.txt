@@ -1,0 +1,7 @@
+owner = TUR
+controller = TUR
+add_core = RUS
+add_core = GEO
+add_core = TUR
+trade_goods = tea
+life_rating = 35

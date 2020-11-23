@@ -1,0 +1,127 @@
+### AUS Reforms - 2nd KUK ###
+
+country_event = {
+       id = 40193
+       title = "Hungarian Approval"
+       desc  = "If we are to create a second Austro-Hungarian Empire, we need to have the approval of the Hungarians. Yes, even if they did act like spoiled brats during the war."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = kuk_take_two
+       }
+
+       option = {
+		name = "Here goes nothing."
+		set_global_flag = hun_ask
+       }
+	option = {
+		name = "Bah. We'll force them in whether they like it or not."
+		set_global_flag = no_hun_ask
+		HUN = {
+			country_event = 4019325
+		}
+	}
+}
+
+### AUS Reforms - 2nd KUK (No HUN Ask 1) ###
+
+country_event = {
+       id = 4019325
+       title = "Austrian Pressure"
+       desc  = "We have just received word from the Austrian Consulate that they will force us into a second Austro-Hungarian Empire whether we like it or not. How should we deal with this?"
+       major = yes
+       fire_only_once = yes
+	is_triggered_only = yes
+
+       option = {
+		name = "Let's send them a letter about what we think about this."
+		KUK = {
+			country_event = 401935
+		}
+       }
+}
+
+### AUS Reforms - 2nd KUK (No HUN Ask 1) ###
+
+country_event = {
+       id = 401935
+       title = "Hungarians Upset"
+       desc  = "The Hungarian consulate has contacted us to let us know that we are making a big mistake and that we should ask the Hungarians, come up with a different empire, or to expect the collapse of the empire."
+       major = yes
+       fire_only_once = yes
+	is_triggered_only = yes
+
+       option = {
+		name = "Fine, let's ask them."
+		set_global_flag = hun_ask
+       }
+	option = {
+		name = "Have you ever heard of the United States of Great Austria?"
+		set_global_flag = vso_planned
+		clr_global_flag = kuk_take_two
+	}
+	option = {
+		name = "They better shut up or they will be punished."
+		set_global_flag = stfu_hun
+	}
+}
+
+### AUS Reforms - 2nd KUK (Hungarians Approve) ###
+
+country_event = {
+       id = 40194
+       title = "Hungarians Say Yes"
+       desc  = "In a shocking turn of events, the Hungarians actually said yes towards the idea of a second Austro-Hungarian Empire."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = hun_ask
+       }
+
+       option = {
+		name = "That's good news."
+		set_global_flag = hun_approves
+		any_pop = {
+			limit = {
+				has_pop_culture = hungarian
+			}
+			militancy = -4
+			consciousness = -2
+		}
+		add_accepted_culture = hungarian
+       }
+}
+
+
+### AUS Reforms - 2nd KUK (Done) ###
+
+country_event = {
+       id = 40197
+       title = "The 2nd Dual-Monarchy"
+       desc  = "This is it. We are now in a position to proclaim the second Austro-Hungarian Empire."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = hun_approves
+		war = no
+       }
+
+       option = {
+		name = "Huzzah!"
+		inherit = HUN
+		inherit = SLD
+		set_global_flag = second_kuk_complete
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			add_core = KUK
+		}
+       }
+}

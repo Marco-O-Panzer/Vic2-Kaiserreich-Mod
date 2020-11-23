@@ -1,0 +1,23 @@
+army = {
+	name = "Army of the Begum of Bhopal"
+	location = 1272
+	regiment = {
+		name= "1.Bhopal"
+		type = infantry
+		home = 1272
+	}
+
+	regiment = {
+		name= "2.Bhopal"
+		type = infantry
+		home = 1272
+	}
+
+	regiment = {
+		name= "3.Bhopal"
+		type = infantry
+		home = 1272
+	}
+
+}
+

@@ -1,0 +1,40 @@
+political_decisions = {
+        create_commonwealth_union = {
+		picture = "commonwealth"
+		major = yes
+		fire_only_once = yes
+
+                potential = {
+			tag = ENG
+			has_global_flag = ENG_end_empire
+			is_greater_power = yes
+		}
+
+                allow = {
+			is_greater_power = yes
+			is_sphere_leader_of  = CAN
+			is_sphere_leader_of  = NZL
+			is_sphere_leader_of  = AST
+			OR = {
+			government = hms_government
+			government = democracy
+			}
+			NOT = {
+				exists = UOC
+			}
+
+                }
+          effect = {
+		change_tag = UOC
+		prestige = 50
+		inherit = CAN
+		inherit = NZL
+		inherit = AST
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

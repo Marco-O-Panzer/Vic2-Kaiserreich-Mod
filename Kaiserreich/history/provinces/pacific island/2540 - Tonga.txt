@@ -1,0 +1,5 @@
+owner = NZL
+controller = NZL
+colonial = 2
+trade_goods = fish
+life_rating = 15

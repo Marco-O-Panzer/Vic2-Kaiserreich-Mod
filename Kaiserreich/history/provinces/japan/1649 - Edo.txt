@@ -1,0 +1,33 @@
+owner = JAP
+controller = JAP
+add_core = JAP
+trade_goods = grain
+life_rating = 35
+fort = 1
+
+naval_base = 3
+railroad = 2
+
+state_building = {
+	level = 2
+	building = coal_power_station
+	upgrade = yes
+}
+
+state_building = {
+	level = 2
+	building = steamer_shipyard
+	upgrade = yes
+}
+
+state_building = {
+	level = 3
+	building = artillery_factory
+	upgrade = yes
+}
+
+state_building = {
+	level = 2
+	building = canned_food_factory
+	upgrade = yes
+}

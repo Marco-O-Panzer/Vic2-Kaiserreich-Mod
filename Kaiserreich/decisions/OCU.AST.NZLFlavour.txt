@@ -1,0 +1,35 @@
+political_decisions = {
+        form_oceania = {
+		fire_only_once = yes
+
+                potential = {
+			OR = {
+			tag = AST
+			tag = NZL
+			}
+			NOT = { has_global_flag = ocu_formed}
+		}
+
+                allow = {
+			owns = 2468
+			owns = 2512
+			owns = 2528
+					
+			NOT = {
+				exists = OCU
+			}			
+                }
+
+          effect = {
+		prestige = 25
+		change_tag = OCU
+		inherit = AST
+		inherit = NZL
+		set_global_flag = ocu_formed
+
+		}
+	   ai_will_do = {
+		factor = 1
+		}
+	}
+}

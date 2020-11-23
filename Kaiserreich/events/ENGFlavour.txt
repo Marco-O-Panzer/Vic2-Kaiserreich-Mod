@@ -1,0 +1,601 @@
+### Background ###
+
+country_event = {
+       id = 40099
+       title = "EVTNAME2900"
+       desc  = "EVTDESC2900"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+		NOT = { year = 1936 }
+       }
+
+       option = {
+              name = "Hmmm... Buggar."
+	      add_country_modifer = {
+			name = peace_with_honor
+			duration = 1825
+	      }
+       }
+}
+
+### Sun Finally Sets ###
+
+country_event = {
+       id = 40023
+       title = "EVTNAME2905"
+       desc  = "EVTDESC2905"
+       fire_only_once = yes
+       major = yes
+
+       trigger = {
+               tag = ENG
+	       has_global_flag = ENG_end_empire
+	       
+	       OR = {
+		government = proletarian_dictatorship
+		government = presidential_dictatorship
+		}
+       }
+
+       option = {
+	      set_global_flag = ENG_end_empire
+	      set_global_flag = royals_escape
+              name = "The Imperial Lion is dead."
+	      prestige = -40
+	      release = CAN
+	      release = IRE
+	      release = EGY
+	      release = VEN
+	      release = BUR
+	      release = HND
+	      release = EOM
+	      release = RHO
+              release = BRU
+              release = WAU
+              release = EAU
+	      release = JOH
+	      release = SAF
+	      release = LIB
+	      release = ETH
+              release_vassal = NEP
+              release_vassal = BUH
+              release_vassal = ABU
+              release_vassal = CAN
+	      release_vassal = EGY
+              release_vassal = AST
+              release_vassal = BRJ
+              release_vassal = SAF
+              release_vassal = NZL
+              release_vassal = YEM
+              release_vassal = OMA
+              release_vassal = HND
+              leave_alliance = HND
+	      leave_alliance = SAF
+	      leave_alliance = AST
+	      leave_alliance = NEP
+	      leave_alliance = BUH
+	      leave_alliance = BRJ
+	      leave_alliance = NZL
+	      leave_alliance = CAN
+	      leave_alliance = EGY
+	      leave_alliance = YEM
+	      leave_alliance = OMA
+       }
+}
+
+
+
+### Irish Home Rule ###
+
+
+country_event = {
+       id = 40
+       title = "EVTNAME2901"
+       desc  = "EVTDESC2901"
+       picture = "IRE_Pic"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+               year = 1922
+	       month = 11
+       }
+
+       option = {
+              name = "The United Kingdom is a stern believer in National Self-Determination. Ireland may leave."
+	      any_pop = {
+		militancy = -3
+		consciousness = 1
+		}
+	      prestige = 5
+
+	      263 = {remove_core = ENG}
+	      264 = {remove_core = ENG}
+	      265 = {remove_core = ENG}
+	      262 = {remove_core = ENG}
+	      260 = {remove_core = ENG}
+	      261 = {remove_core = ENG}
+	      258 = {remove_core = ENG}
+	      259 = {remove_core = ENG}
+	      257 = {remove_core = ENG}
+	      254 = {remove_core = IRE}
+	      256 = {remove_core = IRE}
+	      255 = {remove_core = IRE}
+
+	      release = IRE
+
+	      ai_chance = {
+		factor = 15
+		}
+       }
+       option = {
+              name = "Politely remind the Irish 'Republic', that Gaelic has no word for Republic, and that it should be a dominion."
+	      prestige = 15
+	      any_pop = {
+		militancy = -3
+		consciousness = 1
+		}
+
+	      ai_chance = {
+		factor = 80
+		}
+
+	      263 = {remove_core = ENG}
+	      264 = {remove_core = ENG}
+	      265 = {remove_core = ENG}
+	      262 = {remove_core = ENG}
+	      260 = {remove_core = ENG}
+	      261 = {remove_core = ENG}
+	      258 = {remove_core = ENG}
+	      259 = {remove_core = ENG}
+	      257 = {remove_core = ENG}
+	      254 = {remove_core = IRE}
+	      256 = {remove_core = IRE}
+	      255 = {remove_core = IRE}
+
+	      release = IRE
+		IRE = {
+			government = hms_government
+		}
+		create_vassal = IRE
+
+       }
+       option = {
+              name = "A nation of potato farmers? Home Rule? How very ludicrous!"
+
+	      ai_chance = {
+		factor = 5
+		}
+
+	      any_pop = {
+		militancy = 4
+		consciousness = 3
+		}
+              prestige = -10
+       }
+}
+
+### General Strike ###
+
+country_event = {
+       id = 40022
+       title = "EVTNAME2904"
+       desc  = "EVTDESC2904"
+       fire_only_once = yes
+       major = yes
+
+       trigger = {
+           tag = ENG	
+	   year = 1926
+	   month = 4
+	   NOT = { government = proletarian_dictatorship }
+       }
+
+       option = {
+              name = "Blasted communist agitators! We make no concessions - send in the troops! Force them back down the pits!"
+		set_country_flag = eng_suppress_communism
+	      socialist_pop = {
+		militancy = 15
+		consciousness = 3
+		}
+	      communist_pop = {
+		militancy = 15
+		consciousness = 3
+		}
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+	      		ideology = {
+				value = communist
+				factor = 0.35
+			}
+		}
+	
+
+       ai_chance = {
+		factor = 99
+	}
+       }
+
+       option = {
+              name = "We have no choice. We must accept that we are no longer a world power, our people must come first."
+	      set_global_flag = ENG_end_empire
+	      government = proletarian_dictatorship
+	      any_pop = {
+		militancy = -2
+		consciousness = -1
+		}
+		political_reform = none_voting
+		political_reform = party_appointed
+		political_reform = no_meeting
+		political_reform = state_press
+		political_reform = state_controlled
+		political_reform = underground_parties
+	ai_chance = {
+		factor = 1
+	}
+       }
+}
+
+### Falklands War ###
+
+country_event = {
+       id = 40051
+       title = "EVTNAME2909"
+       desc  = "EVTDESC2909"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       has_global_flag = falklands_war
+       }
+
+       option = {
+              name = "The government has now decided that a large taskforce will set sail..."
+	      prestige = 5
+	      any_pop = {
+		consciousness = 3
+		}
+	      war = {
+		name = "The Falklands War"
+		target = ARG
+		attacker_goal = {
+			acquire_core_state = 2131
+			}
+		defender_goal = {
+			casus_belli = status_quo
+			}
+		}
+       }
+       option = {
+              name = "The Empire is dead. It is not worth defending this vestage of Empire."
+	      prestige = -15
+	      any_pop = {
+		militancy = 3
+		consciousness = 1
+		}
+       }
+}
+
+### Douglas Haig Death ###
+
+country_event = {
+       id = 40052
+       title = "EVTNAME2910"
+       desc  = "ENG-HAIG-DEAD"
+       picture = "haig_funeral"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       year = 1928
+	       month = 1
+       }
+
+       option = {
+              name = "History will not be kind to Haig"
+	      kill_leader = "Douglas Haig, 1st Earl Haig"
+	      any_pop = {
+		consciousness = 1
+		}
+       }
+}
+
+### Gandhi Visits Darwen ###
+
+country_event = {
+       id = 40156
+       title = "Gandhi Visits Darwen"
+       desc  = "ENG-GAN-DAR"
+       picture = "gandhi_darwen"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       year = 1931
+	       month = 8
+       }
+
+       option = {
+              name = "Hopefully he learnt something"
+	      prestige = -5
+	      any_pop = {
+		militancy = -1
+		consciousness = -1
+		}
+       }
+}
+
+
+### The Imperial Conference - Renewal ###
+
+country_event = {
+       id = 40067
+       title = "The 1921 Imperial Conference - Renewal?"
+       desc  = "EVTDESC2914"
+       picture = "empire_conference"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       alliance_with = JAP
+	       has_global_flag = ENG_1921_conference
+	       NOT = { year = 1925 }
+       }
+
+       option = {
+              name = "The Right Honourable Canadian gentlemen makes a point, but we will be allied to Japan."
+	      ai_chance = {
+		factor = 5
+		}
+	      any_pop = {
+		consciousness = 1
+		}
+	      relation = {
+		who = JAP
+		value = 75
+		}
+	      relation = {
+		who = USA
+		value = -75
+		}
+	      relation = {
+		who = CAN
+		value = -10
+		}
+	      relation = {
+		who = NZL
+		value = 50
+		}
+	      relation = {
+		who = AST
+		value = 50
+		}
+       }
+
+       option = {
+              name = "The Empire has decided to refrain from interventionism. Our alliance with Japan will expire."
+	      ai_chance = {
+		factor = 95
+		}
+	      any_pop = {
+		consciousness = 1
+		}
+	      leave_alliance = JAP
+	      relation = {
+		who = JAP
+		value = -150
+		}
+	      relation = {
+		who = USA
+		value = 75
+		}
+	      relation = {
+		who = CAN
+		value = 50
+		}
+	      relation = {
+		who = NZL
+		value = -10
+		}
+	      relation = {
+		who = AST
+		value = -10
+		}
+       }
+}
+
+### The Imperial Conference - Independence ###
+
+country_event = {
+       id = 40140
+       title = "The 1921 Imperial Conference - Independence?"
+       desc  = "IMP-CONF-IND"
+       picture = "empire_conference"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       has_global_flag = ENG_1921_conference
+	       NOT = { year = 1925 }
+       }
+
+       option = {
+              name = "Of course! Well, I suppose..."
+	      ai_chance = {
+		factor = 5
+		}
+	      any_pop = {
+		consciousness = 1
+		}
+	      relation = {
+		who = USA
+		value = 25
+		}
+	      release_vassal = CAN
+	      relation = {
+		who = CAN
+		value = 100
+		}
+	      release_vassal = NZL
+	      relation = {
+		who = NZL
+		value = 100
+		}
+	      release_vassal = AST
+	      relation = {
+		who = AST
+		value = 100
+		}
+	      release_vassal = SAF
+	      relation = {
+		who = SAF
+		value = 100
+		}
+       }
+}
+
+### The Imperial Conference - The Raj ###
+
+country_event = {
+       id = 40141
+       title = "The 1921 Imperial Conference - The Raj?"
+       desc  = "IMP-CONF-BRJ"
+       picture = "empire_conference"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ENG
+	       exists = BRJ
+	       has_global_flag = ENG_1921_conference
+	       NOT = { year = 1925 }
+       }
+
+       option = {
+              name = "Yes, gradual independence"
+	      prestige = -20
+	      ai_chance = {
+		factor = 25
+		}
+	      any_pop = {
+		consciousness = 1
+		}
+
+	      relation = {
+		who = BRJ
+		value = -50
+		}
+       }
+       option = {
+              name = "India is not ready!"
+	      set_global_flag = conference_no_ind
+	      ai_chance = {
+		factor = 75
+		}
+	      any_pop = {
+		consciousness = 1
+		militancy = 1.5
+		}
+
+	      relation = {
+		who = BRJ
+		value = 50
+		}
+       }
+
+}
+
+### Margaret Thatcher ###
+
+country_event = {
+       id = 40075
+       title = "Margaret Thatcher"
+       desc  = "EVTDESC2920"
+       picture = "thatcher"
+       fire_only_once = yes
+
+       trigger = {
+	       OR = {
+               tag = ENG
+	       tag = UOC
+		}
+	       OR = {
+	       government = democracy
+	       government = hms_government
+		}
+	       year = 1979
+	       NOT = {year = 1990}
+	       ruling_party_ideology = conservative
+       }
+
+       option = {
+              name = "A controversial figure"
+	      prestige = 10
+       }
+}
+
+### The Beatles ###
+
+country_event = {
+       id = 40097
+       title = "The Beatles"
+       desc  = "EVTDESC2927"
+       picture = "beatles"
+       fire_only_once = yes
+
+       trigger = {
+	       year = 1960
+	       punk_era = 1
+	       NOT = { has_country_flag = has_beatles }
+	       OR = {
+               tag = ENG
+	       tag = UOC
+		}
+       }
+
+       option = {
+              name = "Give peace a chance!"
+	      prestige = 10
+	      set_country_flag = has_beatles
+       }
+}
+
+### Clement Attlee ###
+
+country_event = {
+       id = 40127
+       title = "Clement Attlee"
+       desc = "EVTDESC2937"
+       picture = "clement_attlee"
+
+       trigger = {
+	       OR = {
+	       	tag = ENG
+		tag = UOC
+	  	}
+	       OR = {
+	       	government = democracy
+		government = hms_government
+	  	}
+	       NOT = { has_global_flag = clement_atlee }
+	       year = 1945
+	       NOT = { year = 1952 }
+	       ruling_party_ideology = socialist
+	}
+
+       option = {
+              name = "A man of the people!"
+	      prestige = 10
+	      set_global_flag = clement_atlee
+	}
+}
+
+
+
+

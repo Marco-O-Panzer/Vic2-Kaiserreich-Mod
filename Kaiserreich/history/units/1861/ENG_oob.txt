@@ -1,0 +1,1290 @@
+army = {
+	name = "Home Guard"
+	location = 300
+	leader = {
+		name = "John French, 1st Earl of Ypres"
+		type = land
+		date="1914.1.1"
+		personality = coward
+		background = school_of_defense
+		picture="european_general_1"
+	}
+	regiment = {
+		name= "1.Royal Guards Division"
+		type = guard
+		home = 300
+	}
+
+	regiment = {
+		name= "2.Royal Guards Division"
+		type = guard
+		home = 269
+	}
+
+	regiment = {
+		name= "3.Royal Guards Division"
+		type = guard
+		home = 263
+	}
+
+	regiment = {
+		name= "Experimental Mech. Brigade"
+		type = cavalry
+		home = 300
+	}
+}
+
+army = {
+	name = "The B.E.F"
+	location = 293
+		leader = {
+		name = "Douglas Haig, 1st Earl Haig"
+		type = land
+		date="1914.1.1"
+		personality = daring
+		background = cavalry_school
+		picture="european_general_14"
+	}
+	regiment = {
+		name= "2nd Colchester Foot" 
+		home = 289
+		type = guard
+	}
+	regiment = {
+		name= "9th Kinsale Foot" 
+		home = 260
+		type = guard
+	}
+	regiment = {
+		name= "12th Portsmouth Foot" 
+		home = 303
+		type = guard
+	}
+	regiment = {
+		name= "49th Dover Foot" 
+		home = 301
+		type = guard
+	}
+	regiment = {
+		name= "1.Brigade Royal Artillery" 
+		home = 301
+		type = artillery
+	}
+	regiment = {
+		name= "15th Tipperary Foot" 
+		home = 255
+		type = guard
+	}
+	regiment = {
+		name= "55th Shorncliffe Foot" 
+		home = 274
+		type = guard
+	}
+	regiment = {
+		name= "23rd Woolwich Foot"
+		home = 300		
+		type = guard
+	}
+	regiment = {
+		name= "4.Brigade Royal Artillery" 
+		home = 292
+		type = artillery
+	}
+	regiment = {
+		name= "5.Brigade Royal Artillery" 
+		home = 294
+		type = artillery
+	}
+	regiment = {
+		name= "77th Dublin Foot"
+		home = 254	
+		type = guard
+	}
+	regiment = {
+		name= "31st Chatham Foot" 
+		home = 277
+		type = guard
+	}
+	regiment = {
+		name= "87th Limerick Foot" 
+		home = 261
+		type = guard
+	}
+	regiment = {
+		name= "Royal Engineer Train" 
+		home = 269
+		type = engineer
+	}
+}
+
+army = {
+	name = "Royal Irish Army"
+	leader = {
+		name = "Henry Rawlinson, 1st Baron Rawlinson"
+		type = land
+		date="1914.2.20"
+		personality = careful
+		background = school_of_offense
+		picture="european_general_8"
+	}
+	location = 263
+	regiment = {
+		name= "1.7. Division"
+		type = infantry
+		home = 300
+	}
+
+	regiment = {
+		name= "2.7. Division"
+		type = infantry
+		home = 255
+	}
+
+	regiment = {
+		name= "3.7. Division"
+		type = infantry
+		home = 259
+	}
+
+}
+
+navy = {
+	name = "Channel Fleet"
+	location = 303
+	ship = {
+		name= "HMS Aboukir" #Plymouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Centurion" #Plymouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Conqueror" #Plymouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Donegal" #Plymouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Edgar" #Portsmouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Frederick William" #Portsmouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hero" #Plymouth
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Revenge"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Trafalgar"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Caesar"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Ariadne"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Diadem"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "Grand Fleet"
+	location = 267 
+	leader = {
+		name = "John Rushworth Jellicoe"
+		type = sea
+		date="1914.1.1"
+		personality = audacious
+		background = school_of_offense
+		picture="european_admiral_1"
+	}
+	ship = {
+		name= "HMS Ark Royal" 
+		type = manowar
+	}
+	ship = {
+		name= "HMS King George V" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Ajax" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Centurion" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Erin" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Orion" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Monarch" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Conqueror" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Thunderer" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Iron Duke" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Royal Oak" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Superb" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Canada" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Benbow" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Bellerophon" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Temeraire" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Vanguard" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Colossus" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Collingwood" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS St. Vincent" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Neptune" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Marlborough" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Revenge" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Hercules" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Agincourt" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Barham" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Warspite" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Malaya" 
+		type = battleship
+	}
+
+	ship = {
+		name= "HMS Australia" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Lion" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Princess Royal" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Queen Mary" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Tiger" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS New Zealand" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Indefatigable" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS England" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Falklands" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Tipperary" 
+		type = ironclad
+	}
+	ship = {
+		name= "HMS Defence" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Warrior" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Duke of Edinburgh" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Black Prince" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Fearless" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Minotaur" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Hampshire" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Shannon" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Cochrane" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Calliope" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Constance" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Comus" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Caroline" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Royalist" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Boadicea" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Active" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Blanche" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Bellona" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Abdiel" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Oak" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Invincible" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Inflexible" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Indomitable" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Canterbury" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Chester" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Shark" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Ophelia" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Christopher" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Acasta" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Galatea" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Phaeton" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Inconstant" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Cordelia" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Southampton" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Dublin" 
+		type = cruiser
+	}
+	ship = {
+		name= "HMS Tipperary" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Spitfire" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Sparrowhawk" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Garland" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Contest" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Owl" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Hardy" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mischief" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Midge" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Broke" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Porpoise" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Unity" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Achates" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Ambuscade" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Ardent" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Fortune" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Castor" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Ossory" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Martial" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Magic" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Minion" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mystic" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mons" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mandate" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Michael" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Kempenfelt" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Marne" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Millbrook" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Manners" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Moon" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mounsey" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Morning Star" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Faulknor" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Obedient" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mindful" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Marvel" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Onslaught" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Maenad" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Narwhal" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Nessus" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Noble" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Marksman" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Opal" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Nonsuch" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Menace" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Munster" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Mary Rose" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Shark" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Ophelia" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Christopher" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Acasta" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Liberty" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Lydiard" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Landrall" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Moorsom" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Laurel" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Morris" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Acheron" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Ariel" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Attack" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Hydra" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Badger" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Lizard" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Goshawk" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Lapwing" 
+		type = frigate
+	}
+	ship = {
+		name= "HMS Defender" 
+		type = frigate
+	}
+	
+}
+
+navy = {
+	name = "Mediterranean Fleet"
+	location = 854
+	ship = {
+		name= "HMS Alexandria" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Agamemnon"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Algiers"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hannibal"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS James Watt"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Victor Emmanuel"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Neptune"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS London"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Marlborough"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Renown"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Exmouth"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Mars"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Orion"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Queen"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Hibernia"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Cressy"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS St Jean d'Acre"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Amphion"
+		type = frigate
+	}
+	
+	ship = {
+		name= "HMS Phoebe"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Liffey"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Doris"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Melpomene"
+		type = frigate
+	}
+	
+	ship = {
+		name= "HMS Immortalité"
+		type = frigate
+	}
+}
+
+navy = {
+	name = "Canada Station"
+	location = 71 #Halifax
+	ship = {
+		name= "HMS Nile"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS St. George"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Mersey"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "South America Station"
+	location = 2131
+	
+	ship = {
+		name= "HMS Forte"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "Mali Station"
+	location = 1884
+	ship = {
+		name= "HMS Arrogant"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "South Africa Station"
+	location = 2087
+	ship = {
+		name= "HMS Boscawen"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Narcissus"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "Singapore Battle Fleet"
+	location = 1384
+	ship = {
+		name= "HMS Hong Kong" 
+		type = battleship
+	}
+	ship = {
+		name= "HMS Calcutta"
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Impérieuse"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Chesapeake"
+		type = frigate
+	}
+	
+	ship = {
+		name= "HMS Active"
+		type = frigate
+	}
+
+	ship = {
+		name= "HMS Pique"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "Pacific Station"
+	location = 14 #Esquimalt
+	ship = {
+		name= "HMS Ganges"
+		type = cruiser
+	}
+	
+	ship = {
+		name= "HMS Termagent"
+		type = frigate
+	}
+	
+	ship = {
+		name= "HMS Tribune"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "Irish Sea Flotilla"
+	location = 277
+	ship = {
+		name= "HMS Majestic" 
+		type = cruiser
+	}
+}
+
+navy = {
+	name = "Coast Guard Southampton"
+	location = 303
+	ship = {
+		name= "HMS Irresistable" 
+		type = cruiser
+	}
+
+	ship = {
+		name= "HMS Dauntless" 
+		type = frigate
+	}
+}
+	
+navy = {
+	name = "Home Transport Flotilla"
+	location = 303
+	ship = {
+		name= "1st Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "3rd Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "4th Transport Flotilla"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "5th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "6th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "7th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "8th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "9th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "10th Transport Flotilla"
+		type = steam_transport
+	}
+
+}
+
+navy = {
+	name = "Reserve Transport Flotilla"
+	location = 277
+	ship = {
+		name= "11th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "12th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "13th Transport Flotilla"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "14th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "15th Transport Flotilla"
+		type = steam_transport
+	}
+
+}
+
+navy = {
+	name = "Med. Transport Flotilla"
+	location = 854
+	ship = {
+		name= "16th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "17th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "18th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "19th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "20th Transport Flotilla"
+		type = steam_transport
+	}
+
+}
+
+navy = {
+	name = "Pacific Ocean Transport Flotilla"
+	location = 1297
+	ship = {
+		name= "21st Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "22nd Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "23rd Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "24th Transport Flotilla"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "25th Transport Flotilla"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "26th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "27th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "28th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "29th Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "30th Transport Flotilla"
+		type = steam_transport
+	}
+
+}
+
+JAP = {
+	value = 200 
+}
+
+GER = {
+	value = -150
+}
+
+USA = {
+	value = 50
+}
+
+FRA = {
+	value = 50
+}
+
+CAN = {
+	value = 150	level = 5	influence_value = 25
+}
+
+AST = {
+	value = 150	level = 5	influence_value = 25
+}
+
+BRJ = {
+	value = 150	level = 5	influence_value = 25
+}
+
+NEW = {
+	value = 150	level = 5	influence_value = 25
+}
+
+ABU = {
+	value = 150	level = 5	influence_value = 25
+}
+
+EGY = {
+	value = 150	level = 5	influence_value = 25
+}
+
+OMA = {
+	value = 150	level = 5	influence_value = 25
+}
+
+YEM = {
+	value = 150	level = 5	influence_value = 25
+}
+
+POR = {
+	value = 150	level = 5	influence_value = 25
+}
+
+HEJ = {
+	value = 150	level = 5	influence_value = 25
+}
+
+SAF = {
+	value = 150	level = 5	influence_value = 25
+}
+
+NZL = {
+	value = 150	level = 5	influence_value = 25
+}

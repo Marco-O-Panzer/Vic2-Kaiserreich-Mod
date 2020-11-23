@@ -1,0 +1,157 @@
+political_decisions = {
+        invade_manchuria = {
+		title = "EVTNAME2908"
+		desc  = "EVTDESC2908"
+		picture = "jap_inf_manchuria"
+
+                potential = {
+			tag = JAP
+			exists = MCK
+			war = no
+			NOT = { has_global_flag = manchuria_invaded }
+		}
+
+                allow = {
+			  year = 1931
+			  is_greater_power = yes
+			MCK = { 
+				NOT = {
+					is_vassal_of = JAP 
+				} 
+			}
+                }
+
+          effect = {
+		badboy = 5
+		set_global_flag = manchuria_invaded
+		war = {
+			name = "Invasion of Manchuria"
+			target = MCK
+			attacker_goal = {
+				casus_belli = make_puppet
+				}
+			}
+		}
+
+	    ai_will_do = {
+		factor = 0.8		
+                }
+	}
+
+	invade_fujian = {
+		title = "EVTNAME2908"
+		desc  = "EVTDESC2908"
+		picture = "jap_inf_manchuria"
+
+                potential = {
+			tag = JAP
+			exists = FJN
+			war = no
+			NOT = { has_global_flag = fujian_invaded }
+		}
+
+                allow = {
+			  year = 1931
+			  is_greater_power = yes
+			  FJN = { 
+				NOT = { 
+					is_vassal_of = JAP 
+				} 
+			}
+                }
+
+          effect = {
+		badboy = 5
+		set_global_flag = fujian_invaded
+		war = {
+			name = "Invasion of Fujian"
+			target = FJN
+			attacker_goal = {
+				casus_belli = make_puppet
+				}
+			}
+		}
+
+	    ai_will_do = {
+		factor = 0.8		
+                }
+	}
+
+	invade_anhui = {
+		title = "EVTNAME2908"
+		desc  = "EVTDESC2908"
+		picture = "jap_inf_manchuria"
+
+                potential = {
+			tag = JAP
+			exists = HUI
+			war = no
+			NOT = { has_global_flag = anhui_invaded }
+		}
+
+                allow = {
+			  year = 1931
+			  is_greater_power = yes
+			  HUI = { 
+				NOT = { 
+					is_vassal_of = JAP 
+				} 
+			}
+                }
+
+          effect = {
+		badboy = 5
+		set_global_flag = anhui_invaded
+		war = {
+			name = "Invasion of Anhui"
+			target = HUI
+			attacker_goal = {
+				casus_belli = make_puppet
+				}
+			}
+		}
+
+	    ai_will_do = {
+		factor = 0.8		
+                }
+	}
+
+	invade_guangdong = {
+		title = "EVTNAME2908"
+		desc  = "EVTDESC2908"
+		picture = "jap_inf_manchuria"
+
+                potential = {
+			tag = JAP
+			exists = GNG
+			war = no
+			NOT = { has_global_flag = guangdong_invaded }
+		}
+
+                allow = {
+			  year = 1931
+			  is_greater_power = yes
+			  GNG = { 
+				NOT = { 
+					is_vassal_of = JAP 
+				} 
+			}
+                }
+
+          effect = {
+		badboy = 5
+		set_global_flag = guangdong_invaded
+		war = {
+			name = "Invasion of Guangdong"
+			target = GNG
+			attacker_goal = {
+				casus_belli = make_puppet
+				}
+			}
+		}
+
+	    ai_will_do = {
+		factor = 0.8		
+                }
+	}
+}

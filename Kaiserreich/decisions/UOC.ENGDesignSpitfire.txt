@@ -1,0 +1,40 @@
+### Design Spitfire ###
+
+political_decisions = {
+        design_spitfire = {
+		picture = "spitfire"
+
+                potential = {
+			money = 250000
+			NOT = { has_country_flag = spitfire_designed }
+			year = 1933
+			OR = {
+				tag = UOC
+				tag = ENG
+			}	
+		}
+
+                allow = {
+			money = 250000
+			year = 1938
+			OR = {
+				tag = UOC
+				tag = ENG
+			}	
+                }
+
+          effect = {
+		prestige = 10
+		money = -250000
+		set_country_flag = spitfire_designed
+		plane = {
+			attack = 3
+			defence = 5
+			maneuver = 1
+			}
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

@@ -1,0 +1,304 @@
+#Starting Relations
+
+KUK = {
+	value = -200		#relation
+}
+
+FRA = {
+	value = 50		#relation
+}
+
+army = {
+	name = "1a Armata" #done
+	location = 726
+	regiment = {
+		name= "1.1a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "2.1a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "3.1a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "1.2a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "2.2a Bersaglieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "3.2a Bersaglieri"
+		type = artillery
+		home = 720
+	}
+
+	regiment = {
+		name= "1.1a Granatieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "2.1a Granatieri"
+		type = infantry
+		home = 720
+	}
+
+	regiment = {
+		name= "3.1a Granatieri"
+		type = infantry
+		home = 722
+	}
+
+	regiment = {
+		name= "4.1a Granatieri"
+		type = engineer
+		home = 723
+	}
+
+	regiment = {
+		name= "1.1a Divisione"
+		type = infantry
+		home = 724
+	}
+
+	regiment = {
+		name= "2.1a Divisione"
+		type = infantry
+		home = 724
+	}
+
+	regiment = {
+		name= "3.1a Divisione"
+		type = infantry
+		home = 725
+	}
+
+	regiment = {
+		name= "1.2a Divisione"
+		type = infantry
+		home = 765
+	}
+
+	regiment = {
+		name= "2.2a Divisione"
+		type = infantry
+		home = 766
+	}
+
+	regiment = {
+		name= "3.2a Divisione"
+		type = infantry
+		home = 726
+	}
+
+
+	regiment = {
+		name= "1.1a Divisione Cavallero "
+		type = infantry
+		home = 726
+	}
+
+	regiment = {
+		name= "2.1a Divisione Cavallero "
+		type = infantry
+		home = 727
+	}
+
+	regiment = {
+		name= "3.1a Divisione Cavallero "
+		type = infantry
+		home = 727
+	}
+
+}
+
+army = {
+	name = "2a Corpo "
+	location = 762
+	regiment = {
+		name= "1.18a Divisione"
+		type = infantry
+		home = 758
+	}
+
+	regiment = {
+		name= "2.18a Divisione"
+		type = infantry
+		home = 759
+	}
+
+	regiment = {
+		name= "3.18a Divisione"
+		type = infantry
+		home = 760
+	}
+
+	regiment = {
+		name= "1.19a Divisione"
+		type = infantry
+		home = 761
+	}
+
+	regiment = {
+		name= "2.19a Divisione"
+		type = infantry
+		home = 762
+	}
+
+	regiment = {
+		name= "3.19a Divisione"
+		type = infantry
+		home = 762
+	}
+
+	regiment = {
+		name= "1.20a Divisione"
+		type = infantry
+		home = 763
+	}
+
+	regiment = {
+		name= "2.20a Divisione"
+		type = infantry
+		home = 764
+	}
+
+	regiment = {
+		name= "3.20a Divisione"
+		type = engineer
+		home = 764
+	}
+
+}
+
+navy = {
+	name = "Italian Fleet"
+	location = 746
+	ship = {
+		name= "Re Galantuomo"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Carlo Alberto"
+		type = frigate
+	}
+
+	ship = {
+		name= "Duca di Genova"
+		type = frigate
+	}
+
+	ship = {
+		name= "Garibaldi"
+		type = frigate
+	}
+
+	ship = {
+		name= "Maria Adelaide"
+		type = frigate
+	}
+
+	ship = {
+		name= "Vittorio Emanuele"
+		type = frigate
+	}
+
+	ship = {
+		name= "Partenope"
+		type = frigate
+	}
+
+	ship = {
+		name= "Regina"
+		type = frigate
+	}
+
+	ship = {
+		name= "San Michele"
+		type = frigate
+	}
+
+	ship = {
+		name= "Archimede"
+		type = frigate
+	}
+
+	ship = {
+		name= "Constituzione"
+		type = frigate
+	}
+
+	ship = {
+		name= "Ercole"
+		type = frigate
+	}
+
+	ship = {
+		name= "Ettore Fieramosca"
+		type = frigate
+	}
+
+	ship = {
+		name= "Fulminante"
+		type = frigate
+	}
+
+	ship = {
+		name= "Governolo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Guiscardo"
+		type = frigate
+	}
+
+	ship = {
+		name= "Roberto"
+		type = frigate
+	}
+
+	ship = {
+		name= "Ruggiero"
+		type = frigate
+	}
+
+	ship = {
+		name= "Tancredi"
+		type = frigate
+	}
+
+}
+
+navy = {
+	name = "1st Transport Squadron"
+	location = 746
+	ship = {
+		name= "1st Transport Flotilla"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "2nd Transport Flotilla"
+		type = clipper_transport
+	}
+
+}
+

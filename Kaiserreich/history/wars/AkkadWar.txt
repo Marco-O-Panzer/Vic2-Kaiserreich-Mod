@@ -1,0 +1,17 @@
+name = "The War of the Akkadian Families"
+
+1936.6.5 = {
+	add_attacker = MCL
+	add_defender = PAH
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = MCL
+		receiver = PAH
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = PAH
+		receiver = MCL
+	}
+}

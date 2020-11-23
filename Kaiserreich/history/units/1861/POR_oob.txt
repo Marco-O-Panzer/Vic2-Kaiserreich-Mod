@@ -1,0 +1,102 @@
+army = {
+	name = "Exército Português"
+	location = 524
+	regiment = {
+		name= "1. Brigada de Infantaria"
+		type = infantry
+		home = 521
+	}
+
+	regiment = {
+		name= "2. Brigada de Infantaria"
+		type = infantry
+		home = 522
+	}
+
+	regiment = {
+		name= "3. Brigada de Infantaria"
+		type = infantry
+		home = 524
+	}
+
+	regiment = {
+		name= "4. Brigada de Infantaria"
+		type = infantry
+		home = 525
+	}
+
+	regiment = {
+		name= "5. Brigada de Infantaria"
+		type = infantry
+		home = 523
+	}
+
+	regiment = {
+		name= "6. Brigada de Infantaria"
+		type = infantry
+		home = 2135
+	}
+
+	regiment = {
+		name= "7. Brigada de Infantaria"
+		type = infantry
+		home = 2134
+	}
+
+	regiment = {
+		name= "8. Brigada de Infantaria"
+		type = infantry
+		home = 527
+	}
+	
+	regiment = {
+		name= "1. Brigada de Artilharia"
+		type = artillery
+		home = 518
+	}
+	
+	regiment = {
+		name= "1. Brigada Hussar"
+		type = infantry
+		home = 521
+	}
+}
+
+navy = {
+	name = "Marinha Portuguesa"
+	location = 521
+	ship = {
+		name= "Vasco da Gama"
+		type = cruiser
+	}
+
+	ship = {
+		name= "Dom Fernando II e Gloria"
+		type = frigate
+	}
+
+	ship = {
+		name= "Bartholomeu Daiz"
+		type = frigate
+	}
+	
+}
+
+navy = {
+	location = 521
+	name = "Esquadrão de Navio"
+
+	ship = {
+		name= "1. Transporte Flotilha"
+		type = steam_transport
+	}
+	ship = {
+		name= "2. Transporte Flotilha"
+		type = steam_transport
+	}
+	ship = {
+		name= "3. Transporte Flotilha"
+		type = steam_transport
+	}
+}
+

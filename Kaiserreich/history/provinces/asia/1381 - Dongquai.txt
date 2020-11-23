@@ -1,0 +1,10 @@
+owner = FRA
+controller = FRA
+add_core = VIE
+trade_goods = cotton
+life_rating = 30
+1929.1.1 = {
+	owner = FRE
+	controller = FRE
+	add_core = FRE
+}

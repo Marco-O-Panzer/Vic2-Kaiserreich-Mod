@@ -1,0 +1,8 @@
+owner = KDU
+controller = KDU
+add_core = RUS
+add_core = UKR
+add_core = CRI
+railroad = 2
+trade_goods = fish
+life_rating = 35

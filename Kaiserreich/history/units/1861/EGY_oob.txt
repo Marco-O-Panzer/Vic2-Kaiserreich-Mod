@@ -1,0 +1,32 @@
+navy = {
+	name = "Egyptian Navy"
+	location = 1751
+	ship = {
+		name= "Al Qahira"
+		type = frigate
+	}
+
+}
+
+army = {
+	name = "Garrison of Cairo"
+	location = 1745
+	regiment = {
+		name= "1.1 Sipahis"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "2.1 Sipahis"
+		type = infantry
+		home = 1745
+	}
+
+	regiment = {
+		name= "3.1 Sipahis"
+		type = infantry
+		home = 1750
+	}
+	
+}

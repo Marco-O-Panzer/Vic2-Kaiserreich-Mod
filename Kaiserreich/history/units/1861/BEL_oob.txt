@@ -1,0 +1,41 @@
+army = {
+	name = "Regular Army"
+	location = 394
+	regiment = {
+		name= "1.2e Infanteriedivisie"
+		type = infantry
+		home = 394
+	}
+
+	regiment = {
+		name= "2.2e Infanteriedivisie"
+		type = infantry
+		home = 395
+	}
+
+	regiment = {
+		name= "3.2e Infanteriedivisie"
+		type = engineer
+		home = 392
+	}
+
+	regiment = {
+		name= "1.4e Infanteriedivisie"
+		type = infantry
+		home = 398
+	}
+
+	regiment = {
+		name= "2.4e Infanteriedivisie"
+		type = infantry
+		home = 396
+	}
+
+	regiment = {
+		name= "3.4e Infanteriedivisie"
+		type = artillery
+		home = 394
+	}
+
+}
+

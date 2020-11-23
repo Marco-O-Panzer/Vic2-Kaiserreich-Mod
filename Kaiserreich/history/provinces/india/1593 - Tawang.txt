@@ -1,0 +1,10 @@
+owner = BRJ
+controller = BRJ
+add_core = TIB
+add_core = CHI
+add_core = HND
+trade_goods = cattle
+life_rating = 30
+1927.1.1 = {
+	remove_core = CHI
+}

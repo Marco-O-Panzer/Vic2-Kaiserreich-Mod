@@ -1,0 +1,5 @@
+controller = ENG
+life_rating = 30
+add_core = ZAN
+colonial = 2
+trade_goods = coffee

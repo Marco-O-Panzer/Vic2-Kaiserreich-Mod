@@ -1,0 +1,103 @@
+### Background ###
+
+country_event = {
+       id = 40030
+       title = "EVTNAME2906"
+       desc = "EVTDESC2906"
+
+       fire_only_once = yes
+
+       trigger = {
+               tag = JAP
+       }
+
+       option = {
+              name = "The honour of our Empire remains intact."
+       }
+}
+
+### Roaring Twenties ###
+
+country_event = {
+       id = 40031
+       title = "EVTNAME2907"
+       desc = "EVTDESC2907"
+
+       fire_only_once = yes
+
+       trigger = {
+	       has_global_flag = roaring_twenties
+               tag = JAP
+       }
+
+       option = {
+              name = "All of Asia will bow before us!"
+	      prestige = 5
+	      add_country_modifier = {
+			name = boom_times
+			duration = 1825
+		}
+       }
+}
+
+### Hirohito Crowned ###
+
+country_event = {
+       id = 40063
+       title = "EVTNAME2912"
+       desc = "EVTDESC2912"
+       picture = "hirohito_crowned"
+       fire_only_once = yes
+
+       trigger = {
+           tag = JAP
+	       year = 1926
+	       month = 12
+       }
+
+       option = {
+              name = "Long live the Empire!"
+	      prestige = 10
+       }
+}
+
+### Western Ideals ###
+
+country_event = {
+       id = 40172
+       title = "Western Ideals"
+       desc = "JAP-WEST-IDE"
+       picture = "western_ideals"
+       fire_only_once = yes
+
+       trigger = {
+           tag = JAP
+	       year = 1923
+	       month = 4
+       }
+
+       option = {
+              name = "Traitors, liars, thieves!"
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+	      		ideology = {
+				value = socialist
+				factor = 0.15
+			}
+	      		ideology = {
+				value = liberal
+				factor = 0.15
+			}
+	      		ideology = {
+				value = communist
+				factor = 0.15
+			}
+		}
+       }
+}
+
+

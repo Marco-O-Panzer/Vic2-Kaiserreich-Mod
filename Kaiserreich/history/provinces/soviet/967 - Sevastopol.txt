@@ -1,0 +1,13 @@
+owner = GER
+controller = GER
+add_core = RUS
+add_core = UKR
+add_core = CRI
+railroad = 2
+trade_goods = fish
+life_rating = 35
+naval_base = 3
+fort = 1
+1861.1.1 = {
+	fort = 2
+}

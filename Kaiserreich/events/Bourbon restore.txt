@@ -1,0 +1,118 @@
+country_event = {
+	id = 40143
+	title = "End of Franco's Rule"
+	desc  = "EVTDESC40143"
+	picture = "franco"
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPF
+		year = 1975
+		month = 10
+		has_global_flag = spcw_fasc_win
+		NOT = {
+			OR = {
+				has_country_flag = restoration_of_monarchy 
+				has_country_flag = third_spanish_republic
+			}
+		}
+		NOT = {
+			year = 1991
+		}
+	}
+
+	option = {
+		name = "Juan Carlos will provide stability."
+		set_country_flag = restoration_of_monarchy
+		any_pop = {
+			militancy = -10
+			consciousness = -7
+		}
+		
+		government = hms_government
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = all_trade_unions
+		political_reform = secret_ballots
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+				ideology = {
+				value = conservative
+				factor = 0.20
+			}
+		}
+	}
+	option = {
+		name = "Bah, monarchist bastards. Never."
+		any_pop = {
+			militancy = -10
+			consciousness = -2
+		}
+		set_country_flag = third_spanish_republic
+		government = democracy
+		political_reform = universal_voting
+		political_reform = state_equal_weight
+		political_reform = yes_meeting
+		political_reform = free_press
+		political_reform = all_trade_unions
+		political_reform = secret_ballots
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+			ideology = {
+				value = liberal
+				factor = 0.35
+				}
+		}
+	}
+}
+
+country_event = {
+	id = 40138
+	title = "Spanish Civil War - Republican Victory!"
+	desc = "Franco has fled Spain and our forces are now firmly in control of Madrid. The hour belongs to the Republic!"
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = SPA
+		year = 1936
+		has_global_flag = spanish_civil_war
+		has_global_flag = spcw_happening
+		NOT = { 
+			exists = SPF
+		} 
+		OR = {
+			NOT = {
+				has_global_flag = spcw_fasc_win
+			}
+			NOT = {
+				has_global_flag = spcw_repub_win
+			}
+		}
+	}
+
+	option = {
+		name = "Republica Espanola!"
+		prestige = 15
+		set_global_flag = spcw_repub_win
+		clr_global_flag = spcw_happening 
+	    SPF = {
+			all_core = {
+				remove_core = SPF
+			}
+		}
+		any_pop = {
+			militancy = -4
+		}
+	}
+}

@@ -1,0 +1,7 @@
+owner = GER
+controller = GER
+colonial = 2
+
+add_core = VIE
+trade_goods = tobacco
+life_rating = 30

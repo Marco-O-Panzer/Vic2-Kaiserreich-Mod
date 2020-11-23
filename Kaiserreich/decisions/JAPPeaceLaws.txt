@@ -1,0 +1,37 @@
+political_decisions = {
+        jap_peace_laws = {
+		picture = "peace_laws"
+
+		potential = {
+			tag = JAP
+			year = 1925
+			month = 4
+			NOT = { has_global_flag = peace_laws }
+		}
+
+		allow = {
+			month = 4
+			government = hms_government
+		}
+
+		effect = {
+			prestige = 5
+			set_global_flag = peace_laws
+			any_pop = {
+				limit = {
+					location = {
+						is_colonial = no
+					}
+				}
+				ideology = {
+					value = conservative
+					factor = 0.10
+				}
+			}
+			any_pop = {
+				militancy = 3
+				consciousness = 5
+			}
+		}
+	}
+}

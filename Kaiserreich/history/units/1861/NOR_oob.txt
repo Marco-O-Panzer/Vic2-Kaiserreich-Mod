@@ -1,0 +1,21 @@
+army = {
+	name = "Oslo Garrison"
+	location = 313
+	regiment = {
+		name= "Oslo Livgarde"
+		type = guard
+		home = 313
+	}
+
+	regiment = {
+		name= "1. Artilleribrigaden"
+		type = artillery
+		home = 309
+	}
+
+	regiment = {
+		name= "No.1 Narvik Brigade"
+		type = guard
+		home = 306
+	}
+}

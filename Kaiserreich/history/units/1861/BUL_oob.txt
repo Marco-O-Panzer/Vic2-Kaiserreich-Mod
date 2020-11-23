@@ -1,0 +1,61 @@
+ENG = {
+	value = -150
+}
+ITA = {
+	value = -150
+}
+FRA = {
+	value = -150
+}
+
+army = {
+	name = "Bulgarian Army"
+	location = 809
+	regiment = {
+		name= "Sofia Empire Guards"
+		type = guard
+		home = 809
+	}
+
+	regiment = {
+		name= "1. Artillery"
+		type = artillery
+		home = 647
+	}
+
+	regiment = {
+		name= "2. Artillery"
+		type = artillery
+		home = 806
+	}
+
+	regiment = {
+		name= "1. Militia"
+		type = infantry
+		home = 665
+	}
+
+	regiment = {
+		name= "2. Militia"
+		type = infantry
+		home = 664
+	}
+
+	regiment = {
+		name= "3. Militia"
+		type = infantry
+		home = 811
+	}
+
+	regiment = {
+		name= "4. Militia"
+		type = infantry
+		home = 812
+	}
+
+	regiment = {
+		name= "Royal Cavalry"
+		type = dragoon
+		home = 809
+	}
+}

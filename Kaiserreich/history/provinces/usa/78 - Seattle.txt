@@ -1,0 +1,27 @@
+trade_goods = timber
+life_rating = 35
+state_building = {
+	level = 1
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = telephone_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = artillery_factory
+	upgrade = yes
+}
+add_core = USA
+owner = USA
+naval_base = 3
+controller = USA
+railroad = 2
+1935.1.1 = {
+	owner = AFA
+	controller = AFA
+	add_core = AFA
+}

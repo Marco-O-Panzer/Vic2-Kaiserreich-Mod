@@ -1,0 +1,319 @@
+army = {
+	name = "Lawrence of Arabia"
+	location = 917
+	leader = {
+		name = "T.E Lawrence"
+		type = land
+		date="1918.1.1"
+		personality = intelligent
+		background = school_of_offense
+		picture="arab_general_0"
+	}
+	regiment = {
+		name= "1. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "2. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "3. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+		regiment = {
+		name= "4. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "5. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "6. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "7. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "8. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "9. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "10. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "11. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "12. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "1. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+	regiment = {
+		name= "2. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+	regiment = {
+		name= "3. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+}
+
+army = {
+	name = "Saud's Army"
+	location = 914
+	leader = {
+		name = "Saud bin Saud"
+		type = land
+		date="1914.1.1"
+		personality = coward
+		background = school_of_defense
+		picture="arab_general_5"
+	}
+	regiment = {
+		name= "1. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "2. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "3. Saudi"
+		type = infantry
+		home = 1164
+	}
+	regiment = {
+		name= "4. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "5. Saudi"
+		type = infantry
+		home = 1157
+	}
+	regiment = {
+		name= "6. Saudi"
+		type = infantry
+		home = 1157
+	}
+	regiment = {
+		name= "7. Saudi"
+		type = infantry
+		home = 1157
+	}
+	regiment = {
+		name= "8. Saudi"
+		type = infantry
+		home = 1157
+	}
+	regiment = {
+		name= "9. Saudi"
+		type = infantry
+		home = 1157
+	}
+
+	regiment = {
+		name= "Foreign Division"
+		type = tank
+		home = 1164
+	}
+
+}
+
+army = {
+	name = "Sunni Rearguard"
+	location = 935
+	regiment = {
+		name= "1. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "2. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "3. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "4. 'Arabian"
+		type = infantry
+		home = 1158
+	}
+
+	regiment = {
+		name= "5. Arabian"
+		type = infantry
+		home = 1163
+	}
+
+	regiment = {
+		name= "6. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "7. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "8. Arabian"
+		type = infantry
+		home = 1158
+	}
+	
+	regiment = {
+		name= "4. 'Ateba"
+		type = infantry
+		home = 1158
+	}
+
+	regiment = {
+		name= "4. Emirate Artillery"
+		type = infantry
+		home = 1163
+	}
+	regiment = {
+		name= "5. Emirate Artillery"
+		type = artillery
+		home = 1163
+	}
+	regiment = {
+		name= "6. Emirate Artillery"
+		type = artillery
+		home = 1163
+	}
+}
+
+army = {
+	name = "Free Islamic Army"
+	location = 929
+	leader = {
+		name = "Emir Wazir of Hedjaz"
+		type = land
+		date="1918.1.1"
+		personality = audacious
+		background = school_of_defense
+		picture="arab_general_3"
+	}
+	regiment = {
+		name= "1. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "2. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "3. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+		regiment = {
+		name= "4. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "5. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "6. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "7. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "8. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "9. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "10. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "11. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "12. Jihadi Infantry"
+		type = infantry
+		home = 1152
+	}
+	regiment = {
+		name= "1. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+	regiment = {
+		name= "2. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+	regiment = {
+		name= "3. Emirate Artillery"
+		type = artillery
+		home = 1152
+	}
+}
+
+

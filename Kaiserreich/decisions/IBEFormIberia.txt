@@ -1,0 +1,38 @@
+political_decisions = {
+        form_iberia = {
+		picture = "iberia"
+		fire_only_once = yes
+
+                potential = {
+			OR = {
+			tag = POR
+			tag = SPA
+			tag = SPF
+			}
+			NOT = { has_global_flag = ibe_formed }
+		}
+
+                allow = {
+			owns = 517
+			owns = 487
+			owns = 521
+					
+			NOT = {
+				exists = IBE
+			}			
+                }
+
+          effect = {
+		prestige = 50
+		change_tag = IBE
+		inherit = SPA
+		inherit = POR
+		set_global_flag = ibe_formed
+
+		}
+
+	   ai_will_do = {
+		factor = 1
+		}
+	}
+}

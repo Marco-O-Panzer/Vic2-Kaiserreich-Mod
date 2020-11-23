@@ -1,0 +1,10 @@
+add_core = MOR
+colonial = 2
+trade_goods = fish
+life_rating = 30
+owner = SPA
+controller = SPA
+1939.1.1 = {
+	owner = SPF
+	controller = SPF
+}

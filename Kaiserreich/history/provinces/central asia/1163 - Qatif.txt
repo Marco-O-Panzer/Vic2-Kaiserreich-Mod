@@ -1,0 +1,5 @@
+owner = ARA
+controller = ARA
+add_core = NEJ
+trade_goods = oil
+life_rating = 35

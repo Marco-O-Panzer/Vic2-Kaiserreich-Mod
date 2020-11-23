@@ -1,0 +1,44 @@
+### IRE Debug ###
+
+country_event = {
+       id = 40112
+       title = "Debug"
+       desc  = "Reduction of starting prestige"
+       fire_only_once = yes
+
+       trigger = {
+               tag = IRE
+	       NOT = { has_country_flag = prestige_debug }
+       }
+
+       option = {
+              name = "Debug"
+	      set_country_flag = prestige_debug
+	      prestige = -300
+       }
+}
+
+### IRE The Republic of Ireland ###
+
+country_event = {
+       id = 40113
+       title = "The Republic of Ireland"
+       desc  = "EVTDESC2932"
+	   picture = "IRE_pic"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = IRE
+	       government = hms_government
+	       year = 1949
+	       month = 4
+	       NOT = { has_country_flag = republic_of_ireland }
+       }
+
+       option = {
+              name = "Fada beo Éire!"
+	      set_country_flag = republic_of_ireland
+	      government = democracy
+       }
+}

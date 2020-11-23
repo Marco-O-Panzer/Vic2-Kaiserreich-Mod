@@ -1,0 +1,48 @@
+### Austrian Empire Proclaimed! ###
+
+country_event = {
+       id = 40192
+       title = "Reforming Austria"
+       desc  = "The memories of the Austro-Hungarian War is still fresh in the minds of many Hungarians. This may be problematic in the future. We need to reform the empire before it's too late."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = aus_empire
+		year = 1940
+       }
+
+       option = {
+		name = "Let's try centralization."
+		set_global_flag = kuk_take_two
+		any_pop = {
+			limit = {
+				has_pop_culture = hungarian
+			}
+			militancy = -4
+			consciousness = -2
+		}
+       }
+	option = {
+		name = "How about a an idea the prevent independence wars from happening?"
+		set_global_flag = vso_planned
+		any_pop = {
+			militancy = -7
+			consciousness = -5
+		}
+	}
+	option = {
+		name = "NO! We will NOT ruin this grand empire that we took centuries to build!"
+		set_global_flag = aus_no_reform
+		any_pop = {
+			limit = {
+				NOT = {
+					has_pop_culture = south_german
+				}
+			}
+			militancy = 10
+			consciousness = 7
+		}
+	}
+}

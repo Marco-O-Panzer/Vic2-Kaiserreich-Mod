@@ -1,0 +1,38 @@
+#### Recognise the USSR ####
+
+political_decisions = {
+        recognise_ussr = {
+		picture = "five_year_plan"
+		fire_only_once = yes
+
+                potential = {
+			NOT = { tag = RUS }
+			is_greater_power = yes
+			year = 1935
+			NOT = { year = 1939 }
+			NOT = { has_country_flag = ussr_recognised }
+			RUS = {
+				government = proletarian_dictatorship
+			}
+			}
+
+                allow = {
+			is_greater_power = yes
+			war = no
+			RUS = {
+				government = proletarian_dictatorship
+			}
+                }
+          effect = {
+		set_country_flag = ussr_recognised
+		relation = {
+			who = RUS
+			value = 25
+			}
+		}
+
+	 ai_will_do = {
+		factor = 0.05		
+                }
+	}
+}

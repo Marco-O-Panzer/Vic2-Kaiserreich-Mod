@@ -1,0 +1,28 @@
+political_decisions = {
+	 execute_rebels = { 
+	 	picture = "execution"
+
+		potential = {
+			OR = {
+			    government = proletarian_dictatorship
+			    government = presidential_dictatorship
+			    government = fascist_dictatorship
+			    government = absolute_monarchy
+			}
+		}
+         
+         	allow = {
+	      		any_pop = {
+				militancy = 5
+				  }
+		}
+
+        	effect = {
+	      		any_pop = {
+				militancy = -4
+				consciousness = 1
+				  }
+                  	badboy = 2
+			}
+	}
+}

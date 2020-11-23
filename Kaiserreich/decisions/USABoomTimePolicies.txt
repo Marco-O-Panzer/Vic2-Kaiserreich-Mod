@@ -1,0 +1,25 @@
+political_decisions = {
+        boom_time_policies = {
+		fire_only_once = yes
+		potential = {
+			has_global_flag = roaring_twenties
+			tag = USA
+			NOT = {
+				has_global_flag = boom_time_policies
+				year = 1929
+			}
+		}
+		allow = {
+			tag = USA
+			has_global_flag = roaring_twenties
+			government = democracy
+		}
+		effect = {
+			set_global_flag = boom_time_policies
+			add_country_modifier = {
+				name = boom_times
+				duration = -1
+			}
+		}
+	}
+}

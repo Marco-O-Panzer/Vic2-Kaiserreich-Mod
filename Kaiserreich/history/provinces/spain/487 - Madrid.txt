@@ -1,0 +1,26 @@
+owner = SPA
+controller = SPA
+add_core = SPA
+trade_goods = cattle
+life_rating = 40
+state_building = {
+	level = 1
+	building = ammunition_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = small_arms_factory
+	upgrade = yes
+}
+state_building = {
+	level = 1
+	building = coal_power_station
+	upgrade = yes
+}
+1861.1.1 = { railroad = 2 }
+1939.1.1 = {
+	owner = SPF
+	controller = SPF
+	remove_core = SPA
+}

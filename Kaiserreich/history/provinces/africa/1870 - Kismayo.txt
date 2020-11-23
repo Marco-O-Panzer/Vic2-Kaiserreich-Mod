@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+add_core = EAU
+trade_goods = cattle
+colonial = 2
+life_rating = 15

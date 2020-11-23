@@ -1,0 +1,55 @@
+political_decisions = {
+	assassinate_trotsky = {
+		picture = "trotsky"
+
+		potential = {
+			tag = RUS
+			year = 1940
+			month = 7	
+			government = proletarian_dictatorship
+			NOT = { has_global_flag = trotsky_dead }	
+		}
+
+		allow = {
+			money = 1000
+		}
+
+		effect = {
+			prestige = -5
+			money = -1000
+			any_pops = {
+		   		militancy = -4
+				consciousness = -4
+			}
+			set_global_flag = trotsky_dead
+			relation = {
+				who = MEX
+				value = -25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}		
+	}
+	take_tuva = {
+		potential = {
+			tag = RUS
+			has_global_flag = small_china
+			NOT = {
+				1469 = {
+					owned_by = RUS
+				}
+			}
+		}
+		allow = {
+			prestige = 8
+		}
+		effect = {
+			MGL = {
+				1469 = {
+					secede_province = RUS
+				}
+			}
+		}
+	}
+}

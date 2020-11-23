@@ -1,0 +1,93 @@
+#### SWE Olof Palme ####
+
+country_event = {
+       id = 40060
+       title = "Assasination of Olof Palme"
+       desc  = "The Prime minister has been assassinated outside a theater, but police have been unable to find to culprit! Though, some suspect right wing elements of the police assassinating him themselves."
+       picture = "palme_assassination"
+       fire_only_once = yes
+
+       trigger = {
+               tag = SWE
+	       year = 1988
+	       government = democracy
+	       government = hms_government
+	       ruling_party_ideology = conservative
+       }
+
+       option = {
+              name = "Will we ever find the culprit?"
+	      any_pops = {
+		consciousness = 3
+		}
+       }
+}
+
+### SWE Åland Crisis REFUSE ###
+
+country_event = {
+       id = 40089
+       title = "Åland Crisis - Finland Refuses!"
+       desc  = "The Finnish have refused out demands for the trasfer of control of the Åland Islands, this leaves us but with two options,Primeminister, war or backing down. I'd prefer the first, wouldn't you?"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = SWE
+	       has_global_flag = finland_refuse
+       		}
+
+       option = {
+              name = "Me too! För Sverige! Attack!"	
+	      war = {
+		name = "The Åland War"
+		target = FIN
+		attacker_goal = {
+			casus_belli = acquire_core_state
+			state_province_id = 3247
+			}
+		defender_goal = {
+			casus_belli = cut_down_to_size
+			}
+		}
+	      ai_chance = {
+		factor = 95
+		}	
+       }
+
+       option = {
+              name = "Forget it, they're not worth a war"
+	      prestige = -10
+	      relations = {
+		who = FIN
+		value = 15
+		}
+	      remove_global_flag = finland_refuse
+	      remove_global_flag = aaland_crisis
+	      ai_chance = {
+		factor = 5
+		}		
+       }
+}
+
+### SWE Åland Crisis ACCEPT ###
+
+country_event = {
+       id = 40090
+       title = "Åland Crisis - Finland Accepts!"
+       desc  = "Hmph. The Finnish have accepted our demands, that was easier than the General Staff anticipated."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = SWE
+	       has_global_flag = finland_accept
+       }
+
+       option = {
+              name = "Excellent."
+	      prestige = 5	
+	      remove_global_flag = finland_accept
+	      remove_global_flag = aaland_crisis		
+       }
+}

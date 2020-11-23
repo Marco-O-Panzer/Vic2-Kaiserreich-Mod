@@ -1,0 +1,313 @@
+############ KAISERREICH ###########
+
+#################################
+######   GERMAN EMPIRE   #######
+#################################
+
+# GER - Mittel Afrika
+vassal = {
+	first = GER
+	second = MIA
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# GER - BEL
+vassal = {
+	first = GER
+	second = BEL
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - KDU
+vassal = {
+	first = GER
+	second = KDU
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - KDO
+vassal = {
+	first = GER
+	second = KDO
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - KDW
+vassal = {
+	first = GER
+	second = KDW
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - LIT
+vassal = {
+	first = GER
+	second = LIT
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - CPL
+vassal = {
+	first = GER
+	second = CPL
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# GER - RUS
+vassal = {
+	first = GER
+	second = RUS
+	start_date = 1927.1.1
+	end_date = 2050.1.1
+}
+
+#################################
+######   OTTOMAN EMPIRE   #######
+#################################
+
+# TUR - AZB
+vassal = {
+	first = TUR
+	second = AZB
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+#################################
+######   BRITISH EMPIRE   #######
+#################################
+
+# Egypt - United Kingdom
+vassal = {
+	first = ENG
+	second = EGY
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# Newfoundland - United Kingdom
+vassal = {
+	first = ENG
+	second = NEW
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# Abu Dhabi - United Kingdom
+vassal = {
+	first = ENG
+	second = ABU
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# South Africa - United Kingdom
+vassal = {
+	first = ENG
+	second = SAF
+	start_date = 1836.1.1
+	end_date = 1930.1.1
+}
+
+# Australia - United Kingdom
+vassal = {
+	first = ENG
+	second = AST
+	start_date = 1836.1.1
+	end_date = 1930.1.1
+}
+
+# New Zealand - United Kingdom
+vassal = {
+	first = ENG
+	second = NZL
+	start_date = 1836.1.1
+	end_date = 1930.1.1
+}
+
+# Canada - United Kingdom
+vassal = {
+	first = ENG
+	second = CAN
+	start_date = 1836.1.1
+	end_date = 1930.1.1
+}
+
+# The Raj - United Kingdom
+vassal = {
+	first = ENG
+	second = BRJ
+	start_date = 1836.1.1
+	end_date = 1940.5.19
+}
+
+# Yemen - United Kingdom
+vassal = {
+	first = ENG
+	second = YEM
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# Oman - United Kingdom
+vassal = {
+	first = ENG
+	second = OMA
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# Nepal - United Kingdom
+vassal = {
+	first = ENG
+	second = NEP
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# Bhutan - United Kingdom
+vassal = {
+	first = ENG
+	second = BHU
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+#Ireland - United Kingdom
+vassal = {
+	first = ENG
+	second = IRE
+	start_date = 1923.1.1
+	end_date = 1937.1.1
+}
+
+###################################
+######   AMERICAN PUPPETS   #######
+###################################
+
+# USA - Puerto Rico
+vassal = {
+	first = USA
+	second = PRI
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# USA - Phillipines
+vassal = {
+	first = USA
+	second = PHI
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# USA - Panama
+vassal = {
+	first = USA
+	second = PNM
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+# USA - Liberia
+vassal = {
+	first = USA
+	second = LIB
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+#################################
+######   SOVIET PUPPETS   #######
+#################################
+
+# SOV - MGL
+vassal = {
+	first = RUS
+	second = MGL
+	start_date = 1836.1.1
+	end_date = 2050.1.1
+}
+
+################################
+#####   AUSTRIA-HUNGARY   ######
+################################
+
+# KUK - SLD
+vassal = {
+	first = KUK
+	second = SLD
+	start_date = 1836.1.1
+	end_date = 1935.1.1
+}
+
+# KUK - HUN
+vassal = {
+	first = KUK
+	second = HUN
+	start_date = 1836.1.1
+	end_date = 1935.1.1
+}
+
+# KUK - LOM
+vassal = {
+	first = KUK
+	second = LOM
+	start_date = 1836.1.1
+	end_date = 1935.1.1
+}
+
+#################################
+####    JAPANESE PUPPETS    #####
+#################################
+
+# JAP - TAI
+vassal = {
+	first = JAP
+	second = TAI
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+# JAP - MCK
+vassal = {
+	first = JAP
+	second = MCK
+	start_date = 1932.2.18
+	end_date = 2050.1.1
+}
+
+# JAP - GNG
+vassal = {
+	first = JAP
+	second = GNG
+	start_date = 1933.8.8
+	end_date = 2050.1.1
+}
+
+# JAP - FJN
+vassal = {
+	first = JAP
+	second = FJN
+	start_date = 1933.8.8
+	end_date = 2050.1.1
+}
+
+# JAP - HUI
+vassal = {
+	first = JAP
+	second = HUI
+	start_date = 1933.8.8
+	end_date = 2050.1.1
+}
+
+###################################
+########    END OF LIST   #########
+###################################

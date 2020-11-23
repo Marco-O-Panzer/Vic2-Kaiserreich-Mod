@@ -1,0 +1,52 @@
+### TUR Background ###
+
+country_event = {
+       id = 40017
+       title = "EVTNAME2902"
+       desc  = "EVTDESC2902"
+       fire_only_once = yes
+
+       trigger = {
+               tag = TUR
+		NOT = {
+			year = 1928
+		}
+       }
+
+       option = {
+              name = "I remember the glories of the 17th century!"
+	      add_country_modifier = {
+		name = sick_man_dying
+		duration = 5475
+		}
+	      add_country_modifier = {
+		name = ww1_victory
+		duration = 1825
+		}
+	      add_country_modifier = {
+		name = ww1_debt_pay
+		duration = 1825
+		}
+       }
+}
+
+### The Rise of the Ottomans? ###
+
+country_event = {
+       id = 40084
+       title = "The Rise of the Ottomans?"
+       desc  = "With the conquest of the Arab capital, we have are now the dominant pwoer once again on the Arabian penninsular. Is this the return of our past glories? Will the Ottoman Empire become the most powerful islamic state?"
+       picture = "arab_soldiers"
+       fire_only_once = yes
+
+       trigger = {
+               tag = TUR         
+	       NOT = { exists = ARA }
+	       owns = 1157
+       }
+
+       option = {
+              name = "The Sultan rises!"
+	      prestige = 10            
+       }
+}

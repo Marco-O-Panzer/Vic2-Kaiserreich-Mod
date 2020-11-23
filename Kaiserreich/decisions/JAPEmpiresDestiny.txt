@@ -1,0 +1,47 @@
+political_decisions = {
+        jap_empire_destiny = {
+		picture = "jap_empire_destiny"
+
+		potential = {
+			tag = JAP
+			year = 1933
+			NOT = { has_global_flag = jap_empire_destiny }
+		}
+
+		allow = {
+			war = no
+			is_greater_power = yes
+		}
+
+		effect = {
+			prestige = 15
+			badboy = 50
+			set_global_flag = jap_empire_destiny
+ 			casus_belli ={
+				target = CHI
+				type = conquest
+				months = 3650
+			}
+ 			casus_belli ={
+				target = SIA
+				type = conquest
+				months = 3650
+			}
+ 			casus_belli ={
+				target = AST
+				type = conquest
+				months = 3650
+			}
+ 			casus_belli ={
+				target = NZL
+				type = conquest
+				months = 3650
+			}
+ 			casus_belli ={
+				target = SIA
+				type = conquest
+				months = 3650
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+political_decisions = {
+        aaland_islands = {
+		picture = "aaland_islands"
+		fire_only_once = yes
+
+                potential = {
+			tag = SWE
+			NOT = { has_global_flag = aaland_crisis }
+			NOT = { set_country_flag = aaland_done }
+			year = 1923
+			exists = FIN
+			NOT = { year = 1930 }
+			NOT = { owns = 348 }
+		}
+
+                allow = {
+			war = no
+                	348 = { owner = FIN }	
+                	}
+		}
+
+          effect = {
+		prestige = 5
+		badboy = 5
+		set_global_flag = aaland_crisis
+		set_country_flag = aaland_done
+		}
+
+	   	ai_will_do = {
+		factor = 0.6
+			}
+	}

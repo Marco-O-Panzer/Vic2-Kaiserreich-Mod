@@ -1,0 +1,35 @@
+political_decisions = {
+        first_gulf_war = {
+		picture = "middle_east"
+		fire_only_once = yes
+
+                potential = {
+			tag = TUR
+			NOT = { has_global_flag = first_gulf_war }
+		}
+
+                allow = {
+			war = no
+			has_global_flag = ENG_end_empire
+			is_greater_power = yes
+			NOT = { exists = ARB }
+                }
+          effect = {
+		set_global_flag = first_gulf_war
+		war = {
+			name = "The Arab-Turkish Gulf War"
+			target = NEJ
+			attacker_goal = {
+				casus_belli = conquest
+				}
+			defender_goal = {
+				casus_belli = cut_down_to_size
+				}
+			}
+		}
+
+	 ai_will_do = {
+		factor = 1	
+                }
+	}
+}

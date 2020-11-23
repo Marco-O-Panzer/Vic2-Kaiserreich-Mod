@@ -1,0 +1,11 @@
+add_core = TEX
+trade_goods = cattle
+life_rating = 35
+fort = 1 #Remember the Alamo!
+owner = USA
+controller = USA
+add_core = USA
+1935.1.1 = {
+	owner = TEX
+	controller = TEX
+}

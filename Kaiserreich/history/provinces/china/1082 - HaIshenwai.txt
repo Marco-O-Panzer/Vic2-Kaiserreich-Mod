@@ -1,0 +1,19 @@
+owner = WHI
+controller = WHI
+add_core = RUS
+add_core = SIB
+trade_goods = coal
+life_rating = 32
+state_building = {
+	level = 2
+	building = steamer_shipyard
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory	upgrade = yes
+}
+1927.1.1 = {
+	owner = RUS
+	controller = RUS
+}

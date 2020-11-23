@@ -1,0 +1,3 @@
+owner = ARGcontroller = ARG
+add_core = ARGtrade_goods = wool
+life_rating = 30

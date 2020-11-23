@@ -1,0 +1,6 @@
+owner = TUR
+controller = ARA
+add_core = EGY
+add_core = TUR
+trade_goods = iron
+life_rating = 35

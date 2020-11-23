@@ -1,0 +1,30 @@
+### Issue Bonds ###
+
+political_decisions = {
+        wartime_bonds = {
+		picture = "war_bonds"
+
+                potential = {
+			war = yes
+			is_greater_power = yes
+			year = 1923
+			NOT = { has_country_flag = bonds_issued}
+			OR = {
+				government = democracy
+				government = hms_government
+			}
+		}
+                allow = {
+			NOT = {money = 50000}
+                }
+
+          effect = {
+		war_exhaustion = 10
+		money = 50000
+		set_country_flag = bonds_issued
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

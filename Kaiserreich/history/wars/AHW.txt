@@ -1,0 +1,18 @@
+name = "The Austro-Hungarian War"
+
+1935.6.30 = {
+	add_attacker = KUK
+	add_defender = HUN
+	
+	war_goal = {
+		casus_belli = annex_core_country
+		actor = KUK
+		receiver = HUN
+	}
+	war_goal = {
+		casus_belli = become_independent
+		actor = HUN
+		receiver = KUK
+	}
+
+}

@@ -1,0 +1,302 @@
+### ITA Introduction ###
+
+country_event = {
+       id = 41000
+       title = "Italy Today"
+       fire_only_once = yes
+       desc = "We have lost too much territory in Italy and abroad. How stupid of us to join in Entente in 1916. Now Italy is sure to fall to revolution - our economy is dead, our democracy is dead, and our pride is dead."
+
+       trigger = {
+               tag = ITA
+               year = 1921
+		NOT = {
+			year = 1930
+		}
+       }
+
+       option = {
+              name = "Mamma mia!"
+ 	      add_country_modifier = {
+		name = ww1_defeat
+		duration = 1825
+		}
+	      add_country_modifier = {
+		name = ww1_debt_give
+		duration = 1825
+		}
+       }
+}
+
+### ITA Civil War - Fascist Victory ###
+
+country_event = {
+       id = 40014
+       title = "Italy is secured! - Fascist Victory"
+       desc = "Victory! The weak government of old is no more brothers! Up with the fascist flag - Italia rises to new heights united under the fascist banner!"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = FIT
+               year = 1922
+	       month = 11
+	       has_global_flag = ITA_civil_war
+		NOT = { has_global_flag = no_ITA_blackshirt }
+		NOT = { has_global_flag = yes_ITA_blackshirt }
+		   government = fascist_dictatorship
+	       war = no
+	       NOT = {
+			exists = ITA
+	       }
+       }
+
+       option = {
+              name = "Mare Nostrum!"
+		set_global_flag = yes_ITA_blackshirt
+	      prestige = 20
+	      any_pop = {
+		  militancy = -4
+		  consciousness = -2
+	      }
+	      change_tag = ITA
+	      any_owned = { remove_core = FIT }
+       }
+}
+
+### ITA Communist Plans ###
+
+country_event = {
+       id = 40002
+       fire_only_once = yes
+       title = "Communist Agitation"
+       desc = "After our crushing defeat in The Great War, Italy as become polarised between fascism and communism. It seems the Communists have struck out first. Communist uprisings and massed public demonstrations have occured andwe"
+
+       picture = "Revolution"
+
+       trigger = {
+               tag = ITA
+               year = 1922
+	       month = 3
+	       NOT = { government = proletarian_dictatorship }
+		NOT = { has_global_flag = no_ITA_blackshirt }
+		NOT = { has_global_flag = yes_ITA_blackshirt }
+               }
+
+	option = {
+		name = "We shall never give in to communism!"
+		prestige = 5
+		any_pop = {
+			militancy = 5
+			consciousness = 5
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+       option = {
+			name = "Many hails to Marx!"
+			prestige = -15
+			government = proletarian_dictatorship
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+			ai_chance = {
+				factor = 40
+			}
+		}
+}
+
+### ITA Civil War - Gov. Victory ###
+
+country_event = {
+       id = 40010
+       title = "Italy is secured! - Government Victory"
+       desc = "Victory! The fascist forces are defeated and right has prevailed over wrong. We now work long and hard to re-stablish what was lost in this civil war."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = ITA
+               year = 1922
+	       war = no
+	       month = 11
+	       has_global_flag = ITA_civil_war
+	       NOT = { government = fascist_dictatorship}
+	       NOT = { exists = FIT }
+		NOT = { has_global_flag = no_ITA_blackshirt }
+		NOT = { has_global_flag = yes_ITA_blackshirt }
+       }
+
+       option = {
+              name = "Huzzah! The day is ours."
+	      prestige = 20
+	      capital = 749
+		set_global_flag = no_ITA_backshirt
+	      any_owned = { remove_core = FIT }
+	      any_pop = {
+		    militancy = -4
+		    consciousness = -2
+	      }
+       }
+}
+
+
+### ITA Fascist Plans ###
+
+country_event = {
+       id = 40004
+       title = "Mussolini Is Gaining Support"
+       desc = "MUSS-SUPP-DESC"
+       fire_only_once = yes
+
+       picture = "Fascist_Unrest_ITA"
+
+       trigger = {
+               tag = ITA
+               year = 1922
+	       month = 5
+		OR = {
+	       		NOT = { government = fascist_dictatorship }
+			NOT = { has_global_flag = ITA_civil_war }
+			NOT = { has_global_flag = yes_ITA_blackshirt }
+			NOT = { has_global_flag = no_ITA_blackshirt }
+		}
+               }
+
+       option = {
+
+              name = "Fascist bastards. Let them come!"
+	      prestige = 5
+	      any_pop = {
+		  militancy = 1
+		  }
+
+	      749 = {add_core = FIT}
+	      750 = {add_core = FIT}
+	      751 = {add_core = FIT}
+	      752 = {add_core = FIT}
+	      748 = {add_core = FIT}
+	      747 = {add_core = FIT}
+	      745 = {add_core = FIT}
+	      744 = {add_core = FIT}
+	      743 = {add_core = FIT}
+	      742 = {add_core = FIT}
+	      741 = {add_core = FIT}
+	      746 = {add_core = FIT}
+	      739 = {add_core = FIT}
+	      738 = {add_core = FIT}
+	      740 = {add_core = FIT}
+	      724 = {add_core = FIT}
+	      725 = {add_core = FIT}
+	      723 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      721 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      722 = {add_core = FIT}
+	      726 = {add_core = FIT}
+	      727 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      728 = {add_core = FIT}
+
+                }
+
+       option = {
+
+              name = "What a welcome development!"
+	      prestige = -5
+
+	      749 = {add_core = FIT}
+	      750 = {add_core = FIT}
+	      751 = {add_core = FIT}
+	      752 = {add_core = FIT}
+	      748 = {add_core = FIT}
+	      747 = {add_core = FIT}
+	      745 = {add_core = FIT}
+	      744 = {add_core = FIT}
+	      743 = {add_core = FIT}
+	      742 = {add_core = FIT}
+	      741 = {add_core = FIT}
+	      746 = {add_core = FIT}
+	      739 = {add_core = FIT}
+	      738 = {add_core = FIT}
+	      740 = {add_core = FIT}
+	      724 = {add_core = FIT}
+	      725 = {add_core = FIT}
+	      723 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      721 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      722 = {add_core = FIT}
+	      726 = {add_core = FIT}
+	      727 = {add_core = FIT}
+	      720 = {add_core = FIT}
+	      728 = {add_core = FIT}
+
+               }
+}
+
+### ITA Civil War ###
+
+country_event = {
+       id = 40003
+       title = "The March on Rome"
+       desc = "Our continuing political instability has reached a dangerous climax. Mussolini and the blackshirts march on Rome can only mean one thing - capitulation or civil war."
+       fire_only_once = yes
+
+       major = yes
+
+       trigger = {
+			tag = ITA
+			year = 1922
+			month = 9
+			OR = {
+				NOT = { government = fascist_dictatorship }
+				NOT = { ruling_party_ideology = fascist }
+				NOT = { has_global_flag = ITA_civil_war }
+				NOT = { has_global_flag = yes_ITA_blackshirt }
+				NOT = { has_global_flag = no_ITA_blackshirt }
+			}
+		}
+
+		option = {
+
+			name = "This is an outrage! Move the government south and mobilise the army!"
+			prestige = 10
+			capital = 754
+			set_global_flag = ITA_civil_war
+			release = FIT
+
+			ai_chance = {
+				factor = 10
+			}
+
+			war = {
+				target = FIT
+				attacker_goal = {
+					casus_belli = civil_war
+				}
+				defender_goal = {
+					casus_belli = civil_war
+				}
+			}	
+
+		}
+		option = {
+			name = "Roma will rise again! Long live The Third Way!"
+			prestige = -10
+			set_global_flag = yes_ITA_blackshirt
+			government = fascist_dictatorship
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+			ai_chance = {
+				factor = 90
+			}
+		}
+}

@@ -1,0 +1,39 @@
+political_decisions = {
+        form_danube = {
+		picture = "rod_flag"
+		fire_only_once = yes
+
+                potential = {
+			OR = {
+			tag = HUN
+			tag = BUL
+			tag = SER
+			tag = ROM
+			}
+			NOT = { has_global_flag = rod_formed}
+		}
+
+                allow = {
+			owns = 657
+			owns = 664
+			owns = 809
+			owns = 641
+			owns = 794
+					
+			NOT = {
+				exists = ROD
+			}			
+                }
+
+          effect = {
+		prestige = 50
+		change_tag = ROD
+		set_global_flag = rod_formed
+
+		}
+
+	   ai_will_do = {
+		factor = 1
+		}
+	}
+}

@@ -1,0 +1,42 @@
+### Merchant Fleet ###
+
+country_event = {
+       id = 40064
+       title = "The Norwegian Merchant Fleet"
+       desc = "In the 1930s, Norway's merchant fleet became the 4th largest in the world and played a pivotal role in atlantic campaign in WW2, when Norway fell. Our access to these merchant resources is proving very beneficial for us!"
+       fire_only_once = yes
+       picture = "merchant_fleet"
+
+       trigger = {
+               tag = NOR
+	       year = 1936
+       }
+
+       option = {
+              name = "Vi er rike!"
+	      prestige = 10
+	      money = 100000
+       }
+}
+
+### Norsk Hydro - Heavy Water ###
+
+country_event = {
+       id = 40168
+       title = "Norsk Hydro - Heavy Water"
+       desc = "NOR-WTR"
+       fire_only_once = yes
+       picture = "norsk_hydro"
+
+       trigger = {
+               tag = NOR
+	       year = 1934
+	       month = 12
+       }
+
+       option = {
+              name = "Heh! We're not making nuclear weapons..."
+	      prestige = 5
+	      research_points = 2500
+       }
+}

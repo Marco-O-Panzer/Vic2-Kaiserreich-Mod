@@ -1,0 +1,19 @@
+owner = FRA
+controller = FRA
+add_core = FRA
+trade_goods = cattle
+life_rating = 31
+1861.1.1 = { 
+	railroad = 3 
+	naval_base = 1
+}
+1927.1.1 = {
+	owner = FRE
+	controller = FRE
+	add_core = FRE
+}
+1930.1.1 = {
+	owner = FRA
+	controller = FRA
+	remove_core = FRE
+}

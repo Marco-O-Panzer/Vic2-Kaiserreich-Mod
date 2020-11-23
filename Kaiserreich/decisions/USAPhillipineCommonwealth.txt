@@ -1,0 +1,39 @@
+political_decisions = {
+        phillipine_commonwealth = {
+		picture = "phillipine_commonwealth"
+
+                potential = {
+			tag = USA
+			NOT = { has_country_flag = phillipine_commonwealth }
+			NOT = { exists = PHI }
+			year = 1935
+			month = 2
+			}
+
+                allow = {
+			war = no
+                	}
+
+				effect = {
+					prestige = 5
+					release_vassal = PHI
+					relation = {
+						who = ENG
+						value = 10
+					}
+					relation = {
+						who = AUS
+						value = 10
+					}
+					relation = {
+						who = NZL
+						value = 10
+					}
+					relation = {
+						who = JAP
+						value = -25
+					}
+					set_country_flag = phillipine_commonwealth
+				}
+		}
+}

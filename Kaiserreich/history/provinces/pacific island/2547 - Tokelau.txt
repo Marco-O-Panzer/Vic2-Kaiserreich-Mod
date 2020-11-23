@@ -1,0 +1,6 @@
+owner = NZL
+controller = NZL
+add_core = NZL
+add_core = JAP
+trade_goods = fish
+life_rating = 15

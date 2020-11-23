@@ -1,0 +1,21 @@
+name = "The Spanish Civil War"
+
+1936.7.17 = {
+	add_attacker = SPA
+	add_defender = SPF
+	
+	war_goal = {
+		casus_belli = civil_war
+		actor = SPA
+		receiver = SPF
+	}
+	war_goal = {
+		casus_belli = civil_war
+		actor = SPF
+		receiver = SPA
+	}
+}
+1939.1.1 = {
+	rem_attacker = SPA
+	rem_defender = SPF
+}

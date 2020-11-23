@@ -1,0 +1,117 @@
+### Royal Family Arrives ###
+
+country_event = {
+       id = 40094
+       title = "The Royal Family has Arrived"
+       desc  = "The political turmoil in the motherland has caused a collapse of the Empire, and the royal family has fled Britain to seek refuge in Canada."
+       picture = "royals"
+       fire_only_once = yes
+
+       trigger = {
+               tag = CAN
+	       has_global_flag = royals_escape
+	       NOT = { has_country_flag = royal_family_arrived }
+       }
+
+       option = {
+              name = "You do grace us with your presence"
+	      prestige = 5
+	      set_country_flag = royal_family_arrived
+       }
+}
+
+### Oil in Alberta! ###
+
+country_event = {
+       id = 40173
+       title = "Oil in Alberta!"
+       desc  = "Oil in Alberta! Black gold in Alberta! We're rich!"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = CAN
+	       year = 1924
+	       month = 5
+       }
+
+       option = {
+              name = "Yes!"
+	      24 = { trade_goods = oil }
+	      relation = {
+			who = USA
+			value = 10
+		}
+       }
+}
+
+
+#### American Civil War - Canada ####
+
+country_event = {
+       id = 40093
+       title = "The American Civil War - Canada"
+       desc  = "EVTDESC2925"
+       picture = "canada"
+       fire_only_once = yes
+
+       trigger = {
+               tag = CAN
+	       NOT = { has_country_flag = tried_ACW_canada}
+	       has_global_flag = acw_active
+	       war = no
+       }
+
+       option = {
+              name = "Go for it, revenge for 1812!"
+	      prestige = 5
+	      ai_chance = {
+		factor = 95
+		}
+	      relations = {
+		who = USA
+		value = -100
+	      }
+	      any_pops = {
+		militancy = 0.15
+		}
+	      badboy = 10
+	      set_country_flag = tried_ACW_canada
+	      set_global_flag = canada_invades_usa
+
+	      250 = {secede_province = CAN}
+	      249 = {secede_province = CAN}
+	      248 = {secede_province = CAN}
+	      247 = {secede_province = CAN}
+	      246 = {secede_province = CAN}
+	      1 = {secede_province = CAN}
+	      2 = {secede_province = CAN}
+	      2630 = {secede_province = CAN}
+	      2599 = {secede_province = CAN}
+	      3 = {secede_province = CAN}
+	      5 = {secede_province = CAN}
+	      2631 = {secede_province = CAN}
+	      4 = {secede_province = CAN}
+	      243 = {secede_province = CAN}
+	      244 = {secede_province = CAN}
+	      242 = {secede_province = CAN}
+	      241 = {secede_province = CAN}
+	      245 = {secede_province = CAN}
+	      232 = {secede_province = CAN}
+	      233 = {secede_province = CAN}
+	      234 = {secede_province = CAN}
+	      235 = {secede_province = CAN}
+	      236 = {secede_province = CAN}
+	      237 = {secede_province = CAN}
+	      238 = {secede_province = CAN}
+	      239 = {secede_province = CAN}
+	      240 = {secede_province = CAN}
+       }
+       option = {
+              name = "We will not risk war"
+	      set_country_flag = tried_ACW_canada
+	      ai_chance = {
+		factor = 5
+		}
+       }
+}

@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+add_core = BRU
+naval_base = 1
+trade_goods = oil
+life_rating = 30

@@ -1,0 +1,39 @@
+political_decisions = {
+        nationalise_suez = {
+		picture = "suezcanal"
+		major = yes
+		fire_only_once = yes
+
+                potential = {
+			NOT = {has_global_flag = suez_nationalised}
+			tag = EGY
+		}
+
+                allow = {
+			is_vassal = no
+			
+                }
+          effect = {
+		prestige = 10
+		set_global_flag = suez_nationalised
+		money = -5000
+		badboy = 5
+		add_country_modifier = {
+			name = nationalised_suez
+			duration = -1
+		}
+		relation = {
+			who = ENG
+			value = -100
+		}
+		relation = {
+			who = FRA
+			value = -100
+		}
+
+	   ai_will_do = {
+		factor = 1
+		}
+	}
+}
+}

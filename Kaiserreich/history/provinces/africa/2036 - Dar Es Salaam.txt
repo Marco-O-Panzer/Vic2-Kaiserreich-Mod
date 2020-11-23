@@ -1,0 +1,7 @@
+owner = GER
+controller = GER
+add_core = ZAN
+trade_goods = fish
+naval_base = 2
+life_rating = 35
+colonial = 2

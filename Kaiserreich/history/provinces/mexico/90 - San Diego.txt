@@ -1,0 +1,8 @@
+add_core = DES
+add_core = CAL
+trade_goods = grain
+life_rating = 40owner = USAcontroller = USAadd_core = USA1935.1.1 = {
+	owner = AFA
+	controller = AFA
+	add_core = AFA
+}

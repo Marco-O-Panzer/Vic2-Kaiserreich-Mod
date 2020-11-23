@@ -1,0 +1,8 @@
+owner = KDU
+controller = KDU
+add_core = RUS
+add_core = UKR
+railroad = 2
+#add_core = PLC
+trade_goods = coal
+life_rating = 35

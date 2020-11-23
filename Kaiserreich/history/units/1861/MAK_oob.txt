@@ -1,0 +1,15 @@
+army = {
+	name = "Army of the Nawab of Makran"
+	location = 1222
+	regiment = {
+		name= "1.Baluchye"
+		type = infantry
+		home = 1222
+	}
+	regiment = {
+		name= "2.Baluchye"
+		type = infantry
+		home = 1222
+	}
+}
+

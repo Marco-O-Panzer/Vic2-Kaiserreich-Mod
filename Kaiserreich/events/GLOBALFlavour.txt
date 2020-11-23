@@ -1,0 +1,426 @@
+### Uranium Setup ###
+
+country_event = {
+       id = 40123
+       title = "Uranium Setup"
+       desc = "uranium setup"
+
+       trigger = {
+	       NOT = { has_global_flag = uranium_setup }
+	       tag = JAN
+	       year = 1946
+	}
+
+       option = {
+              name = "Setup Uranium Production."
+	      2481 = {trade_goods = tropical_wood} 
+	      1213 = {trade_goods = tropical_wood}
+	      1692 = {trade_goods = tropical_wood}
+	      98 = {trade_goods = tropical_wood}
+	      2676 = {trade_goods = tropical_wood}
+	      1721 = {trade_goods = tropical_wood}
+	      1963 = {trade_goods = tropical_wood}
+	      2082 = {trade_goods = tropical_wood}
+	      2093 = {trade_goods = tropical_wood}
+	      1810 = {trade_goods = tropical_wood}
+	      1811 = {trade_goods = tropical_wood}
+	      682 = {trade_goods = tropical_wood}
+	      699 = {trade_goods = tropical_wood}
+	      701 = {trade_goods = tropical_wood}
+	      997 = {trade_goods = tropical_wood}
+	      996 = {trade_goods = tropical_wood}
+	      1201 = {trade_goods = tropical_wood}
+	      1129 = {trade_goods = tropical_wood}
+	      1137 = {trade_goods = tropical_wood}
+	      899 = {trade_goods = tropical_wood}
+	      1240 = {trade_goods = tropical_wood}
+	      1239 = {trade_goods = tropical_wood}
+	      1513 = {trade_goods = tropical_wood}
+	      1508 = {trade_goods = tropical_wood}
+	      1492 = {trade_goods = tropical_wood}
+	      2300 = {trade_goods = tropical_wood}
+	      2369 = {trade_goods = tropical_wood}
+	      2481 = {trade_goods = tropical_wood}
+	      2177 = {trade_goods = tropical_wood}
+	      22 = {trade_goods = tropical_wood}
+	      1071 = {trade_goods = tropical_wood}
+	      2676 = {trade_goods = tropical_wood}
+
+	      set_global_flag = uranium_setup
+	}
+}
+
+
+### Great Depression ###
+
+country_event = {
+       id = 40047
+       title = "EVTNAME2908"
+       desc = "EVTDESC2908"
+       allow_multiple_instances = yes
+       picture = "stocks"
+
+       trigger = {
+	       has_global_flag = great_depression
+	       civilized = yes
+	       NOT = { tag = USA }
+	       NOT = { has_country_flag = great_depression }
+	}
+
+       option = {
+              name = "Why the bankers? Why always the bankers?"
+	      set_country_flag = great_depression
+	      add_country_modifier = { 
+			name = gd_global
+			duration = 3650
+	      }
+	}
+}
+
+### The Blockade Takes Effect! ###
+
+country_event = {
+       id = 40069
+       title = "The Blockade Takes Effect!"
+       allow_multiple_instances = yes
+       picture = "grand_fleet"
+       desc = "The blockade of our nation has begun to take affect on our nation's economic output, unless we regain control of our territorial waters soon we will see increased discontent towards the war at home, as industry suffers."
+
+       trigger = {
+               blockade = 0.80
+	       war = yes
+	       NOT = {has_country_flag = blockaded}
+       }
+
+       option = {
+              name = "Bah, Ships! Navies are for the weak!"
+	      set_country_flag = blockaded
+	      add_country_modifier = {
+				name = "blockaded"
+				duration = -1
+				}
+       }
+}
+
+### The Blockade is Over! ###
+
+country_event = {
+       id = 40070
+       title = "The Blockade is Over!"
+       allow_multiple_instances = yes
+       desc = "The blockade of our nation has stopped and our economic situation is improving gradually. However, it may take some time to recover from the damage caused."
+       picture = "grand_fleet"
+
+       trigger = {
+	       has_country_flag = blockaded
+	       NOT = { has_country_flag = not_blockaded }
+	       war = no
+       }
+
+       option = {
+            name = "What did I say? Navies are a waste."
+			set_country_flag = not_blockaded
+			clr_country_flag = blockaded
+			remove_country_modifier = blockaded
+       }
+}
+
+### The Grand Battle Fleet! ###
+
+country_event = {
+       id = 40071
+       title = "The Grand Battle Fleet!"
+       desc = "We have amassed a tremendous fleet that is destined the dominate to globe, the world trembles before our naval prowess!"
+       picture = "grand_fleet"
+
+       trigger = {
+	total_amount_of_ships = 350	
+	NOT = { has_country_flag = grand_fleet_built}
+	}
+
+       option = {
+              name = "Rule, §$COUNTRY$§, our nation rules the waves!"
+	      set_country_flag = grand_fleet_built
+	      prestige = 50
+       }
+}
+
+### Allow New Bonds ###
+
+country_event = {
+       id = 40086
+       title = "Bonds can be Issued Again"
+       desc = "We can issue new bonds in the event of another war now."
+       fire_only_once = yes
+       picture = "stocks"
+
+       trigger = {
+	       has_country_flag = bonds_issued
+	       civilized = yes
+	       war = no
+	}
+       option = {
+              name = "Excellent"
+	      remove_country_flag = bonds_issued
+	}
+}
+
+### North Sea Oil ###
+
+country_event = {
+       id = 40092
+       title = "Oil in The North Sea!"
+       desc = "Our scientists are reporting that they have found oil in the North Sea off the coast of Great Britain and Norway - we're rich!"
+       fire_only_once = yes
+       picture = "north_sea"
+
+       trigger = {
+	       year = 1979
+	       NOT = { has_global_flag = north_sea_oil_found }
+	       renewable_energy = 1
+	       	OR = {
+			owns = 266
+			owns = 309
+	    	}	
+	    }
+
+       option = {
+              name = "Black Gold?! Off our shores?!"
+	      prestige = 5
+	      set_global_flag = north_sea_oil_found
+	      266 = {trade_goods = oil} 
+	      309 = {trade_goods = oil}
+	}
+}
+
+### Oil in Libya ###
+
+country_event = {
+       id = 40111
+       title = "Oil in Libya"
+       desc = "Our scientists are reporting that they have found oil in the Libyan desert - we're rich!"
+       fire_only_once = yes
+       major = yes
+
+       trigger = {
+	       year = 1959
+	       NOT = { has_global_flag = libyan_oil_found }
+	       	OR = {
+			owns = 1732
+			owns = 1740
+	    	}	
+	}
+
+       option = {
+              name = "Black Gold?! In our deserts?!"
+	      prestige = 5
+	      set_global_flag = libyan_oil_found
+	      1732 = {trade_goods = oil} 
+	      1740 = {trade_goods = oil}
+	}
+}
+
+### First Moon Landing Attempt ###
+
+country_event = {
+
+	id =  40116 # First attempt
+
+	trigger = {
+		has_country_flag = moon_landing_in_progress
+		not = { has_global_flag = Moon_Is_Landed }
+		not = { has_country_flag = NoGoToMoon }
+		not = { has_country_flag = YesGoToMoonAgain }
+		not = { has_country_flag = YesGoToMoon }
+		not = { has_country_flag = YesGoToMoonThird }
+		money = 1000000
+		is_greater_power = yes # Nation is a great power
+		year = 1965 # Will happen sometime after 1866
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1966
+		}
+		modifier = {
+			factor = 0.6
+			year = 1968
+		}
+		modifier = {
+			factor = 0.6
+			year = 1969
+		}
+	}
+
+	title = "Moon Landing - Attempt?"
+	desc = "EVTDESC2934"
+	picture = "moon_attempt"
+	
+
+	option = {
+		name = "To infinity and beyond!" # Support the mission
+		ai_chance = { factor = 25 }
+		money = -1000000
+		set_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "Soon, soon..." # Consider the idea later
+		ai_chance = { factor = 45 }
+		prestige = -5
+	}
+	option = {
+		name = "The risk of failure... we can't" # Reject the idea
+		ai_chance = { factor = 30 }
+		set_country_flag = NoGoToMoon
+		prestige = -10
+	}
+}
+
+### Moon Landing - Launch Failure! ###
+
+country_event = {
+	
+	id = 40117 # First attempt fails, try again?
+	
+	trigger = {
+		has_country_flag = YesGoToMoon
+		not = { has_global_flag = MoonDiscovered }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1965 # Will happen sometime after 1868
+	}
+	
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.6
+			year = 1966
+		}
+		modifier = {
+			factor = 0.6
+			year = 1968
+		}
+		modifier = {
+			factor = 0.6
+			year = 1969
+		}
+	}
+
+	title = "Moon Landing - Launch Failure!"
+	desc = "How embarassing, we couldn't even get into the air never mind reach escape velocity. This is a collosal embarassment and waste of money."
+	picture = "moon_launch_fail"
+
+	option = {
+		name = "Science demands success" # Fund second attempt
+		ai_chance = { factor = 60 }
+		money = -1500000
+		set_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoon
+	}
+	option = {
+		name = "To hell with it!" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoon
+		set_country_flag = NoGoToMoon
+		prestige = -30
+	}
+}
+
+### Moon Landing - Midflight Explosion! ###
+
+country_event = {
+
+	id = 40118 # Our Mission to the Moon is lost
+
+	trigger = {
+		has_country_flag = YesGoToMoonAgain
+		not = { has_global_flag = NileDiscovered }
+		not = { has_country_flag = NoGoToNile }
+		year = 1966 # Will happen sometime after 1869
+	}
+
+	mean_time_to_happen =  {
+		months = 24
+
+		modifier = {
+			factor = 0.3
+			year = 1966
+		}
+		modifier = {
+			factor = 0.6
+			year = 1968
+		}
+		modifier = {
+			factor = 0.8
+			year = 1969
+		}
+	}
+
+	title = "Moon Landing - Midflight Explosion!"
+	desc = "Disaster! Our space craft exploded on its way to the moon. Think of the amount of money we've lost on this grandest of enterprises, what a waste... the astronauts you say? Well, err..."
+	picture = "moon_explosion"
+
+	option = {
+		name = "For god's sake - GET IT RIGHT!" # Fund third attempt
+		ai_chance = { factor = 60 }
+		money = -2000000
+		set_country_flag = YesGoToMoonThird
+		clr_country_flag = YesGoToMoonAgain
+	}
+	option = {
+		name = "Never again!" # Reject second attempt
+		ai_chance = { factor = 40 }
+		clr_country_flag = YesGoToMoonAgain
+		set_country_flag = NoGoToMoon
+		prestige = -40
+	}
+}
+
+### Moon Landing - Success! ###
+
+country_event = {
+
+	id = 40119 # We've landed on the moon!
+
+	trigger = {
+		or = {
+			has_country_flag = YesGoToMoonAgain
+			has_country_flag = YesGoToMoonThird
+		}
+		not = { has_global_flag = MoonDiscovered }
+		not = { has_country_flag = NoGoToMoon }
+		year = 1966
+	}
+
+	mean_time_to_happen =  {
+		months = 12
+
+		modifier = {
+			factor = 0.4
+			year = 1966
+		}
+		modifier = {
+			factor = 0.7
+			year = 1968
+		}
+		modifier = {
+			factor = 0.9
+			year = 1969
+		}
+	}
+
+	title = "Moon Landing - Success!"
+	desc = "We've done it, we've defied all doubts and fears over our project and achieved one of the - if not the - greatest technological feats in history, our nations flag is on the moon!"
+	major = yes
+
+	option = {
+		name = "One small step for a man, one giant leap for mankind..." # Success
+		prestige = 500
+		set_global_flag = Moon_Is_Landed
+		clr_country_flag = YesGoToMoonAgain
+		clr_country_flag = YesGoToMoonThird
+	}
+}

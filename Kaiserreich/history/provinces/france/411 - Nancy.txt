@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+add_core = FRA
+trade_goods = dye
+life_rating = 30
+1861.1.1 = { railroad = 3 }

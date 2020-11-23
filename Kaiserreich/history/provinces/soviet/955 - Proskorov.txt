@@ -1,0 +1,7 @@
+owner = KDU
+controller = KDU
+add_core = UKR
+add_core = PLC
+add_core = RUS
+trade_goods = cattle
+life_rating = 35

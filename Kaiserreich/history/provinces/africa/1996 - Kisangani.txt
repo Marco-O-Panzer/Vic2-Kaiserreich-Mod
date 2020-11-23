@@ -1,0 +1,4 @@
+owner = MIA
+controller = MIA
+trade_goods = rubber
+life_rating = 15

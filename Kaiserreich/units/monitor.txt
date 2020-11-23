@@ -1,0 +1,49 @@
+monitor = {
+	icon = 10
+	naval_icon = 7
+	
+	type = naval
+	sprite = Submarine
+	unit_type = big_ship
+	floating_flag = yes
+	active = no
+	move_sound = steam_move
+	select_sound = steam_selected
+	colonial_points = 10
+
+
+	#Core Abilities
+	priority = 0
+	max_strength = 100
+	default_organisation = 30
+	maximum_speed = 9
+	weighted_value = 10.0
+
+	#Building Costs
+	build_time = 360
+	build_cost = {
+		steamer_convoy = 20
+		tropical_wood = 16
+		steel = 18
+		artillery = 12
+	}
+	limit_per_port = -1
+	min_port_level = 5
+	supply_consumption_score = 3
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 0.85
+		artillery = 0.1
+		tropical_wood = 0.90
+		fuel = 0.05
+	}
+	
+	#Naval Abilties
+	hull = 25
+	gun_power = 20
+	fire_range = 0.80
+	evasion = 0.75
+	torpedo_attack = 6
+}
+

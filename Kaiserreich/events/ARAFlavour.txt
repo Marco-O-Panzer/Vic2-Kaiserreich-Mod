@@ -1,0 +1,65 @@
+#### ARB Union of Arab States ####
+
+country_event = {
+       id = 40081
+       title = "The Arab Union"
+       desc  = "It is clear the Turk dogs are pushing to take the whole penninsular, and as a result, our Arab brothers are willing to cede authority to us to form a nation to resist the invaders."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = ARA
+	       has_global_flag = first_gulf_war
+	       war = yes
+               NOT = { has_global_flag = arab_union_formed }
+       }
+
+       option = {
+              name = "Soldiers of Allah, march onwards!"
+	      set_global_flag = arab_union_formed
+              THIS = { inherit = OMA }
+              THIS = { inherit = YEM }
+              THIS = { inherit = ABU }
+       }
+}
+
+
+### ARB The Turkish Pigs are Repulsed ###
+
+country_event = {
+       id = 40083
+       title = "The Turkish Pigs are Repulsed"
+       desc  = "We have repulsed the Turkish invaders and caused great humiliation in their 'Empire'. Arabia now stands poised at the start of a great era, a golden era!"
+       picture = "arab_soldiers"
+       fire_only_once = yes
+
+       trigger = {
+               tag = ARA
+	       has_global_flag = first_gulf_war
+	       war = no
+       }
+
+       option = {
+              name = "We are victorious!"
+	      prestige = 15
+	      remove_global_flag = first_gulf_war
+		release = OMA
+		release = YEM
+		release = ABU
+		ABU = {
+			all_core = {
+				remove_core = ARA
+			}
+		}
+		OMA = {
+			all_core = {
+				remove_core = ARA
+			}
+		}
+		YEM = {
+			all_core = {
+				remove_core = ARA
+			}
+		}
+       }
+}

@@ -1,0 +1,33 @@
+political_decisions = {
+        yamato_class = {
+		picture = "yamato_class"
+
+                potential = {
+			tag = JAP
+			year = 1937
+			NOT = { has_country_flag = yamato_active }
+		}
+
+                allow = {
+			money = 200000
+			is_greater_power = yes
+                }
+
+          effect = {
+		prestige = 10
+		money = -200000
+		dreadnought = {
+			hull = 8
+			attack = 4
+			}
+		battleships = {
+			hull = 8
+			attack = 4
+			}
+		set_country_flag = yamato_active
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

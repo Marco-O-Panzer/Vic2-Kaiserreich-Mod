@@ -1,0 +1,8 @@
+add_core = CHI
+add_core = GNG
+trade_goods = timber
+life_rating = 32
+owner = GNG
+controller = GNG
+fort = 1
+

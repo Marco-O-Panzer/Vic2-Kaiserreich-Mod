@@ -1,0 +1,484 @@
+#impressionism
+impressionist_literature = {
+	limit = { impressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = impressionist_art
+		}
+		modifier = {
+			factor = 2
+			invention = impressionist_music
+		}
+	}
+	effect = {
+		shared_prestige = 5 
+	}
+}
+impressionist_art = {
+	limit = { impressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = impressionist_literature
+		}
+		modifier = {
+			factor = 2
+			invention = impressionist_music
+		}
+	}
+	effect = {
+		shared_prestige = 5
+	}
+}
+impressionist_music = {
+	limit = { impressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = impressionist_literature
+		}
+		modifier = {
+			factor = 2
+			invention = impressionist_art
+		}
+	}
+	effect = {
+		shared_prestige = 5 
+	}
+}
+#expressionism
+expressionist_literature = {
+	limit = { expressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = expressionist_art
+		}
+		modifier = {
+			factor = 2
+			invention = expressionist_music
+		}			
+	}
+	effect = {
+		shared_prestige = 10 
+	}
+}
+expressionist_art = {
+	limit = { expressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = expressionist_literature
+		}
+		modifier = {
+			factor = 2
+			invention = expressionist_music
+		}
+	}
+	effect = {
+		shared_prestige = 10 
+	}
+}
+expressionist_music = {
+	limit = { expressionism = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = expressionist_literature
+		}
+		modifier = {
+			factor = 2
+			invention = expressionist_art
+		}
+	}
+	effect = {
+		shared_prestige = 10 
+	}
+}
+#social_realism
+social_realist_literature = {
+                      limit = { social_realism = 1 }
+                      news = no
+                      chance = {
+                                base = 2
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_art
+		                }
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_music
+		                }
+	              }
+                      effect = {
+                                shared_prestige = 15
+                      }
+}
+social_realist_art = {
+                      limit = { social_realism = 1 }
+                      news = no
+                      chance = {
+                                base = 2
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_literature
+		                }
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_music
+		                }
+	              }
+                      effect = {
+                                shared_prestige = 15
+                      }
+}
+social_realist_music = {
+                      limit = { social_realism = 1 }
+                      news = no
+                      chance = {
+                                base = 2
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_literature
+		                }
+		                modifier = {
+			                    factor = 2
+			                    invention = social_realist_art
+		                }
+	              }
+                      effect = {
+                                shared_prestige = 15
+                      }
+}
+#avant_garde
+avant_garde_literature = {
+                          limit = { avant_garde = 1 }
+                          news = no
+                          chance = {
+                                    base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_art
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_music
+		                    }
+                          }
+                          effect = {
+                                    shared_prestige = 20
+                          }
+}
+avant_garde_art = {
+                   limit = { avant_garde = 1 }
+                   news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_literature
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_music
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 20
+                   }
+}
+avant_garde_music = {
+                   limit = { avant_garde = 1 }
+                   news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_literature
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = avant_garde_art
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 20
+                   }
+}
+#punk_era
+rock_music = {
+              limit = { punk_era = 1 }
+              news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = graffiti_art
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = television_film
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 25
+                   }
+}
+graffiti_art = {
+              limit = { punk_era = 1 }
+              news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = rock_music
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = television_film
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 25
+                   }
+}
+television_film = {
+              limit = { punk_era = 1 }
+              news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = rock_music
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = graffiti_art
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 25
+                   }
+}
+#pop_generation
+pop_music = {
+             limit = { pop_generation = 1 }
+             news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = blues_music
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = modern_novels
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 30
+                   }
+}
+blues_music = {
+             limit = { pop_generation = 1 }
+             news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = pop_music
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = modern_novels
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 30
+                   }
+}
+modern_novels = {
+             limit = { pop_generation = 1 }
+             news = no
+                   chance = {
+                              base = 2
+		                    modifier = {
+			                        factor = 2
+			                        invention = pop_music
+		                    }
+		                    modifier = {
+			                        factor = 2
+			                        invention = blues_music
+		                    }
+                   }
+                   effect = {
+                             shared_prestige = 30
+                   }
+}
+#phenomenology_&_hermeneutic
+phenomenology = {
+	limit = { phenomenology_&_hermeneutic = 1 }
+	news = no
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			invention = hermeneutics
+		}
+	}
+	effect = {
+                increase_research = 0.05  
+	}
+}
+hermeneutics = {
+	limit = { phenomenology_&_hermeneutic = 1 }
+	news = no
+	chance = {
+		base = 4
+                modifier = {
+                            factor = 2
+                            invention = phenomenology
+				}
+	}
+	effect = {
+                increase_research = 0.05 
+	}
+}
+#rationalism
+science_of_logic = {
+                    limit = { rationalism = 1 }
+                    news = no
+	            chance = {
+		              base = 4
+					  modifier = {
+					              factor = 2 
+								  invention = critical_rationalism
+					  }
+                    }
+                    effect = {
+                              increase_research = 0.05
+                    }
+}
+critical_rationalism = {
+                        limit = { rationalism = 1 }
+                        news = no
+                        chance = {
+                                  base = 2
+                                  modifier = {
+                                              factor = 4
+                                              invention = science_of_logic
+                                  }
+                        }
+                        effect = {
+                                  increase_research = 0.05
+                        }
+}
+#logical_positivism
+pragmatism = {
+              limit = { logical_positivism = 1 }
+              news = no
+              chance = {
+                        base = 4
+						modifier = {
+						            factor = 2 
+									individualism = 1 
+						}
+              }
+              effect = {
+                        increase_research = 0.05
+                        education_efficiency = 0.1
+              }
+}
+#computational_logic
+artificial_intelligence = {
+                           limit = { computational_logic = 1 }
+                           news = no
+                           chance = {
+                                     base = 2
+									 modifier = {
+									             factor = 2 
+												 electronic_circuit = 1 
+									 }
+									 modifier = {
+									             factor = 2 
+												 social_determinism = 1 
+									 }
+									 modifier = {
+									             factor = 2 
+												 cognitivism = 1 
+									 }
+                           }
+                           effect = {
+                                     increase_research = 0.05
+                           }
+}
+digital_physics = {
+                   limit = { computational_logic = 1 }
+                   news = no
+                   chance = {
+                             base = 2
+                             modifier = {
+                                         factor = 4
+                                         invention = artificial_intelligence
+                             }
+							 modifier = {
+							             factor = 2 
+										 existentialism = 1 
+							}
+                   }
+                   effect = {
+                             increase_research = 0.05
+                             education_efficiency = 0.05
+                   }
+}
+#post_structuralism
+post_phenomenology = {
+                      limit = { post_structuralism = 1 }
+                      news = no
+                      chance = {
+                                base = 2
+								modifier = {
+								            factor = 2 
+											cognitivism = 1 
+								}
+								modifier = {
+								            factor = 2
+                                            interactionism = 1 
+								}																						
+                      }
+                      effect = {
+                                increase_research = 0.025
+                      }
+}
+#neopragmatism
+constructivist_epistemology = {
+                               limit = { neopragmatism = 1 } 
+                                news = no
+                                chance = {
+                                          base = 2
+										  modifier = {
+										              factor = 2 
+													  consensus_reality = 1 
+										  }
+										  modifier = {
+										              factor = 2 
+													  humanistic_psychology = 1 
+										  }
+                                }
+                                effect = {
+                                          increase_research = 0.025
+                                }
+}                                                                                                                    

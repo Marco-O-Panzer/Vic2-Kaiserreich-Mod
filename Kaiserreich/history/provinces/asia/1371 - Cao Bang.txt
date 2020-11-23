@@ -1,0 +1,7 @@
+owner = GER
+controller = GER
+add_core = VIE
+colonial = 2
+
+trade_goods = grain
+life_rating = 30

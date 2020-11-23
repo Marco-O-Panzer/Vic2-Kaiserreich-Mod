@@ -1,0 +1,373 @@
+### GER Background ###
+
+country_event = {
+       id = 41002
+       title = "The German Empire Today."
+       desc = "Deutschland über alles! We have crushed our enemies are the Kaiser reigns supreme. Only the British swinehunds remain to oppose us, and they are being destroyed from within."
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+		NOT = {
+			year = 1930
+		}
+       }
+
+       option = {
+              name = "Für den Kaiser! Vorwärts!"
+		set_global_flag = ger_start_1921
+	      add_country_modifier = {
+		name = ww1_victory
+		duration = 1825
+		}
+	      add_country_modifier = {
+		name = ww1_debt_pay
+		duration = 1825
+		}
+	      add_country_modifier = {
+		name = ger_nerf_measure
+		duration = -1
+		}
+       }
+}
+
+country_event = {
+       id = 410020
+       title = "The German Empire Today."
+       desc = "Deutschland über alles! We have crushed our enemies are the Kaiser reigns supreme. Only the British swinehunds remain to oppose us, and they are being destroyed from within."
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+		year = 1927
+		NOT = {
+			has_global_flag = ger_start_1921
+		}
+       }
+
+       option = {
+              name = "Für den Kaiser! Vorwärts!"
+		set_country_flag = ger_start_1927
+	      add_country_modifier = {
+		name = ger_nerf_measure
+		duration = -1
+		}
+       }
+}
+
+
+country_event = {
+       id = 410021
+       title = "The German Empire Today."
+       desc = "Deutschland über alles! We have crushed our enemies are the Kaiser reigns supreme. Only the British swinehunds remain to oppose us, and they are being destroyed from within."
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+		year = 1936
+		NOT = {
+			OR = {
+				has_global_flag = ger_start_1921
+				has_global_flag = ger_start_1927
+			}
+		}
+       }
+
+       option = {
+              name = "Für den Kaiser! Vorwärts!"
+		set_global_flag = ger_start_1936
+	      add_country_modifier = {
+		name = ger_nerf_measure
+		duration = -1
+		}
+       }
+}
+
+country_event = {
+       id = 410022
+       title = "The German Empire Today."
+       desc = "Deutschland über alles! We have crushed our enemies are the Kaiser reigns supreme. Only the British swinehunds remain to oppose us, and they are being destroyed from within."
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+		year = 1940
+		NOT = {
+			OR = {
+				has_global_flag = ger_start_1921
+				has_global_flag = ger_start_1927
+				has_global_flag = ger_start_1936
+			}
+		}
+       }
+
+       option = {
+              name = "Für den Kaiser! Vorwärts!"
+		set_global_flag = ger_start_1940
+	      add_country_modifier = {
+		name = ger_nerf_measure
+		duration = -1
+		}
+       }
+}
+
+country_event = {
+       id = 410023
+       title = "The Rise of Germany."
+       desc = "Deutschland über alles! We have experienced a rise in status to being the center of the universe. This day will fall in history as the day when Germany becomes a power to be reckoned with."
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+		year = 1945
+       }
+
+       option = {
+              name = "Deutschland is the master of the world!"
+	      remove_country_modifier = ger_nerf_measure
+       }
+}
+
+###  Treaty of Nuremburg ###
+
+country_event = {
+       id = 40171
+       title = "The Treaty of Nuremberg"
+       desc = "GER-AUS-TREAT"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+	       has_global_flag = ger_intervene_aus
+       }
+
+       option = {
+              name = "No, we want Anschluss with Austria!"
+	      prestige = 10
+	      badboy = -15
+	      set_global_flag = ger_want_annex
+	      clr_global_flag = ger_intervene_aus
+	      ai_chance = {
+		factor = 55
+              }
+       }
+       option = {
+              name = "We accept Austria as a client state!"
+	      prestige = 5
+	      badboy = -10
+	      clr_global_flag = ger_intervene_aus
+	      create_vassal = AUS
+	      ai_chance = {
+		factor = 40
+		}
+       }
+
+       option = {
+              name = "The Austrians are on their own!"
+	      prestige = -10
+	      badboy = -5
+	      clr_global_flag = ger_intervene_aus
+	      ai_chance = {
+		factor = 5
+		}
+       }
+}
+
+### Frederick the Great ###
+
+country_event = {
+       id = 40166
+       title = "Frederick the Great"
+       desc = "GER-FRED-200"
+       picture = "fredericus_rex"
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+	       year = 1940
+	       month = 5
+       }
+
+       option = {
+              name = "Fredericus Rex!"
+	      prestige = 5
+       }
+}
+
+### Debts to the Dutch? ###
+
+country_event = {
+       id = 40142
+       title = "Debts to the Dutch?"
+       picture = "dutch_debt"
+       desc = "DUTCH-DEBT-DESC"
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+	       money = 250000
+       }
+
+       option = {
+              name = "We fulfill our obligations!"
+	      prestige = 5
+	      money = -250000
+	      set_global_flag = dutch_debt_ok
+
+	      relation = {
+		who = NET
+		value = 50
+		}
+	      diplomatic_influence = {
+		who = NET
+		value = 50
+		}
+	      ai_chance = {
+		factor = 95
+		}
+       }
+
+       option = {
+              name = "No, the Dutch are weak!"
+	      prestige = -10
+	      set_global_flag = dutch_debt_bad
+
+	      relation = {
+		who = NET
+		value = -200
+		influence = -200
+		}
+	      diplomatic_influence = {
+		who = NET
+		value = -200
+		}
+	      ai_chance = {
+		factor = 5
+		}
+       }
+}
+
+
+### Adolf The Artist ###
+
+country_event = {
+       id = 40001
+       title = "Influential Austrian Artist Found!"
+       desc = "A young Austrian artist by the name of Adolf Hitler has won the International Arts Prize in Vienna! Media from around the Empire gather to celebrate this little known artist's success."
+
+       picture = "HitlerPainting"
+
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+               year = 1922
+	       month = 2
+	}
+
+       option = {
+              name = "Ah! Das ist so wunderbar!"
+              prestige = 20
+		ai_chance = {
+			factor = 100
+		}
+       }
+
+       option = {
+              name = "Das Schweinhund! Cash in on his gains!"
+              prestige = 5
+              money = 15000
+       }
+}
+
+### Kraftfahrstraße Constructed ###
+
+country_event = {
+       id = 40066
+       title = "The First Kraftfahrstraße"
+       major = yes
+       desc = "EVTDESC2913"
+       picture = "motorway"
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+	       year = 1932
+	       month = 2
+       }
+       option = {
+		name = "Deutschland is a master of machines!"
+		prestige = 10
+		add_country_modifier = {
+			name = kraftfahrstraße_built
+		}
+	}
+}
+
+
+### Kaiser Death ###
+
+country_event = {
+       id = 40055
+       title = "A New Kaiser"
+       major = yes
+       desc = "Deutschland über alles! The great leader of Germany, sole victor in The Great War - Kaiser Wilhelm - has died. He will be long cherised and remembered in the minds of the German people, long live Kaiser Louis Ferdinand!"
+       fire_only_once = yes
+
+       trigger = {
+               tag = GER
+	       year = 1941
+	       month = 5
+	       OR = { 
+		government = absolute_monarchy
+		government = prussian_constitutionalism
+		government = hms_government
+		}
+       }
+       option = {
+		name = "The monarchy lives on!"
+		prestige = 10
+	}
+}
+
+### Escape to Mittel Afrika ###
+
+country_event = {
+       id = 40132
+       title = "Escape to Mittel Afrika!"
+       major = yes
+       desc = "Deutschland über alles! The true leader of Germany has been toppled! The Kaiser has fled to the dominion of Mittel Afrika after the Reichstag suffered a sudden burst of political turmoil, forming a new government!"
+       fire_only_once = yes
+
+       trigger = {
+               tag = MIA
+	       exists = GER
+		NOT = {
+			has_country_flag = hohenzollerns_fled
+		}
+	       MIA = {
+	       		OR = {
+				government = absolute_monarchy
+				government = prussian_constitutionalism
+				government = hms_government
+				government = democracy
+			}
+	        }
+
+	       GER = {
+			AND = {
+				NOT = { government = absolute_monarchy }
+				NOT = { government = prussian_constitutionalism }
+				NOT = { government = hms_government }
+				}
+			}
+		}
+
+       option = {
+		name = "The Kaiser will be back!"
+		prestige = 10
+		set_country_flag = hohenzollerns_fled
+	}
+}
+

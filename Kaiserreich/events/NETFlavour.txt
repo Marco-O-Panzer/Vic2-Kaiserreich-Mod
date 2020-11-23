@@ -1,0 +1,76 @@
+### Germany Obliges! ###
+
+country_event = {
+       id = 40144
+       title = "Germany Obliges!"
+       picture = "dutch_debt"
+       desc = "DUTCH-DEBT-DESC-ACC"
+       fire_only_once = yes
+
+       trigger = {
+               tag = NET
+	       has_global_flag = dutch_debt_ok
+	       NOT = { has_global_flag = dutch_debt_bad }
+       }
+
+       option = {
+              name = "Excellent!"
+	      prestige = 5
+	      money = 250000
+	      clr_global_flag = dutch_debt_ok
+
+	      relation = {
+		who = GER
+		value = 50
+		}
+       	}
+}
+
+### Germany Defaults! ###
+
+country_event = {
+       id = 40145
+       title = "Germany Defaults!"
+       picture = "dutch_debt"
+       desc = "DUTCH-DEBT-DESC-REJ"
+       fire_only_once = yes
+
+       trigger = {
+               tag = NET
+	       has_global_flag = dutch_debt_bad
+	       NOT = { has_global_flag = dutch_debt_ok }
+       }
+
+       option = {
+              name = "We are powerless!"
+	      ai_chance = {
+		factor = 85
+		}
+	      prestige = -5
+	      clr_global_flag = dutch_debt_bad
+
+	      relation = {
+		who = GER
+		value = -100
+		}
+       	}
+       option = {
+              name = "They WILL pay!"
+	      ai_chance = {
+		factor = 15
+		}
+	      clr_global_flag = dutch_debt_bad
+	      GER = {
+              	add_casus_belli = {
+	        	target = NET
+			type = cut_down_to_size
+			months = 36
+		}
+
+
+	      relation = {
+		who = GER
+		value = -200
+		}
+       	}
+}

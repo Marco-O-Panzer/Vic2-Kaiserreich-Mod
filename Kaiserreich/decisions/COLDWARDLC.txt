@@ -1,0 +1,112 @@
+political_decisions = {
+        found_equalitarian = {
+		picture = "equalitarian_concord"
+
+                potential = {
+					has_global_flag = cold_war_dlc
+					has_country_flag = superpower_country
+					NOT = { has_global_flag = found_equalitarian }
+					OR = {
+						government = hms_government
+						government = democracy
+					}
+					OR = {
+						has_global_flag = superpower_status_1
+						has_global_flag = superpower_status_2
+					}
+				}
+
+                allow = {
+                }
+
+          	effect = {
+				set_global_flag = found_equalitarian
+		}
+
+	    ai_will_do = {
+		factor = 1	
+                }
+	}
+
+        found_axis = {
+		picture = "axis_continum"
+
+                potential = {
+					has_global_flag = cold_war_dlc
+					has_country_flag = superpower_country
+					NOT = { has_global_flag = found_axis }
+					government = fascist_dictatorship
+					OR = {
+						has_global_flag = superpower_status_1
+						has_global_flag = superpower_status_2
+					}
+				}
+
+                allow = {
+                }
+
+          	effect = {
+				set_global_flag = found_axis
+		}
+
+	    ai_will_do = {
+		factor = 1	
+                }
+	}
+
+        found_marxist = {
+		picture = "marxist_confederation"
+
+                potential = {
+					has_global_flag = cold_war_dlc
+					has_country_flag = superpower_country
+					NOT = { has_global_flag = found_marxist }
+					government = proletarian_dictatorship
+					OR = {
+						has_global_flag = superpower_status_1
+						has_global_flag = superpower_status_2
+					}
+				}
+
+                allow = {
+                }
+
+          	effect = {
+				set_global_flag = found_marxist
+			}
+
+	    ai_will_do = {
+		factor = 1	
+                }
+	}
+
+        found_bourgeiousie = {
+		picture = "bourgeiousie_covenant"
+
+                potential = {
+					has_global_flag = cold_war_dlc
+					has_country_flag = superpower_country
+					NOT = { has_global_flag = found_bourgeoisie }
+					OR = {
+						government = bourgeoisie_dictatorship
+						government = absolute_monarchy
+					}
+					OR = {
+						has_country_flag = superpower_status_1
+						has_global_flag = superpower_status_2
+					}
+				}
+
+                allow = {
+                }
+
+		effect = {
+			set_global_flag = found_bourgeoisie
+		}
+
+	    ai_will_do = {
+			factor = 1	
+        }
+	}
+}
+

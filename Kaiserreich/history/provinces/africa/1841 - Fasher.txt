@@ -1,0 +1,6 @@
+owner = ENG
+controller = ENG
+add_core = EGY
+colonial = 2
+trade_goods = wool
+life_rating = 30

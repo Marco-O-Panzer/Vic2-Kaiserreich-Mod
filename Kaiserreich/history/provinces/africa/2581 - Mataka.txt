@@ -1,0 +1,6 @@
+owner = POR
+controller = POR
+add_core = EOM
+colonial = 2
+trade_goods = grain
+life_rating = 15

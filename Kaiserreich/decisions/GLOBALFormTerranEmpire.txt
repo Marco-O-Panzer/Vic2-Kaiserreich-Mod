@@ -1,0 +1,85 @@
+political_decisions = {
+        form_terran_empire = {
+		picture = "terran_empire"
+                potential = {
+			is_greater_power = yes
+			NOT = { exists = TTE }
+			owns = 300
+			owns = 425
+			owns = 487
+			owns = 521
+			owns = 387
+			owns = 375
+			owns = 263
+			owns = 549
+			owns = 372
+			owns = 322
+			owns = 313
+			owns = 343
+			owns = 1008
+			owns = 749
+			owns = 726
+			owns = 605
+			owns = 729
+			owns = 794
+			owns = 809
+			owns = 849
+			owns = 834
+			owns = 860
+			owns = 1745
+			owns = 1680
+			owns = 1852
+			owns = 2087
+			owns = 2348
+			owns = 2344
+			owns = 2447
+			owns = 2324
+			owns = 2295
+			owns = 2313
+			owns = 2279
+			owns = 2247
+			owns = 1723
+			owns = 2201
+			owns = 2197
+			owns = 2193
+			owns = 2191
+			owns = 2186
+			owns = 2172
+			owns = 220
+			owns = 57
+			owns = 2213
+			owns = 2214
+			owns = 2223
+			owns = 2209
+			owns = 2468
+			owns = 2512
+			owns = 1346
+			owns = 1502
+			owns = 1612
+			owns = 1649
+			owns = 1082
+			owns = 1236
+			owns = 1082
+			owns = 1236
+			owns = 1209
+			owns = 1121
+			owns = 1587
+			owns = 2062
+			owns = 1157
+			owns = 1755
+			owns = 369
+			}
+
+            allow = {
+			NOT = { exists = TTE }
+			}
+
+          	effect = {
+			prestige = 400
+			change_tag = TTE
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}

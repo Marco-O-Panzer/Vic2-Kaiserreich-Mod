@@ -1,0 +1,39 @@
+political_decisions = {
+        por_support_franco = {
+		picture = "franco"
+		fire_only_once = yes
+
+                potential = {
+			tag = POR
+			has_global_flag = spcw_happening
+			exists = SPF
+			exists = SPA
+			NOT = { has_country_flag = spcw_intervention }
+		}
+
+                allow = {
+			money = 50000
+			war = no
+                }
+
+          	effect = {
+			prestige = -5
+			military_access = SPF
+			money = -50000
+			relation = {	
+				who = SPF
+				value = 200
+			}
+			relation = {
+				who = SPA
+				value = -200
+			}
+			set_global_flag = por_support_franco
+			set_country_flag = spcw_intervention
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}             

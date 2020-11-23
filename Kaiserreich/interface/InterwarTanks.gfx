@@ -1,0 +1,607 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "GenericTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "BritishGCTank3"
+		actorfile = "gfx\anims\BritishTank.xac"
+		retargeting = yes
+		scale = 1.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 1.4
+		}
+	}
+
+	EMFXActorType = {
+		name = "FrenchGCTank3"
+		actorfile = "gfx\anims\FrenchTank.xac"
+		retargeting = yes
+		scale = 1.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "UsGCTank3"
+		actorfile = "gfx\anims\UsTank.xac"
+		retargeting = yes
+		scale = 1.93
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "ConfederateGCTank3"
+		actorfile = "gfx\anims\UsTank.xac"
+		retargeting = yes
+		scale = 1.93
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "RussianGCTank3"
+		actorfile = "gfx\anims\SovietTank.xac"
+		retargeting = yes
+		scale = 1.87
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "OttomanGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "PrussianGCTank3"
+		actorfile = "gfx\anims\GermanTank.xac"
+		scale = 2.07
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GermanTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GermanTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GermanTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+
+	EMFXActorType = {
+		name = "AustriaHungaryGCTank3"
+		actorfile = "gfx\anims\GermanTank.xac"
+		scale = 2.07
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GermanTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GermanTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GermanTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+	}
+
+	EMFXActorType = {
+		name = "SwedishGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "JapaneseGCTank3"
+		actorfile = "gfx\anims\JapaneseTank.xac"
+		retargeting = yes
+		scale = 1.8
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "ItalianGCTank3"
+		actorfile = "gfx\anims\ItalianTank.xac"
+		retargeting = yes
+		scale = 1.85
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.8
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\ItalianTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\ItalianTankAttackMove.xsm"
+			defaultAnimationTime = 1.4
+		}
+	}
+
+	EMFXActorType = {
+		name = "ChineseGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "SpanishGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "AsianGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "IndianGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "AfricanGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "MiddleEasternGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "SouthAmericanGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+
+	EMFXActorType = {
+		name = "EuropeanGCTank3"
+		actorfile = "gfx\anims\GenericTank.xac"
+		retargeting = yes
+		scale = 1.65
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericTankIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericTankMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericTankAttack.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "attackmove"
+			file = "gfx\anims\GenericTankAttackMove.xsm"
+			defaultAnimationTime = 0.8
+		}
+	}
+}

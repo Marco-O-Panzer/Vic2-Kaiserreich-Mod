@@ -1,0 +1,138 @@
+RUS = {
+	value = -200
+}
+army = {
+	name = "Russian Freedom Army"
+	location = 1082
+	regiment = {
+		name= "1. Free Brigade"
+		type = infantry
+		home = 1082
+	}
+	regiment = {
+		name= "2. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "3. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "4. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "5. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "6. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "7. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "8. Free Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "1. Free Artillery"
+		type = artillery
+		home = 1082
+	}	 
+	regiment = {
+		name= "2. Free Artillery"
+		type = artillery
+		home = 1082
+	}	 
+	regiment = {
+		name= "3. Free Artillery"
+		type = artillery
+		home = 1082
+	}	 
+	            
+}
+
+army = {
+	name = "The Free Siberian Army"
+	location = 1078
+	regiment = {
+		name= "1. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}
+	regiment = {
+		name= "2. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}	 
+	regiment = {
+		name= "3. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}	 
+	regiment = {
+		name= "4. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}	 
+	regiment = {
+		name= "5. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}	 
+	regiment = {
+		name= "6. Siberia Brigade"
+		type = infantry
+		home = 1078
+	}	 
+	regiment = {
+		name= "7. Siberia Brigade"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "No.1 Foreign Volunteers"
+		type = infantry
+		home = 1082
+	}	 
+	regiment = {
+		name= "1. Siberia Artillery"
+		type = artillery
+		home = 1078
+	}	 
+	regiment = {
+		name= "2. Siberia Artillery"
+		type = artillery
+		home = 1078
+	}	 
+	regiment = {
+		name= "3. Siberia Artillery"
+		type = artillery
+		home = 1078
+	}	 
+	            
+}
+
+navy = {
+	name = "Free Russian Navy"
+	location = 1082
+	regiment = {
+		name= "Sevastopol"
+		type = cruiser
+		home = 1082
+	}
+	regiment = {
+		name= "Romanov"
+		type = cruiser
+		home = 1082
+	}

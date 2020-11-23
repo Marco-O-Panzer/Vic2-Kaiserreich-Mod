@@ -1,0 +1,54 @@
+political_decisions = {
+        nafa = {
+		picture = "nafa"
+
+                potential = {
+			year = 1994
+			money = 10000
+			exists = CAN
+			exists = USA
+			OR = {
+				exists = MEX
+				exists = LAE
+			}
+			OR = {
+				tag = USA
+				tag = CAN
+				tag = MEX
+				tag = LAE
+			}
+			NOT = { has_global_flag = nafa_formed }
+		}
+
+                allow = {
+			modern_institutional_economics = 1
+			money = 10000
+			
+                }
+          effect = {
+		set_global_flag = nafa_formed
+		prestige = 5
+		money = -10000
+		CAN = {
+			add_country_modifier = {
+				name = na_trade_zone
+			}
+		}
+		USA = {
+			add_country_modifier = {
+				name = na_trade_zone
+			}
+		}
+		MEX = {
+			add_country_modifier = {
+				name = na_trade_zone
+			}
+		}
+		LAE = {
+			add_country_modifier = {
+				name = na_trade_zone
+			}
+		}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+#### PER Arab-Turkish War Intervention ####
+
+country_event = {
+       id = 40082
+       title = "Placeholder"
+       desc  = "Placeholder"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = PER
+	       year = 9000
+       }
+
+       option = {
+              name = "Placeholder"
+       }
+}
+
+### PER The Islamic Revolution ###
+
+country_event = {
+       fire_only_once = yes
+       id = 40087
+       title = "The Iranian Revolution"
+       desc = "EVTDESC2922"
+       major = yes
+
+       trigger = {
+               tag = PER
+	       exists = PER
+	       year = 1979
+	       OR = {
+		governemnt = hms_government
+		government = democracy
+	       	}
+       }
+
+       option = {
+              name = "The Grand Ayatollah is supreme!"
+	      prestige = 5
+	      government = theocracy
+	      ruling_party = PER_theocracy
+	      any_pops = {
+		militancy = -2
+		}
+		ai_chance = {
+			factor = 5
+		}
+       }
+	option = {
+              name = "The Shah is supreme!"
+	      prestige = 5
+	      any_pops = {
+		militancy = -2
+		}
+		ai_chance = {
+			factor = 95
+		}
+       }
+}

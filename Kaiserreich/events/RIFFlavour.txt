@@ -1,0 +1,38 @@
+country_event = {
+       id = 40122
+       title = "Turn our Attention South!"
+       picture = "arab_soldiers"
+       fire_only_once = yes
+       desc = "The Spanish armies are in tatters and their nation is greatly humiliated, however, the time has now come to turn our attention south and liberate Morocco from its colonial opressors!"
+
+       trigger = { 
+	       tag = RIF
+	       war = no
+	       NOT = { exists = MOR }	      
+	       NOT = { has_country_flag = get_fez}
+       }
+
+       option = {
+              name = "Onwards. Onwards to Fez!"
+	      prestige = 5
+	      set_country_flag = get_fez  
+
+	      1685 = { add_core = RIF } 
+	      1681 = { add_core = RIF } 
+	      1680 = { add_core = RIF } 
+	      1682 = { add_core = RIF } 
+	      1683 = { add_core = RIF } 
+	      1684 = { add_core = RIF } 
+	      1697 = { add_core = RIF } 
+	      1698 = { add_core = RIF } 
+	      1699 = { add_core = RIF } 
+	      1694 = { add_core = RIF } 
+	      1685 = { add_core = RIF } 
+	      1694 = { add_core = RIF } 
+	      1692 = { add_core = RIF } 
+	      1691 = { add_core = RIF } 
+	      2563 = { add_core = RIF } 
+	      1690 = { add_core = RIF } 
+	      1693 = { add_core = RIF } 
+       }
+}

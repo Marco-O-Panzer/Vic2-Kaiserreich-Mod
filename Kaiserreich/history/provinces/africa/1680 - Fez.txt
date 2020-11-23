@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+colonial = 2
+add_core = MOR
+trade_goods = oil
+life_rating = 35

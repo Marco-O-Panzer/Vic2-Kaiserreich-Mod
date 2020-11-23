@@ -1,0 +1,41 @@
+owner = GER
+controller = GER
+add_core = PRU
+add_core = GER
+trade_goods = coal
+life_rating = 40
+state_building = {
+	level = 1
+	building = fabric_factory
+	upgrade = yes
+}
+
+state_building = {
+	level = 4
+	building = coal_power_station
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = barrel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = telephone_factory
+	upgrade = yes
+}
+1861.1.1 = { 
+	state_building = {
+		level = 1
+		building = machine_parts_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = steel_factory
+		upgrade = yes
+	}
+
+}
+1861.1.1 = { railroad = 3 }

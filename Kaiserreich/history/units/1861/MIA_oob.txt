@@ -1,0 +1,27 @@
+GER = {
+	value = 200
+}
+army = {
+	name = "Afrika Korps"
+	location = 1993
+	regiment = {
+		name= "1. Afrika Brigade"
+		type = infantry
+		home = 1993
+	}
+	regiment = {
+		name= "2. Afrika Brigade"
+		type = infantry
+		home = 1993
+	}
+	regiment = {
+		name= "3. Afrika Brigade"
+		type = infantry
+		home = 1993
+	}
+	regiment = {
+		name= "4. Afrika Brigade"
+		type = artillery
+		home = 1993
+	}			            
+}

@@ -1,0 +1,22 @@
+name = "The Rif War"
+
+1920.5.5 = {
+	add_attacker = RIF
+	add_defender = SPA
+	
+	war_goal = {
+		casus_belli = become_independent
+		actor = RIF
+		receiver = SPA
+	}
+	war_goal = {
+		casus_belli = conquest
+		actor = SPA
+		receiver = RIF
+	}
+}
+
+1922.6.6 = {
+	rem_attacker = RIF
+	rem_defender = SPA
+	}

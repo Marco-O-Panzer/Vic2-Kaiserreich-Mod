@@ -1,0 +1,24 @@
+name = "Third Afghan-Anglo War"
+
+1920.12.31 = {
+	add_attacker = AFG
+	add_defender = ENG
+	add_defender = BRJ
+	
+	war_goal = {
+		casus_belli = become_independent
+		actor = AFG
+		receiver = BRJ
+	}
+	war_goal = {
+		casus_belli = make_puppet
+		actor = ENG
+		receiver = AFG
+	}
+
+}
+1930.1.1 = {
+	rem_attacker = AFG
+	rem_defender = ENG
+	rem_defender = BRJ
+}

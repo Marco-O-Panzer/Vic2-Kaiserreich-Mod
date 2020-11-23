@@ -1,0 +1,408 @@
+#Sphere of Influence
+BEL = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+LUX = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+SWI = {
+	value = 125		#relation
+	level = 3		#3=cordial, 4 = friendly, 5 sphere
+	influence_value = 25
+}
+
+ITA = {
+	value = 50		#relation
+}
+
+ENG = {
+	value = 75		#relation
+}
+
+GER = {
+	value = -200		#relation
+}
+
+KUK = {
+	value = -200		#relation
+}
+
+TUR = {
+	value = -200		#relation
+}
+
+BUL = {
+	value = -200		#relation
+}
+
+YNN = {
+	value = 75
+	influence_value = 25
+}
+
+GXI = {
+	value = 75
+	influence_value = 25
+}
+
+army = {
+	name = "IX. Corps" #done
+	location = 433
+	regiment = {
+		name= "1.1ère Division de Chasseurs"
+		type = infantry
+		home = 433
+	}
+
+	regiment = {
+		name= "1.2ème Division de Chasseurs"
+		type = infantry
+		home = 428
+	}
+
+	regiment = {
+		name= "2.2ème Division de Chasseurs"
+		type = infantry
+		home = 431
+	}
+
+	regiment = {
+		name= "3.2ème Division de Chasseurs"
+		type = infantry
+		home = 434
+	}
+
+	regiment = {
+		name= "4.2ème Division de Chasseurs"
+		type = engineer
+		home = 439
+	}
+
+}
+
+army = {
+	name = "V. Corps"
+	leader = {
+		name = "Ferdinand Foch"
+		type = land
+		date="1875.1.1"
+		personality = incompetent
+		background = school_of_defense
+		picture="european_general_12"
+	}
+	location = 409
+	regiment = {
+		name= "1.13ème Division d'Infanterie"
+		type = infantry
+		home = 409
+	}
+
+	regiment = {
+		name= "2.13ème Division d'Infanterie"
+		type = infantry
+		home = 409
+	}
+
+	regiment = {
+		name= "3.13ème Division d'Infanterie"
+		type = infantry
+		home = 409
+	}
+
+	regiment = {
+		name= "1.14ème Division d'Infanterie"
+		type = infantry
+		home = 413
+	}
+
+	regiment = {
+		name= "2.14ème Division d'Infanterie"
+		type = infantry
+		home = 410
+	}
+
+	regiment = {
+		name= "3.14ème Division d'Infanterie"
+		type = infantry
+		home = 412
+	}
+
+	regiment = {
+		name= "1.15ème Division d'Infanterie"
+		type = infantry
+		home = 412
+	}
+
+	regiment = {
+		name= "2.15ème Division d'Infanterie"
+		type = artillery
+		home = 412
+	}
+
+	regiment = {
+		name= "3.15ème Division d'Infanterie"
+		type = artillery
+		home = 412
+	}
+
+}
+
+army = {
+	name = "Corps de Cavalerie" #done
+	location = 425
+
+	regiment = {
+		name= "2.1ère Division de Cavalerie"
+		type = dragoon
+		home = 408
+	}
+
+	regiment = {
+		name= "3.1ère Division de Cavalerie"
+		type = dragoon
+		home = 408
+	}
+
+	regiment = {
+		name= "4.1ère Division de Cavalerie"
+		type = dragoon
+		home = 406
+	}
+
+	regiment = {
+		name= "3.2ème Division Légère de Cavalerie"
+		type = infantry
+		home = 2570
+	}
+
+	regiment = {
+		name= "1.3ème Division Légère de Cavalerie"
+		type = infantry
+		home = 402
+	}
+
+	regiment = {
+		name= "2.3ème Division Légère de Cavalerie"
+		type = infantry
+		home = 402
+	}
+
+	regiment = {
+		name= "3.3ème Division Légère de Cavalerie"
+		type = infantry
+		home = 402
+	}
+
+}
+
+army = {
+	name = "Troupes d'Indochine"
+	location = 1380
+	regiment = {
+		name= "1.11ème Division d'Infanterie"
+		type = infantry
+		home = 399
+	}
+
+	regiment = {
+		name= "2.11ème Division d'Infanterie"
+		type = infantry
+		home = 399
+	}
+
+	regiment = {
+		name= "3.11ème Division d'Infanterie"
+		type = infantry
+		home = 399
+	}
+
+	regiment = {
+		name= "3.12ème Division d'Infanterie"
+		type = engineer
+		home = 401
+	}
+
+}
+
+navy = {
+	name = "Escadre de la Méditerranée"
+	location = 470	
+	
+	ship = {
+		name = "Fontenoy"
+		type = cruiser
+	}
+
+	ship = {
+		name = "Alexandre"
+		type = cruiser
+	}
+
+	ship = {
+		name = "Massena"
+		type = cruiser
+	}
+	
+	ship = {
+		name = "Ville de Bordeaux"
+		type = cruiser
+	}
+
+	ship = {
+		name = "Charlemagne"
+		type = cruiser
+	}
+
+	ship = {
+		name = "Guerrière "
+		type = frigate
+	}
+
+	ship = {
+		name = "Danaé"
+		type = frigate
+	}
+	
+	ship = {
+		name = "Zénobie"
+		type = frigate
+	}
+
+	ship = {
+		name = "Bellone"
+		type = frigate
+	}
+
+	ship = {
+		name = "Pandore"
+		type = frigate
+	}
+
+	ship = {
+		name = "Hermione"
+		type = frigate
+	}
+	ship = {
+		name= "Isis"
+		type = steam_transport
+	}
+	ship = {
+		name= "Oise"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Caravane"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Egérie"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Fortune"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Perdrix"
+		type = steam_transport
+	}
+}
+	
+navy = {
+	name = "Bordeaux Flotilla"
+	location = 458	
+
+	ship = {
+		name= "Saone"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Marne"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Meuse"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Nievre"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Meurthe"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Yonne"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Européen"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Japon"
+		type = steam_transport
+	}
+}
+
+navy = {
+	name = "Expédition d'Indochine"
+	location = 1380
+
+	ship = {
+		name= "Armide"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Provençale"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Loire"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Durance"
+		type = steam_transport
+	}
+	
+	ship = {
+		name= "Gironde"
+		type = steam_transport
+	}
+
+	ship = {
+		name= "Rhin"
+		type = steam_transport
+	}
+
+}
+
+navy = {
+	name = "Station de l'Afrique de l'ouest"
+	location = 1783
+	ship = {
+		name = "Poursuivante" 
+		type = frigate
+	}
+	
+}

@@ -1,0 +1,137 @@
+political_decisions = {
+	iberian_destiny = {
+		major = yes
+		picture = "conquistadors"
+		set_global_flag = iberian_destiny
+		fire_only_once = yes
+		potential = {
+			greater_power = yes
+			NOT = {has_global_flag = ibe_destiny}
+			OR = {
+				tag = IBE
+			}
+		}
+		
+		allow = { 
+			war = no
+			NOT = {
+				exists = POR
+				exists = SPA
+			}
+		}
+
+		effect = { 
+			set_global_flag = ibe_destiny
+			badboy = 2
+			prestige = 20
+			relation = {
+				who = MEX
+				value = -200
+			}
+			relation = {
+				who = ARG
+				value = -200
+			}
+			relation = {
+				who = BRZ
+				value = -200
+			}
+			relation = {
+				who = HAI
+				value = -200
+			}
+			relation = {
+				who = CUB
+				value = -200
+			}
+			relation = {
+				who = BOL
+				value = -200
+			}
+			relation = {
+				who = PRG
+				value = -200
+			}
+			relation = {
+				who = USA
+				value = -100
+			}
+			relation = {
+				who = PEU
+				value = -200
+			}
+			relation = {
+				who = UCA
+				value = -200
+			}
+			relation = {
+				who = URU
+				value = -200
+			}
+			relation = {
+				who = VNZ
+				value = -200
+			}
+
+			ARG = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			BRZ = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			MEX = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			HAI = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			CUB = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			BOL = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			PRG = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			PEU = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			UCA = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			URU = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+			VNZ = { 
+				all_core = { 
+					add_core = IBE
+				 }
+			}
+		}
+
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+}

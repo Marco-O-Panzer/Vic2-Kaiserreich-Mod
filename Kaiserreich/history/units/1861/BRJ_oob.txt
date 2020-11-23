@@ -1,0 +1,37 @@
+ENG = {
+	value = 150
+}
+army = {
+	name = "The Raj Guards"
+	location = 1236
+	regiment = {
+		name= "1. Gurkha Rifles"
+		type = infantry
+		home = 1236
+	}
+	regiment = {
+		name= "2. Gurkha Rifles"
+		type = infantry
+		home = 1236
+	}	   
+	regiment = {
+		name= "3. Gurkha Rifles"
+		type = infantry
+		home = 1236
+	}	   
+	regiment = {
+		name= "4. Gurkha Rifles"
+		type = infantry
+		home = 1236
+	}	   
+	regiment = {
+		name= "1. Royal Gurkha Artillery"
+		type = artillery
+		home = 1236
+	}	   
+	regiment = {
+		name= "2. Royal Gurkha Artillery"
+		type = artillery
+		home = 1236
+	}	   	            
+}

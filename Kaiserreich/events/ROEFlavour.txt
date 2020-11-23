@@ -1,0 +1,84 @@
+### Emperor Benito I ###
+
+country_event = {
+       id = 40124
+       title = "Emperor Mussolini I"
+       desc = "ROE-BENITO-EMP"
+       picture = "benito_I"
+
+       trigger = {
+	       NOT = { has_global_flag = benito_I }
+	       government = fascist_dictatorship
+	       tag = ROE
+	       NOT = { year = 1971 }
+	}
+
+       option = {
+              name = "Ego sum Mussolini I!"
+	      prestige = 15
+              government = absolute_monarchy
+	      political_reform = none_voting
+	      political_reform = party_appointed
+	      political_reform = underground_parties
+	      set_global_flag = benito_I
+	      ai_chance= 1 {
+	      	factor = 100
+	      }
+	}
+
+       option = {
+              name = "A little less of the ego, please?"
+	      set_global_flag = benito_I
+	      prestige = -15
+	}
+}
+
+### For the Glory of Rome! ###
+
+country_event = {
+       id = 40125
+       title = "For the Glory of Rome!"
+       desc = "Only Romans understand what lies beyond the limits of glory! Our nation has prestige and wealth beyond the imagining of our contemptable neighbours, we are the greatest!"
+       major = yes
+
+       trigger = {
+	       NOT = { has_global_flag = glory_of_rome }
+	       prestige = 800
+	       tag = ROE
+	}
+
+       option = {
+              name = "Hail to Rome!"
+	      prestige = 50
+	      set_global_flag = glory_of_rome
+	      add_country_modifier = {
+		name = for_the_glory_of_rome
+		duration = -1
+		}
+	}
+}
+
+### Restore Constantinople! ###
+
+country_event = {
+       id = 40126
+       title = "Restore Constantinople!"
+       desc = "Once overrun by the Turks 600 years ago, the mighty fortress city of 'Istanbul' - so they call it - has been returned as the great Roman city it was destined to be. Let us rename it to Constantinople again!"
+       picture = "constantinople"
+
+       trigger = {
+	       OR = {
+	       	tag = ROE
+		tag = ITA
+	  	}
+	       NOT = { has_global_flag = restore_constantinople }
+	       owns = 860
+	}
+
+       option = {
+              name = "Nova Roma"
+	      prestige = 10
+	      860 = { change_province_name = "Constantinople"}
+	      set_global_flag = restore_constantinople
+	}
+}

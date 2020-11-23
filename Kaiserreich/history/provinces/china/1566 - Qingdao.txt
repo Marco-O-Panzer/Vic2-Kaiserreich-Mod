@@ -1,0 +1,13 @@
+owner = GER
+controller = GER
+add_core = CHI
+add_core = ZHI
+naval_base = 1
+colonial = 2
+trade_goods = fruit
+life_rating = 32
+1927.1.1 = {
+	owner = CHI
+	controller = CHI
+	remove_core = ZHI
+}

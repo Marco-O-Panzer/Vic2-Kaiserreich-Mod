@@ -1,0 +1,10 @@
+army = {
+	name = "Army of the Trucial States"
+	location = 1167
+	regiment = {
+		name= "Trucial Army"
+		type = infantry
+		home = 1167
+	}
+}
+

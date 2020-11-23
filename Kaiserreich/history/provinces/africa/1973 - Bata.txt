@@ -1,0 +1,9 @@
+owner = SPA
+controller = SPA
+colonial = 2
+trade_goods = timber
+life_rating = 15
+1939.1.1 = {
+	owner = SPF
+	controller = SPF
+}

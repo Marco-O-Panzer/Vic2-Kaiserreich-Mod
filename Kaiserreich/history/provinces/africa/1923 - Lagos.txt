@@ -1,0 +1,6 @@
+trade_goods = rubber
+life_rating = 15
+add_core = WAU
+owner = ENG
+controller = ENG
+colonial = 2

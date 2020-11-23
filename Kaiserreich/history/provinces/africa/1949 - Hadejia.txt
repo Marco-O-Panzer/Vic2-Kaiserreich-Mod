@@ -1,0 +1,7 @@
+owner = ENG
+controller = ENG
+add_core = SOK
+add_core = WAU
+colonial = 2
+trade_goods = coal
+life_rating = 35

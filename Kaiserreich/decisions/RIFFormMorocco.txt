@@ -1,0 +1,21 @@
+political_decisions = {
+        rif_to_morocco = {
+                potential = {
+			tag = RIF
+			NOT = { exists = MOR }
+		}
+                allow = {
+			war = no
+			owns = 1680
+			}
+
+          	effect = {
+			prestige = 10
+			change_tag = MOR
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

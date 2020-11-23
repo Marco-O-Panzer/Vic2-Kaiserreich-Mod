@@ -1,0 +1,2177 @@
+#deep_defence_system
+fox_hole = {
+            limit = { deep_defence_system = 1 }
+            chance = {
+                      base = 12
+            }
+            effect = {
+                      army_base = { 
+                                   default_organisation = 2.5
+                                   supply_consumption = 0.05
+           	      }
+            }
+}
+trench_system = {
+                 limit = { deep_defence_system = 1 }
+                 chance = {
+                           base = 6
+                           modifier = {
+                                       factor = 2
+                                       invention = fox_hole
+                           }
+						   modifier = {
+						               factor = 2
+									   pre_war_small_arms = 1
+			               }
+                }
+                effect = {
+                          dig_in_cap = 1
+                          army_base = {
+                                       supply_consumption = 0.10
+                          }
+                          engineer = {
+                                      support = 0.25
+                                      supply_consumption = 0.05
+                          }
+                }
+}
+barbed_wire = {
+               limit = { deep_defence_system = 1 }
+               chance = {
+                         base = 4
+						 modifier = {
+						             factor = 2
+									 invention = trench_system
+						}
+                        modifier = {
+                                    factor = 2
+                                    organised_factories = 1
+                        }						
+               }
+               effect = {
+                         army_base = {
+                                      default_organisation = 2.5
+                                      supply_consumption = 0.05
+                         }
+               }
+}
+electric_fence = {
+                  limit = { deep_defence_system = 1 }
+                  chance = { 
+                            base = 2
+                            modifier = {
+                                        factor = 4
+                                        electricity = 1
+                            }
+                            modifier = {
+                                        factor = 2
+                                        invention = barbed_wire
+                            }
+                  }
+                  effect = {
+                            army_base = {
+                                         default_organisation = 2.5
+                                         supply_consumption = 0.05
+                            }
+                            engineer = {
+                                        support = 0.25
+                                        supply_consumption = 0.10
+                            }
+                  }
+}
+#hardened_field_fortification
+bunker = {
+          limit = { hardened_field_fortification = 1 }
+          chance = {
+                    base = 2
+                    modifier = {
+                                factor = 2
+                                invention = trench_system
+                    }
+					modifier = {
+					            factor = 4
+								electrical_power_generation = 1
+					}
+          }
+          effect = {
+                    dig_in_cap = 1
+                    army_base = {
+                                 supply_consumption = 0.10
+                    }
+                    engineer = {
+                                support = 0.25
+                                supply_consumption = 0.10
+                    }
+          }
+}
+pillbox = {
+           limit = { hardened_field_fortification = 1 }
+           chance = {
+                     base = 4
+                     modifier = {
+                                 factor = 4
+                                 invention = bunker
+                     }
+           }
+           effect = {
+                     dig_in_cap = 1
+                     army_base = {
+                                  supply_consumption = 0.10
+                     }
+           }
+}
+dragon's_teeth = {
+                  limit = { hardened_field_fortification = 1 }
+                  chance = {
+                            base = 2
+                            modifier = {
+                                        factor = 6
+                                        war = yes
+										war_countries = { great_war_heavy_arms = 1 }
+							}
+							modifier = {
+							            factor = 2
+										invention = pillbox
+					        }
+                  }
+                  effect = {
+                            army_base = {
+                                         default_organisation = 2.5
+                                         supply_consumption = 0.05
+                            }
+                  }
+}
+#border_fortification
+casemate = {
+            limit = { border_fortification = 1 }
+            chance = {
+                      base = 4
+					  modifier = {
+					              factor = 2
+								  invention = bunker
+					  }
+					  modifier = {
+					              factor = 2
+								  invention = creeping_barrage
+					  }
+            }
+            effect = {
+                      dig_in_cap = 1
+                      army_base = {
+                                   supply_consumption = 0.10
+                      }
+                      engineer = {
+                                  support = 0.25
+                                  supply_consumption = 0.10
+                      }
+            }
+}
+flak_tower = {
+              limit = { border_fortification = 1 }
+              chance = {
+                        base = 2
+                        modifier = {
+                                    factor = 4
+                                    invention = casemate
+                        }
+						modifier = {
+						            factor = 2
+									radar = 1
+						}
+              }
+              effect = {
+                        army_base = {
+                                     default_organisation = 2.5
+                                     supply_consumption = 0.05
+                        }
+                        engineer = {
+                                    support = 0.25
+                                    supply_consumption = 0.10
+                        }
+              }
+}
+czech_hedgehog = {
+                  limit = { border_fortification = 1 }
+                  chance = {
+                            base = 4
+                            modifier = {
+                                        factor = 2
+                                        invention = dragon's_teeth
+                            }
+							modifier = {
+							            factor = 2 
+										combined_arms = 1 
+							}
+                  }
+                  effect = {
+                            army_base = {
+                                         default_organisation = 2.5
+                                         supply_consumption = 0.05
+                            }
+                  }
+}
+#main_field_operating_base
+revised_strength_gradient = {
+                             limit = { main_field_operating_base = 1 }
+                             chance = {
+                                       base = 2
+									   modifier = {
+									               factor = 4 
+												   public_road_transit_system = 1 
+									   }
+									   modifier = {
+									               factor = 4 
+												   combined_arms_maneuver = 1 
+									   }
+                             }
+                             effect = {
+                                       army_base = {
+                                                    default_organisation = 5
+                                                    supply_consumption = 0.20
+                                       }
+                             }
+}
+forward_operating_base = {
+                          limit = { main_field_operating_base = 1 }
+                          chance = {
+                                    base = 2 
+									modifier = {
+									            factor = 2 
+												invention = revised_field_training
+									}
+									modifier = {
+									            factor = 2 
+												international_protocol = 1
+									}
+									modifier = {
+									            factor = 2 
+												invention = revised_strength_gradient
+									}											 
+                          }
+                          effect = {
+                                    dig_in_cap = 1
+                                    army_base = {
+                                                 supply_consumption = 0.10
+                                    }
+                                    engineer = {
+                                                support = 0.25
+                                                supply_consumption = 0.10
+                                    }
+                          }
+}
+#fire_support_base 
+tactical_operations_centre = {
+                              limit = { fire_support_base = 1 }
+                              chance = {
+                                        base = 2
+                                        modifier = {
+                                                    factor = 2
+                                                    invention = forward_operating_base
+                                        }
+										modifier = {
+										            factor = 2 
+													computational_logic = 1 
+										}
+										modifier = {
+										            factor = 4 
+													modern_military_management = 1 
+										}
+										modifier = {
+										            factor = 4
+													cold_war_policy = 1 
+										}
+                              }
+                              effect = {
+                                        army_base = {
+                                                     default_organisation = 5
+                                                     supply_consumption = 0.20
+                                        }
+                              }
+}
+cooperative_security_location = {
+                                 limit = { fire_support_base = 1 }
+                                 chance = {
+                                           base = 2
+                                           modifier = {
+                                                       factor = 4
+                                                       cold_war_policy = 1 
+                                           }
+										   modifier = {
+										               factor = 2 
+													   invention = modern_tactical_protocol
+										   }
+                                  }
+                                  effect = {
+                                            dig_in_cap = 1
+                                  }
+}
+#modern_army_base
+hesco_bastion = {
+                 limit = { modern_army_base = 1 }
+                 chance = {
+                           base = 4
+						   modifier = {
+						               factor = 2 
+									   invention = modern_infantry_logistics
+						   }
+						   modifier = {
+						               factor = 2 
+									   modern_military_management = 1 
+						   }
+                 }
+                 effect = {
+                           dig_in_cap = 1
+                           army_base = {
+                                        supply_consumption = 0.10
+                           }
+                 }
+}
+bremer_wall = {
+               limit = { modern_army_base = 1 }
+               chance = {
+                         base = 2
+                         modifier = {
+                                     factor = 2
+                                     invention = dragon's_tooth
+                         }
+                         modifier = {
+                                     factor = 2
+                                     street_roads = 1 
+                         }
+						 modifier = {
+						             factor = 2 
+									 modern_military_management = 1 
+						 }
+               }
+               effect = {
+                         army_base = {
+                                      default_organisation = 2.5
+                                      supply_consumption = 0.05
+                         }
+               }
+}
+#military_academy
+field_training = {
+                  limit = { military_academy = 1 }
+                  chance = {
+                            base = 6
+							modifier = {
+							            factor = 2 
+										psychoanalysis = 1 
+							}
+							modifier = {
+							            factor = 2 
+										structural_functionalism = 1 
+							}
+							modifier =
+							          factor = 2 
+									  invention = tactical_training
+							}
+                  }
+                  effect = {
+                            morale = 0.10
+                            army_base = {
+                                         maximum_speed = 1
+                                         supply_consumption = 0.10
+                            }
+                  }
+}
+tactical_training = {
+                     limit = { military_academy = 1 }
+                     chance = {
+                               base = 4
+							   modifier = {
+							               factor = 2 
+										   psychoanalysis = 1 
+							   }
+							   modifier = {
+							               factor = 2 
+										   structural_functionalism = 1 
+							   }
+                               modifier = {
+                                           factor = 2
+										   invention = field_training
+							   }
+                     }
+                     effect = {
+                               military_tactics = 0.10
+                               army_base = {
+                                            discipline = 0.25
+                                            supply_consumption = 0.10
+                               }
+                               
+                     }
+}
+#great_war_experience
+great_war_field_training = {
+                         limit = { great_war_experience = 1 }
+                         chance = {
+                                   base = 4
+                                   modifier = {
+                                               factor = 2
+                                               rationalism = 1 
+                                   }
+								   modifier = {
+								               factor = 2 
+											   behaviorism = 1 
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = great_war_tactical_training
+								   }
+                         }
+                         effect = {
+                                   morale = 0.10
+                                   army_base = {
+                                                maximum_speed = 1
+                                                supply_consumption = 0.10
+                                   }
+                         }
+}
+great_war_tactical_training = {
+                                       limit = { great_war_experience = 1 }
+                                       chance = {
+                                                 base = 4
+                                                 modifier = {
+                                                             factor = 2
+                                                             rationalism = 1
+                                                 }
+												 modifier = {
+												             factor = 2 
+															 behaviorism = 1 
+												 }
+												 modifier = {
+												             factor = 2 
+															 invention = great_war_field_training
+												 }
+                                       }
+                                       effect = {
+                                                 military_tactics = 0.10
+                                                 army_base = {
+                                                              discipline = 0.25
+                                                              supply_consumption = 0.10
+                                                 }
+                                       }
+}
+#combined_arms_maneuver
+tank_desant = {
+               limit = { combined_arms_maneuver = 1 }
+               chance = {
+                         base = 2
+						 modifier = {
+						             factor = 2 
+									 combined_arms = 1
+						 }
+						 modifier = { 
+						             factor = 4
+									 invention = armour_support
+						 }
+               }
+               effect = {
+                         tank = {
+                                 attack = 0.50
+                                 defence = 0.50
+                                 maximum_speed = 1
+                                 supply_consumption = 0.10
+                         }
+               }
+}               
+schwerpunkt = {
+               limit = { combined_arms_maneuver = 1 }
+               chance = {
+                         base = 2
+						 modifier = {
+						             factor = 2 
+									 invention = armour_support
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = close_air_support
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = tank_desant
+						 }
+						 modifier = {
+						             factor = 2 
+									 war = yes 
+									 war_countries = { invention = schwerpunkt }
+						 }
+               }
+               effect = {
+                         combat_width = -2
+                         army_base = {
+                                      maneuver = 1
+                                      supply_consumption = -0.10                                     
+                         }
+               }
+}
+blitzkrieg = {
+              limit = { combined_arms_maneuver = 1 }
+              chance = {
+                        base = 2
+                        modifier = {
+                                    factor = 6
+                                    invention = schwerpunkt
+                        }						
+						modifier = {
+						            factor = 2 
+									radar = 1 
+						}
+						modifier = {
+						            factor = 2 
+									war = yes 
+									war_countries = { invention = blitzkrieg }
+						}
+              }
+              effect = {
+                        combat width = -2
+                        army_base = {
+                                     maximum_speed = 1
+                                     reconnaissance = 1
+                                     supply_consumption = -0.10
+                        }
+              }
+}
+#overhauled_military_education
+revised_field_training = {
+                          limit = { overhauled_military_education = 1 }
+                          chance = {
+                                    base = 4
+                                    modifier = {
+                                                factor = 2
+                                                invention = schwerpunkt
+                                    }
+									modifier = {
+									            factor = 2 
+												invention = blitzkrieg
+									}
+									modifier = {
+									            factor = 2 
+												invention = revised_tactical_training
+									}
+                          }
+                          effect = {
+                                    morale = 0.10
+                                    army_base = {
+                                                 maximum_speed = 1
+                                                 supply_consumption = 0.10
+                                    }
+                          }
+}
+revised_tactical_training = {
+                             limit = { overhauled_military_education = 1 }
+                             chance = {
+                                       base = 4
+                                       modifier = {
+                                                   factor = 2
+                                                   invention = schwerpunkt
+                                       }
+									   modifier = {
+									               factor = 2 
+												   invention = blitzkrieg
+									   }
+									   modifier = {
+									               factor = 2 
+												   invention = revised_field_training
+										}
+                             }
+                             effect = {
+                                       military_tactics = 0.10
+                                       army_base = {
+                                                    discipline = 0.25
+                                                    supply_consumption = 0.10
+                                       }
+                             }
+}
+#modern_military_management
+modern_field_principles = {
+                           limit = { modern_military_management = 1 }
+                           chance = {
+                                     base = 4
+                                     modifier = {
+                                                 factor = 2
+                                                 revamped_light_weaponry = 1 
+                                     }
+									 modifier = {
+									             factor = 2 
+												 redesigned_heavy_ordnance = 1
+									 }
+									 modifier = {
+									             factor = 2 
+												 invention = modern_tactical_protocol
+									 }
+                           }
+                           effect = {
+                                     morale = 0.10
+                                     army_base = {
+                                                  maximum_speed = 1
+                                                  supply_consumption = 0.10
+                                     }
+                           }
+}
+modern_tactical_protocol = {
+                            limit = { modern_military_management = 1 }
+                            chance = {
+                                      base = 4
+                                      modifier = {
+                                                  factor = 2
+                                                  revamped_light_weaponry = 1
+                                      }
+									  modifier = {
+									              factor = 2 
+												  revamped_light_weaponry = 1
+									  }
+									  modifier = {
+									              factor = 2 
+												  invention = modern_field_principles
+									  }
+                            }
+                            effect = {
+                                      military_tactics = 0.10
+                                      army_base = {
+                                                   discipline = 0.25
+                                                   supply_consumption = 0.10
+                                      }
+                            }
+}
+#cyber_integrated_training
+modern_electronic_conduct = {
+                             limit = { cyber_integrated_training = 1 }
+                             chance = {
+                                       base = 4
+                                       modifier = {
+                                                   factor = 2
+                                                   battlespace_digitisation = 1
+                                       }
+									   modifier = {
+									               factor = 2 
+												   modern_troop_heirarchy = 1
+									   }
+									   modifier = {
+									               factor = 2 
+												   invention = cyber_integrated_approach
+									   }
+                             }
+                             effect = {
+                                       morale = 0.10
+                                       army_base = {
+                                                    maximum_speed = 1
+                                                    supply_consumption = 0.10
+                                       }
+                             }
+}
+cyber_integrated_approach = {
+                             limit = { cyber_integrated_training = 1 }
+                             chance = {
+                                       base = 4
+                                       modifier = {
+                                                   factor = 2
+                                                   battlespace_digitisation = 1 
+                                       }
+									   modifier = {
+									               factor = 2 
+												   modern_troop_heirarchy = 1
+									   }
+									   modifier = {
+									               factor = 2 
+												   invention = modern_electronic_conduct
+									   }
+                             }
+                             effect = {
+                                       military_tactics = 0.10
+                                       army_base = {
+                                                    discipline = 0.25
+                                                    supply_consumption = 0.10
+                                       }
+                             }
+}
+#pre_war_small_arms
+bolt_action_rifle = {
+                     limit = { pre_war_small_arms = 1 }
+                     chance = {
+                               base = 4
+                               modifier = {
+                                           factor = 2
+                                           organised_factories = 1 
+                               }
+                               modifier = {
+ 							               factor = 2 
+										   invention = industrialised_armament_industry 
+							   }
+							   modifier = {
+							               factor = 2 
+										   invention = fox_hole
+							   }
+                     }
+                     effect = {
+        infantry = {
+                    attack = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.05
+        }
+        dragoon = {
+                   attack = 0.25
+                   supply_consumption = 0.10
+        }
+    }
+}
+portable_machine_guns = {
+                     limit = { pre_war_small_arms = 1 }
+                     chance = {
+                               base = 4
+                               modifier = {
+                                           factor = 2
+                                           organised_factories = 1 
+                               }
+							   modifier = {
+							               factor = 2 
+										   invention = industrialised_armament_industry 
+							   }
+							   modifier = {
+							               factor = 2 
+										   invention = trench_system
+							   }
+                     }
+                     effect = {
+        infantry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 defence = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+        dragoon = {
+                   attack = 0.25
+                   supply_consumption = 0.10
+        }
+    }
+}
+supressive_fire = {
+                   limit = { pre_war_small_arms = 1 }
+                   chance = {
+                             base = 2
+                             modifier = {
+                                         factor = 2
+                                         invention = bolt_action_rifle
+                             }
+                             modifier = {
+                                         factor = 2
+                                         invention = portable_machine_guns
+                             }
+                             modifier = {
+                                         factor = 2
+                                         chemical_arsenal = 1 
+                             }										 
+                   }
+                   effect = {
+        infantry = {
+                    attack = 0.25
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.25
+                 supply_consumption = 0.10
+        }
+   }
+}
+#heavy_weapons_platoon
+hand_grenade = {
+                limit = { heavy_weapons_platoon = 1 }
+                chance = {
+                          base = 2
+						  modifier = {
+						              factor = 2 
+									  invention = industrialised_armament_industry
+						  }
+						  modifier = {
+						              factor = 2 
+									  invention = tear_gas
+						  }
+                }
+                effect = {
+        infantry = {
+                    attack = 0.25
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.25
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.05
+        }
+    }
+}
+land_mine = {
+             limit = { heavy_weapons_platoon = 1 }
+             chance = {
+                       base = 2
+					   modifier = {
+					               factor = 4 
+								   invention = hand_grenade
+					   }
+             }
+             effect = {
+        infantry = {
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 defence = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.15
+                    support = 0.25
+        }
+   }
+}
+rifle_grenade = {
+                 limit = { heavy_weapons_platoon = 1 }
+                 chance = {
+                           base = 2
+						   modifier = {
+						               factor = 2 
+									   invention = bolt_action_rifle
+						   }
+						   modifier = {
+						               factor = 2 
+									   invention = hand_grenade
+						   }
+                 }
+                 effect = {
+        infantry = {
+                    attack = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.15
+                    support = 0.25
+        }
+   }
+}
+flamethrower = {
+                limit = { heavy_weapons_platoon = 1 }
+                chance = {
+                          base = 2
+						  modifier = {
+						              factor = 2 
+									  chemical_arsenal = 1 
+						  }
+						  modifier = {
+						              factor = 2 
+									  synthetic_polymers = 1 
+						  }						  
+                }
+                effect = {
+                                       effect = {
+        infantry = {
+                    attack = 0.25
+                    supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.15
+                    support = 0.25
+        }
+   }
+}
+#combined_arms
+armour_support = {
+                  limit = { combined_arms = 1 }
+                  chance = {
+                            base = 2
+							modifier = {
+							            factor = 2 
+										invention = tank_desant
+							}
+							modifier = {
+							            factor = 2 
+										invention = mounted_heavy_machine_gun
+							}
+							modifier = {
+							            factor = 4 
+										invention = self_propelled_gun_artillery
+							}
+                  }
+                  effect = {
+                            tank = {
+                                    attack = 0.5
+                                    defence = 0.5
+									support = 0.25 
+                                    reconnaissance = 1
+                                    supply_consumption = 0.10
+                            }
+                  }
+}
+close_air_support = {
+                     limit = { combined_arms = 1 }
+                     chance = {
+                               base = 2
+							   modifier = {
+							               factor = 2
+                                           invention = air_bomber
+                               }
+                               modifier = {
+                                           factor = 2 
+                                           invention = turboprop
+                               }
+                               modifier = {
+                                           factor = 2
+                                           invention = radar 
+                               }										   		   
+                     }
+                     effect = {
+                               plane = {
+                                        support = 0.5
+                                        maneuver = 1
+                                        attack = 0.25
+                                        defence = 0.25
+                                        supply_consumption = 0.10
+                               }
+                     }
+}
+reconnaissance_by_fire = {
+                         limit = { combined_arms = 1 }
+                         chance = {
+                                   base = 2
+								   modifier = {
+								               factor = 2 
+											   invention = rifle_grenade
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = fire_for_effect
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = self_propelled_gun_artillery
+								   }
+                         }
+                         effect = {
+        cavalry = {
+                    attack = 0.50
+                    defence = 0.50
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.50
+                    defence = 0.50
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.50
+                 defence = 0.50
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+        dragoon = {
+                   attack = 0.25
+                   defence = 0.25
+                   supply_consumption = 0.10
+        }
+   }
+}
+final_protective_fire = {
+                         limit = { combined_arms = 1 }
+                         chance = {
+                                   base = 2
+								   modifier = {
+								               factor = 2 
+											   invention = concentrated_fire
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = fire_for_effect
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = mounted_heavy_machine_gun
+								   }
+                         }
+                         effect = {
+        cavalry = {
+                    attack = 0.50
+                    defence = 0.50
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.50
+                    defence = 0.50
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.50
+                 defence = 0.50
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+		artillery = {
+		             attack = 0.25 
+					 defence = 0.25 
+					 support = 0.25 
+					 supply_consumption = 0.05 
+		}
+        hussar = {
+                   attack = 0.25
+                   defence = 0.25
+				   support = 0.25 
+                   supply_consumption = 0.10
+        }
+   }
+}
+#revamped_light_weaponry = {
+assault_rifle = {
+                 limit = { revamped_light_weaponry = 1 }
+                 chance = {
+                           base = 4
+						   modifier = {
+						               factor = 2
+						               overhauled_military_education = 1
+						   }
+						   modifier = {
+						               factor = 2 
+									   invention = revised_strength_gradient
+						   }
+						   modifier = {
+						               factor = 2 
+									   invention = international_protocol
+						   }
+                 }
+                 effect = {
+        cavalry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 defence = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+    }
+}
+shoulder_fired_missile = {
+                          limit = { revamped_light_weaponry = 1 }
+                          chance = {
+                                    base = 4
+									modifier = {
+									            factor = 2 
+												overhauled_military_education = 1 
+									}
+									modifier = {
+									            factor = 2 
+												invention = revised_strength_gradient
+									}
+									modifier = {
+									            factor = 2 
+												invention = forward_operating_base
+									}
+                          }
+                          effect = {
+        cavalry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 defence = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+    }
+}
+#modern_light_armament
+minigun = {
+           limit = { modern_light_armament = 1 }
+           chance = {
+                     base = 4
+					 modifier = {
+					             factor = 2 
+								 cold_war_policy = 1 
+					 }
+					 modifier = {
+					             factor = 2 
+								 modern_military_management = 1 
+					 }
+					 modifier = {
+					             factor = 2
+                                 invention = cooperative_security_location
+                     }					 
+           }
+           effect = {
+        cavalry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 defence = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    defence = 0.25
+                    supply_consumption = 0.05
+        }
+    }
+}
+semi_automatic_sniper_rifle = {
+                               limit = { modern_light_armament = 1 }
+                               chance = {
+                                         base = 4
+				                         modifier = {
+					                                 factor = 2 
+								                     cold_war_policy = 1 
+					                     }
+					                     modifier = {
+					                                 factor = 2 
+								                     modern_military_management = 1 
+					                     }
+					                     modifier = {
+					                                 factor = 2
+                                                     invention = tactical_operations_centre
+                                         }		
+                               }
+                               effect = {
+        cavalry = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+        infantry = {
+                    attack = 0.5
+                    supply_consumption = 0.10
+        }
+        guard = {
+                 attack = 0.5
+                 supply_consumption = 0.10
+        }
+        engineer = {
+                    attack = 0.25
+                    supply_consumption = 0.05
+        }
+    }
+}
+#modern_troop_heirarchy
+modern_infantry_divisions = {
+                             limit = { modern_troop_heirarchy = 1 }
+                             chance = {
+                                       base = 2
+									   modifier = {
+									               factor = 2 
+												   cyber_integrated_training = 1 
+									   }
+									   modifier = {
+									               factor = 2 
+												   modern_political_negotiations = 1 
+									   }
+									   modifier = {
+									               battlespace_digitisation = 1 
+									   }
+                             }
+                             effect = {
+        cavalry = {
+                    attack = 1
+                    defence = 1
+                    supply_consumption = 0.20
+        }
+        infantry = {
+                    attack = 1
+                    defence = 1
+                    supply_consumption = 0.20
+        }
+        guard = {
+                 attack = 1
+                 defence = 1
+                 supply_consumption = 0.20
+        }
+        engineer = {
+                    attack = 0.5
+                    defence = 0.5
+                    supply_consumption = 0.10
+        }
+     }
+}
+modern_infantry_logistics = {
+                             limit = { modern_troop_heirarchy =1 }
+                             chance = {
+                                       base = 4
+									   modifier = {
+									               factor = 2 
+									               modern_institutional_economics = 1 
+									   }
+									   modifier = {
+									               factor = 2 
+												   renewable_energy = 1 
+									   }
+									   modifier = {
+									               factor = 2 
+												   battlespace_digitisation = 1 
+									   }
+                             }
+                             effect = {
+        cavalry = {
+                    supply_consumption = -0.20
+        }
+        infantry = {
+                    supply_consumption = -0.20
+        }
+        guard = {
+                 supply_consumption = -0.20
+        }
+        engineer = {
+                    supply_consumption = -0.10
+        }
+    }
+}
+#pre_war_heavy_armament
+gun_field_artillery = {
+                       limit = { pre_war_heavy_arms = 1 }
+                       chance = {
+                                 base = 4
+								 modifier = {
+								             factor = 2
+											 organised_factories = 1 
+								 }
+								 modifier = {
+								             factor = 2 
+											 invention = industrialised_armament_industry
+								 }											 
+                       }
+                       effect = {
+                                 artillery = {
+                                              attack = 0.25
+                                              defence = 0.25
+                                              support = 0.25
+                                              supply_consumption = 0.10
+                                 }
+                       }
+}
+howitzer = {
+            limit = { pre_war_heavy_arms = 1 }
+            chance = {
+                      base = 2
+					  modifier = {
+					              factor = 2 
+								  invention = gun_field_artillery
+					  }
+					  modifier = {
+					              factor = 2 
+								  organised_factories = 1 
+					  }
+					  modifier = {
+					              factor = 2 
+								  invention = industrialised_armament_industry
+					  }
+            }
+            effect = {
+                      artillery = {
+                                   attack = 0.25
+                                   defence = 0.25
+                                   support = 0.25
+                                   supply_consumption = 0.10
+                      }
+            }
+}
+mortar = {
+          limit = { pre_war_heavy_arms = 1 }
+          chance = {
+                    base = 2
+					modifier = {
+					            factor = 2 
+								invention = trench_system
+					}
+					modifier = {
+					            factor = 2 
+								organised_factories = 1 
+					}
+					modifier = {
+					            factor = 2 
+								invention = industrialised_armament_industry
+					}					
+          }
+          effect = {
+                    artillery = {
+                                 siege = 1
+                                 supply_consumption = 0.05
+                    }
+          }
+}
+#great_war_heavy_armament
+self_propelled_gun_artillery = {
+                                limit = { great_war_heavy_arms = 1 }
+                                chance = {
+                                          base = 2
+										  modifier = {
+										              factor = 2 
+													  invention = gun_field_artillery
+										  }
+										  modifier = {
+										              factor = 2 
+													  invention = mounted_heavy_machine_gun
+										  }
+                                }
+                                effect = {
+                                          artillery = {
+                                                       attack = 0.25
+                                                       defence = 0.25
+                                                       support = 0.25
+                                                       supply_consumption = 0.10
+                                          }
+                                          tank = {
+                                                  attack = 1
+                                                  defence = 1
+                                                  supply_consumption = 0.20
+                                          }
+                                }
+}
+creeping_barrage = {
+                    limit = { great_war_heavy_arms = 1 }
+                    chance = {
+                              base = 2
+							  modifier = {
+							              factor = 2 
+										  invention = trench_system
+							  }
+							  modifier = {
+							              factor = 2 
+										  invention = great_war_tactical_training
+							  }
+                    }
+                    effect = {
+                              artillery = {
+                                           attack = 0.25
+                                           defence = 0.25
+                                           support = 0.25
+                                           supply_consumption = 0.10
+                              }
+                    }
+}
+mounted_heavy_machine_gun = {
+                     limit = { great_war_heavy_arms = 1 }
+                     chance = {
+                               base = 4
+							   modifier = {
+							               factor = 2 
+										   invention = portable_machine_guns
+							   }
+							   modifier = {
+							               factor = 2
+										   invention = self_propelled_gun_artillery
+							   }
+                     }
+                     effect = {
+                               tank = {
+                                       attack = 0.5
+                                       defence = 0.5
+                                       supply_consumption = 0.10
+                               }
+                               plane = {
+                                        attack = 0.25
+                                        defence = 0.25
+                                        supply_consumption = 0.10
+                               }
+                               cavalry = {
+                                          attack = 0.50
+                                          defence = 0.50
+                                          supply_consumption = 0.10
+                               }
+                     }
+}
+#rocket_artillery
+concentrated_fire = {
+                              limit = { rocket_artillery = 1 }
+                              chance = {
+                                        base = 4
+										modifier = {
+										            factor = 2 
+													combined_arms = 1 
+										}
+										modifier = {
+										            factor = 2 
+													invention = casemate
+										}
+                              }
+                              effect = {
+                                        artillery = {
+                                                     attack = 0.25
+                                                     defence = 0.25
+                                                     support = 0.25
+                                                     supply_consumption = 0.10
+                                        }
+                                        hussar = {
+                                                  attack = 0.25
+                                                  defence = 0.25
+                                                  support = 0.25
+                                                  supply_consumption = 0.10
+                                        }
+                                        tank = {
+                                                attack = 0.50
+                                                defence = 0.50
+                                                supply_consumption = 0.10
+                                        }
+                              }
+}
+fire_for_effect = {
+                   limit = { rocket_artillery = 1 }
+                   chance = {
+                             base = 4
+							 modifier = {
+							             factor = 2 
+										 behaviorism = 1 
+							 }
+							 modifier = {
+							             factor = 2 
+										 combined_arms = 1 
+							 }
+                   }
+                   effect = {
+                             artillery = {
+                                          attack = 0.25
+                                          defence = 0.25
+                                          support = 0.25
+                                          supply_consumption = 0.10
+                             }
+                             hussar = {
+                                       attack = 0.25
+                                       defence = 0.25
+                                       support = 0.25
+                                       supply_consumption = 0.10
+                             }
+                             tank = {
+                                     attack = 0.50
+                                     defence = 0.50
+                                     supply_consumption = 0.10
+                             }
+                   }
+}
+#redesigned_heavy_ordnance
+revamped_light_howitzer = {
+                           limit = { redesigned_heavy_ordnance = 1 }
+                           chance = {
+                                     base = 4
+									 modifier = {
+									             factor = 2 
+												 overhauled_military_education = 1 
+									 }
+									 modifier = {
+									             factor = 2 
+												 invention = blitzkrieg
+									 }												             
+                           }
+                           effect = {
+                                     artillery = {
+                                                  attack = 0.25
+                                                  defence = 0.25
+                                                  support = 0.25
+                                                  supply_consumption = 0.10
+                                     }
+                                     hussar = {
+                                               attack = 0.25
+                                               defence = 0.25
+                                               support = 0.25
+                                               supply_consumption = 0.10
+                                     }
+                                     tank = {
+                                             attack = 0.5
+                                             defence = 0.5
+                                             supply_consumption = 0.10
+                                     }
+                           }
+}
+revamped_heavy_howitzer = {
+                           limit = { redesigned_heavy_ordnance = 1 }
+                           chance = {
+                                     base = 4
+									 modifier = {
+									             factor = 2 
+												 overhauled_military_education = 1 
+									 }
+									 modifier = {
+									             factor = 2 
+												 invention = blitzkrieg
+									 }
+                           }
+                           effect = {
+                                     artillery = {
+                                                  attack = 0.25
+                                                  defence = 0.25
+                                                  support = 0.25
+                                                  supply_consumption = 0.10
+                                     }
+                                     hussar = {
+                                               attack = 0.25
+                                               defence = 0.25
+                                               support = 0.25
+                                               supply_consumption = 0.10
+                                     }
+                                     tank = {
+                                             attack = 0.25
+                                             defence = 0.25
+                                             support = 0.25
+                                             supply_consumption = 0.10
+                                     }
+                           }
+}
+#modern_heavy_armament
+modern_armoured_systems = {
+                      limit = { modern_heavy_armament = 1 }
+                      chance = {
+                                base = 4
+								modifier = {
+								            factor = 2 
+											modern_military_management = 1 
+							    }
+								modifier = {
+								            factor = 2 
+											fire_support_base = 1
+								}
+                      }
+                      effect = {
+                                tank = {
+                                        attack = 1
+                                        defence = 1
+                                        maximum_speed = 1                                      
+                                        supply_consumption = 0.20
+                                }
+                                cavalry = {
+                                           attack = 1
+                                           defence = 1
+                                           maximum_speed = 1
+                                           supply_consumption = 0.20
+                                }
+                      }
+}
+modern_artillery_land_system = {
+                                limit = { modern_heavy_armament = 1 }
+                                chance = {
+                                          base = 4
+										  modifier = {
+										              factor = 2 
+													  modern_military_management = 1 
+										  }
+										  modifier = {
+										              factor = 2 
+													  fire_support_base = 1 
+										  }
+                                }
+                                effect = {
+                                          artillery = {
+                                                       attack = 0.50
+                                                       defence = 0.50
+                                                       support = 0.50
+                                                       supply_consumption = 0.20
+                                          }
+                                          hussar = {
+                                                    attack = 0.50
+                                                    defence = 0.50
+                                                    support = 0.50
+                                                    supply_consumption = 0.20
+                                          }
+                                }
+}
+#heavy_armament_cyber_integration
+satellite_assisted_coordinates = {
+                                   limit = { heavy_arms_cyber_integration = 1 }
+                                   chance = {
+                                             base = 2
+											 modifier = {
+											             factor = 4 
+														 invention = global_positioning_system
+											 }
+											 modifier = {
+											             factor = 2 
+														 invention = modern_electronic_conduct
+											 }
+                                   }
+                                   effect = {
+                                             artillery = {
+                                                          attack = 0.25
+                                                          defence = 0.25
+                                                          support = 0.25
+                                                          supply_consumption = 0.10
+                                             }
+                                             hussar = {
+                                                       attack = 0.25
+                                                       defence = 0.25
+                                                       support = 0.25
+                                                       supply_consumption = 0.10
+                                             }
+                                             tank = {
+                                                     attack = 0.25
+                                                     defence = 0.25
+                                                     supply_consumption = 0.10
+                                             }
+                                             irregular = {
+                                                          attack = 0.25
+                                                          defence = 0.25
+                                                          support = 0.25
+                                                          supply_consumption = 0.10
+                                             }
+                                             cuirassier = {
+                                                           attack = 0.25
+                                                           defence = 0.25
+                                                           support = 0.25
+                                                           supply_consumption = 0.10
+                                             }
+                                   }
+}
+computerised_targeting_system = {
+                                      limit = { heavy_arms_cyber_integration = 1 }
+                                      chance = {
+                                                base = 2
+												modifier = {
+												            factor = 2
+															computational_logic = 1 
+												}
+												modifier = {
+												            factor = 2 
+															invention = cyber_integrated_approach
+												}
+												modifier = {
+												            factor = 2 
+															invention = modern_electronic_conduct
+												}															
+                                      }
+                                      effect = {
+                                                tank = {
+                                                        attack = 0.50
+                                                        defence = 0.50
+                                                        supply_consumption = 0.10
+                                                }
+                                                hussar = {
+                                                          attack = 0.25
+                                                          defence = 0.25
+                                                          support = 0.25
+                                                          supply_consumption = 0.10
+                                                }
+                                                irregular = {
+                                                             attack = 0.25
+                                                             defence = 0.25
+                                                             supply_consumption = 0.10
+                                                }
+                                                cuirassier = {
+                                                              attack = 0.25
+                                                              defence = 0.25
+                                                              supply_consumption = 0.10
+                                                }           
+                                      }
+}
+#chemical_arsenal
+gas_mask = {
+            limit = { chemical_arsenal = 1 }
+            chance = {
+                      base = 2
+					  modifier = {
+					              factor = 2 
+								  synthetic_polymers = 1 
+					  }
+					  modifier = { 
+					              factor = 2
+								  invention = tear_gas
+					  }
+					  modifier = { 
+					              factor = 2 
+								  invention = phosgene
+				      }
+					  modifier = {
+					              factor = 4 
+								  war = yes
+								  war_countries = { chemical_arsenal = 1 }
+				      }								  								  
+            }
+            effect = {
+                      gas_defence = yes
+            }
+}
+phosgene = {
+            limit = { chemical_arsenal = 1 }
+            chance = {
+                      base = 2
+					  modifier = {
+					              factor = 2 
+								  combustion_engine = 1 
+					  }
+					  modifier = {
+					              factor = 2 
+								  pre_war_heavy_arms = 1 
+					  }
+					  modifier = {
+					              factor = 2 
+								  invention = trench_system
+					  }								  
+            }
+            effect = {
+                      factory_goods_output = { oil = 0.10 }
+                      factory_goods_output = { coal = 0.10 }
+                      factory_goods_output = { lumber = 0.05 }
+                      artillery = {
+                                   attack = 0.25
+                                   defence = 0.25
+                                   support = 0.25
+                                   supply_consumption = 0.10
+                      }
+            }
+}
+tear_gas = {
+            limit = { chemical_arsenal = 1 }
+            chance = { 
+                      base = 4
+					  modifier = {
+					              factor = 2 
+								  invention = trench_system
+					  }
+					  modifier = { 
+					              factor = 2 
+								  psychoanalysis = 1 
+					  }
+            }
+            effect = {
+                      infantry = {
+                                  attack = 0.25
+                                  defence = 0.25
+                                  supply_consumption = 0.05
+                      }
+                      guard = {
+                               attack = 0.25
+                               defence = 0.25
+                               supply_consumption = 0.05
+                      }
+            }
+}
+mustard_gas = {
+               limit = { chemical_arsenal = 1 }
+               chance = {
+                         base = 2
+						 modifier = {
+						             factor = 2 
+									 invention = advanced_extractive_metallurgy
+						 }
+						 modifier = {
+						             factor = 2 
+									 synthetic_polymers = 1 
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = phosgene
+						 }
+               }
+               effect = {
+                         factory_goods_output = { sulphur = 0.10 }
+                         artillery = {
+                                      attack = 0.50
+                                      defence = 0.50
+                                      support = 0.50
+                                      supply_consumption = 0.20
+                         }
+               }
+}
+#early_aeronautics
+air_fighter = {
+               limit = { early_aeronautics = 1 }
+               chance = {
+                         base = 4
+						 modifier = {
+						             factor = 2 
+									 invention = air_bomber
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = mounted_heavy_machine_gun
+						 }
+						 modifier = {
+						             factor = 2 
+									 combustion_engine = 1 
+						 }
+               }
+               effect = {
+                         plane = {
+                                  attack = 0.25
+                                  defence = 0.25
+                                  support = 0.25
+                                  supply_consumption = 0.10
+                         }
+               }
+}
+air_bomber = {
+              limit = { early_aeronautics = 1 }
+              chance = {
+                        base = 4
+						modifier = {
+						            factor = 2 
+									invention = air_fighter
+						}
+						modifier = {
+						            factor = 2 
+									invention = creeping_barrage
+						}
+						modifier = {
+						            factor = 2 
+									combustion_engine = 1 
+						}
+              }
+              effect = {
+                        plane = {
+                                 siege = 1
+                                 support = 0.25
+                                 supply_consumption = 0.15
+                        }
+              }
+}
+turboprop = {
+             limit = { early_aeronautics = 1 }
+             chance = {
+                       base = 2
+					   modifier = {
+					               factor = 2 
+								   combustion_engine = 1 
+					   }
+					   modifier = {
+					               factor = 2 
+								   rationalism = 1 
+					   }
+					   modifier = {
+					               factor = 4 
+								   war = yes 
+								   war_countries = { invention = turboprop }
+					   }
+             }
+             effect = {
+                       plane = {
+                                maneuver = 1
+                                maximum_speed = 1
+                       }
+			 }
+}
+dogfight_group_tactics = {
+                          limit = { early_aeronautics = 1 }
+                          chance = {
+                                    base = 2
+									modifier = {
+									            factor = 6
+												war = yes 
+												war_countries = { invention = dogfight_group_tactics }
+									}
+									modifier = {
+									            factor = 2
+                                                invention = turboprop
+								    }
+                          }
+                          effect = {
+                                    plane = {
+                                             attack = 0.25
+                                             defence = 0.25
+                                             maneuver = 1
+                                             support = 0.25
+                                             evasion = 0.10
+                                             supply_consumption = 0.20
+                                    }
+                          }
+}
+#radar
+radar_jammer = {
+                limit = { radar = 1 }
+                chance = {
+                          base = 4
+						  modifier = {
+						              factor = 4 
+									  war = yes
+									  war_countries = { invention = close_air_support }
+						  }
+						  modifier = {
+						              factor = 2 
+									  electrochemical_cell = 1 
+						  }
+                }
+                effect = {
+                          engineer = {
+                                      support = 0.25
+                                      supply_consumption = 0.05
+                          }
+                }
+}
+vehicular_radio_system = {
+                          limit = { radar = 1 }
+                          chance = {
+                                    base = 2
+									modifier = {
+									            factor = 4
+												combined_arms_maneuver = 1 
+								    }
+									modifier = {
+									            factor = 4
+												war = yes
+												war_countries =  { invention = vehicular_radio_system }
+									}
+									modifier = {
+									            factor = 2 
+												combined_arms = 1 
+									}
+                          }
+                          effect = {
+                                    plane = {
+                                             attack = 0.25
+                                             defence = 0.25
+                                             support = 0.25
+                                             supply_consumption = 0.10
+                                    }
+                                    tank = {
+                                            attack = 0.5
+                                            defence = 0.5
+                                            supply_consumption = 0.10
+                                    }
+                          }
+}
+#nuclear_weaponry
+critical_mass = {
+                 limit = { nuclear_weaponry = 1 }
+                 chance = {
+                           base = 2
+						   modifier = {
+						               factor = 2 
+									   social_determinism = 1 
+						   }
+						   modifier = {
+						               factor = 2 
+									   international_protocol = 1 
+						   }
+                 }
+                 effect = {
+                           factory_goods_output = { tropical_wood = 0.05 }
+                 }
+}
+fission_weaponry = {
+                 limit = { nuclear_weaponry = 1 }
+                 chance = {
+                           base = 2
+						   modifier = {
+						               factor = 2 
+									   invention = fusion_weaponry
+						   }
+						   modifier = {
+						               factor = 2 
+									   invention = critical_mass
+						   }									   
+                 }
+                 effect = {
+                           factory_goods_output = { tropical_wood = 0.025 }
+                 }
+}
+fusion_weaponry = {
+                 limit = { nuclear_weaponry = 1 }
+                 chance = {
+                           base = 4
+						   modifier = {
+						               factor = 2 
+									   invention = fusion_weaponry
+						   }
+						   modifier = {
+						               factor = 2 
+									   invention = critical_mass
+						  }
+                 }
+                 effect = {
+                           factory_goods_output = { tropical_wood = 0.025 }
+                 }
+}
+ballistic_missile_weaponry = {
+                 limit = { nuclear_weaponry = 1 }
+                 chance = {
+                           base = 2
+						   modifier = {
+						               factor = 2 
+									   computational_logic = 1 
+						   }
+						   modifier = {
+						               factor = 2 
+									   electronic_circuit = 1 
+						   }
+                 }
+                 effect = {
+                           factory_goods_output = { explosives = 0.05 }
+                 }
+}
+#advanced_aerodynamics
+jet_engine = {
+              limit = { advanced_aerodynamics = 1 }
+              chance = {
+                        base = 2
+						modifier = {
+						            factor = 4 
+									war = yes 
+									war_countries = { invention = jet_engine }
+						}
+						modifier = {
+						            factor = 2 
+									benchmarking = 1 
+						}
+              }
+              effect = {
+                        activate_unit = irregular
+              }
+}
+rotor_blades = {
+                limit = { advanced_aerodynamics = 1 }
+                         chance = {
+                                   base = 2
+								   modifier = {
+								               factor = 4 
+											   war = yes 
+											   war_countries = { invention = rotor_blades }
+								   }
+								   modifier = {
+								               factor = 2 
+											   invention = digital_physics
+								   }
+                         }
+                         effect = {
+                                   activate_unit = cuirassier
+                         }
+}
+integrated_missile_guidance_system = {
+                                      limit = { heavy_arms_cyber_integration = 1 }
+                                      chance = {
+                                                base = 4
+												modifier = {
+												            factor = 2 
+															invention = cyber_integrated_approach
+												}
+												modifier = {
+												            factor = 2 
+															invention = modern_telecommunication_system
+												}
+                                      }
+                                      effect = {
+                                                hussar = {
+                                                          attack = 0.25
+                                                          defence = 0.25
+                                                          support = 0.25
+                                                          supply_consumption = 0.10
+                                                }
+                                                irregular = {
+                                                             attack = 0.25
+                                                             defence = 0.25
+                                                             support = 0.25
+                                                             supply_consumption = 0.10
+                                                }
+                                                cuirassier = {
+                                                              attack = 0.25
+                                                              defence = 0.25
+                                                              support = 0.25
+                                                              supply_consumption = 0.10
+                                                }
+                                                navy_base = {
+                                                             attack = 5
+                                                             defence = 5
+                                                }        
+                                      }
+}
+#battlespace_digitisation
+modern_telecommunication_system = {
+                                     limit = { battlespace_digitisation = 1 }
+                                     chance = {
+                                               base = 4
+											   modifier = {
+											               factor = 2 
+														   semiconductor_device = 1 
+											   }
+											   modifier = {
+											               factor = 2 
+														   invention = modern_electronic_conduct
+											   }														   
+                                     }
+                                     effect = {
+                                               morale = 0.25
+                                               military_tactics = 0.25
+                                               army_base = {
+                                                            default_organisation = 5
+                                                            supply_consumption = 0.20
+                                                            maximum_speed = 1
+                                               }                
+                                     }
+}
+global_positioning_system = {
+                             limit = { battlespace_digitisation = 1 }
+                             chance = {
+                                       base = 2
+									   modifier = {
+									               factor = 2 
+									               invention = satellite
+									   }
+									   modifier = {
+									               factor = 2 
+												   neopragmatism = 1 
+									   }
+                             }
+                             effect = {
+                                       morale = 0.25
+                                       military_tactics = 0.25
+                                       army_base = {
+                                                    maximum_speed = 1
+                                                    default_organisation = 5
+                                                    supply_consumption = 0.20
+                                       }
+                                       navy_base = {
+                                                    maximum_speed = 1
+                                                    default_organisation = 5
+                                       }            
+                             }
+}

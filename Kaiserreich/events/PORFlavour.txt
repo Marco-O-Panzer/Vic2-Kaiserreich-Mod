@@ -1,0 +1,94 @@
+### The First Republic ###
+
+country_event = {
+       id = 40149
+       title = "The First Republic"
+       desc  = "POR-FIRST-REP"
+       picture = "portugese_parliament"
+       fire_only_once = yes
+
+       trigger = {
+	       tag = POR
+		NOT = {
+			year = 1926
+		}
+       }
+
+       option = {
+		name = "Hmm, proceed with caution"
+		add_country_modifier = {
+			name = volatile_republic
+		}
+	}
+}
+
+### Ditadura Nacional and Estado Novo ###
+
+country_event = {
+       id = 40150
+       title = "Ditadura Nacional and Estado Novo"
+       desc  = "POR-NOVO-DIT"
+       picture = "portugese_parliament" 
+       fire_only_once = yes
+
+		trigger = {
+			tag = POR
+			year = 1926     
+			months = 4                                  
+		}
+
+		option = {
+			name = "Let the fascists in!"	
+			government = fascist_dictatorship
+			
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+		
+			remove_country_modifier = volatile_republic
+		ai_chance = {
+			factor = 75
+		}
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+				ideology = {
+				value = fascist
+				factor = 0.30
+			}
+		} 
+       }       
+	   
+       option = {   
+			name = "We can resolve this democratically!"
+			
+		ai_chance = {
+			factor = 25
+		}
+
+				any_pop = {
+					limit = {
+						location = {
+							is_colonial = no
+						}
+					}
+						ideology = {
+						value = fascist
+						factor = 0.55
+					}
+
+			remove_country_modifier = volatile_republic
+
+			add_country_modifier = {
+				name = collapsing_republic
+				duration  = 2920
+			}
+		}
+	}
+}

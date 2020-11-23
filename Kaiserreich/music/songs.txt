@@ -1,0 +1,921 @@
+song = {
+	name = "jap2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = JAP }
+			}
+		}	
+	}
+
+song = {
+	name = "jap1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = JAP }
+			}
+		}	
+	}
+
+song = {
+	name = "motherganges.mp3"
+
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = IND }
+			}
+		}	
+	}
+
+song = {
+	name = "motherganges.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = BRJ }
+			}
+		}	
+	}
+
+song = {
+	name = "ceddindeden.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = TUR }
+			}
+		}	
+	}
+
+song = {
+	name = "ceddindeden_war.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = TUR }
+			}
+		}	
+	}
+
+song = {
+	name = "terranempire.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = TER }
+			}
+		}	
+	}
+
+song = {
+	name = "SPA.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = SPA }
+			}
+		}	
+	}
+
+song = {
+	name = "SPA.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = IBE }
+			}
+		}	
+	}
+
+song = {
+	name = "SPA.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = SPF }
+			}
+		}	
+	}
+
+song = {
+	name = "SWE.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = SWE }
+			}
+		}	
+	}
+
+song = {
+	name = "SWE.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = SCA }
+			}
+		}	
+	}
+
+song = {
+	name = "tropico_two.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = TRO }
+			}
+		}	
+	}
+
+song = {
+	name = "tropico.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = TRO }
+			}
+		}	
+	}
+
+song = {
+	name = "general1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "general7.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "general2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+
+song = {
+	name = "war1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "war2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "war3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "war4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			war = no
+			}
+		}	
+	}
+
+
+song = {
+	name = "general3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "general4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "general5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+song = {
+	name = "general6.mp3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			war = no
+			}
+		}	
+	}
+
+
+
+song = {
+	name = "frenchanthem.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRA}
+			}	
+		}
+	}
+
+song = {
+	name = "fra4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRA}
+			}	
+		}
+	}
+
+song = {
+	name = "fra4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRE}
+			}	
+		}
+	}
+
+
+song = {
+	name = "lavictoireestanous.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRA }
+		}
+	}	
+}
+
+song = {
+	name = "lorrainemarch.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRA }
+		}
+	}	
+}
+
+song = {
+	name = "lorrainemarch.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRE }
+		}
+	}	
+}
+
+song = {
+	name = "frenchanthem.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRE }
+		}	
+	}
+}
+
+song = {
+	name = "lavictoireestanous.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = FRE }
+		}
+	}	
+}
+
+song = {
+	name = "das_boot_tipperary.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = CAN }
+			}
+		}	
+	}
+
+song = {
+	name = "soldiersofthequeen.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = CAN }
+			}
+		}	
+	}
+
+song = {
+	name = "ColonelBogey.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = CAN }
+			}
+		}	
+	}
+
+song = {
+	name = "das_boot_tipperary.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AST }
+			}
+		}	
+	}
+
+song = {
+	name = "soldiersofthequeen.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AST }
+			}
+		}	
+	}
+
+song = {
+	name = "ColonelBogey.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AST }
+			}
+		}	
+	}
+
+song = {
+	name = "das_boot_tipperary.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = NZL }
+			}
+		}	
+	}
+
+song = {
+	name = "soldiersofthequeen.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = NZL }
+			}
+		}	
+	}
+
+song = {
+	name = "ColonelBogey.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = NZL }
+			}
+		}	
+	}
+	
+song = {
+	name = "das_boot_tipperary.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ENG }
+			}
+		}	
+	}
+
+song = {
+	name = "soldiersofthequeen.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ENG }
+			}
+		}	
+	}
+
+song = {
+	name = "ColonelBogey.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ENG }
+			}
+		}	
+	}
+
+song = {
+	name = "uk_hasbro_theme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ENG }
+			}
+		}	
+	}
+
+song = {
+	name = "oceaniatrack.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AST }
+			}
+		}	
+	}
+
+song = {
+	name = "oceaniatrack.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = NZL }
+			}
+		}	
+	}
+
+song = {
+	name = "CHItheme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = CHI }
+			}
+		}	
+	}
+
+
+song = {
+	name = "das_boot_tipperary.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = UOC }
+			}
+		}	
+	}
+
+song = {
+	name = "ColonelBogey.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = UOC }
+			}
+		}	
+	}
+
+song = {
+	name = "soldiersofthequeen.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = UOC }
+			}
+		}	
+	}
+
+song = {
+	name = "uk_hasbro_theme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = UOC }
+			}
+		}	
+	}
+
+song = {
+	name = "ITAMain.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ITA }
+			}
+		}	
+	}
+
+song = {
+	name = "ita2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ITA }
+			}
+		}	
+	}
+
+song = {
+	name = "ita2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ROE }
+			}
+		}	
+	}
+
+song = {
+	name = "ITAMain.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = ROE }
+			}
+		}	
+	}
+
+song = {
+	name = "usa_hasbro_theme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = USA }
+			}
+		}	
+	}
+
+song = {
+	name = "dixie.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = USA }
+			}
+		}	
+	}
+
+song = {
+	name = "usmc_hymn.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = USA }
+			}
+		}	
+	}
+
+song = {
+	name = "yellow_rose_texas.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = USA }
+			}
+		}	
+	}
+
+song = {
+	name = "thecoronation_titletheme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+
+song = {
+	name = "ger1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+song = {
+	name = "ger2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+song = {
+	name = "ger3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+song = {
+	name = "ger4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+song = {
+	name = "ger5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = GER }
+			}
+		}	
+	}
+
+song = {
+	name = "thecoronation_titletheme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+
+song = {
+	name = "ger1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+song = {
+	name = "ger2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+song = {
+	name = "ger3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+song = {
+	name = "ger4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+song = {
+	name = "ger5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = KUK }
+			}
+		}	
+	}
+
+song = {
+	name = "thecoronation_titletheme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+
+song = {
+	name = "ger1.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+song = {
+	name = "ger2.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+song = {
+	name = "ger3.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+song = {
+	name = "ger4.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+song = {
+	name = "ger5.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = AUS }
+			}
+		}	
+	}
+
+song = {
+	name = "sacredwar.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = RUS }
+			}
+		}	
+	}
+
+song = {
+	name = "apprenticetheme.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = RUS }
+			}
+		}	
+	}
+
+song = {
+	name = "russianrevolution.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = RUS }
+			}
+		}	
+	}
+
+song = {
+	name = "redalert.mp3"
+	
+	chance = {
+		modifier = {
+			factor = -1
+			NOT = { tag = RUS }
+			}
+		}	
+	}

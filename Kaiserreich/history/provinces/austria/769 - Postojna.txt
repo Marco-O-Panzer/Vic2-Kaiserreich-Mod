@@ -1,0 +1,10 @@
+owner = KUK
+controller = KUK
+add_core = KUK
+add_core = AUS
+add_core = SLO
+add_core = ITA
+trade_goods = grain
+life_rating = 35
+1861.1.1 = { railroad = 2 }
+

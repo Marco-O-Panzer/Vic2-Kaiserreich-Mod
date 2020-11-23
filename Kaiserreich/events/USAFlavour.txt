@@ -1,0 +1,251 @@
+### USA Background ###
+
+country_event = {
+       fire_only_once = yes
+       id = 41003
+       title = "The United States of America Today."
+       desc = "Our entrance in 1917 did little to stem the stunning German advance that year. However, although defeated, the American people remain resolute, free and unhindered by this short intervention in Europe."
+
+       trigger = {
+               tag = USA
+		NOT = {
+			year = 1929
+		}
+       }
+
+       option = {
+              name = "The American people remain proud."
+       }
+	option = {
+		name = "The American people remain proud."
+		set_country_flag = fdr_dead
+	}
+}
+
+### Dutch Harbour Naval Base ###
+
+country_event = {
+       fire_only_once = yes
+       id = 40139
+       title = "Dutch Harbour Naval Base"
+       desc = "DUTCH-HARBOUR-DESC"
+	   picture = "dutch_harbour"
+
+       trigger = {
+               tag = USA
+			   NOT = { has_global_flag = dutch_harbour_built }
+			   year = 1938
+			   4 = {
+					naval_base = 2
+					fort = 1
+				}
+       }
+
+       option = {
+			name = "Come and get some, Tojo!"
+			set_global_flag = dutch_harbour_built
+			prestige = 5
+			relation = {
+				who = JAP
+				value = -10
+			}
+       }
+}
+
+### The Roaring Twenties ###
+
+country_event = {
+       id = 40016
+       title = "The Roaring Twenties"
+       major = yes
+       fire_only_once = yes
+       desc = "The end of the war has caused a mass exedous from Europe to America and our economy couldn't be better. New GDP figures show an era of exponential growth, welcome to the roaring twenties!"
+
+       trigger = {
+               tag = USA
+               month = 4
+		NOT = {
+			year = 1929
+		}
+       }
+
+       option = {
+              name = "An infinite era of growth!"
+	      prestige = 5
+	      set_global_flag = roaring_twenties	      
+       }
+}
+
+### Wall Street Crash ###
+
+country_event = {
+       id = 40021
+       title = "EVTNAME2903"
+       desc = "EVTDESC2903"
+       fire_only_once = yes
+       major = yes
+
+       trigger = {
+               tag = USA
+	       year = 1929
+               month = 10
+       }
+
+       option = {
+              name = "Blame the bankers!"
+	      clr_global_flag = roaring_twenties
+	      set_global_flag = great_depression	
+	      add_country_modifier = {
+		name = "gd_global"
+		duration = -1
+		}
+	      remove_country_modifier = boom_times
+		}
+}
+
+### Empire State Building ###
+
+country_event = {
+       id = 40020
+       title = "The Empire State Building"
+       picture = "empire_state"
+       fire_only_once = yes
+       desc = "USA-EMPIRE-STATE"
+
+       trigger = {
+               tag = USA
+               year = 1931
+       }
+
+       option = {
+              name = "Long live the city of Liberty!"
+	      prestige = 10
+	      add_country_modifier = {
+			name = empire_state
+			duration = 3650
+		}                    
+	      THIS = {immigrant_attraction = 0.5}
+	      
+       }
+}
+
+### USA Franklin Delano Roosevelt ###
+
+country_event = {
+       id = 40079
+       title = "Franklin Delano Roosevelt"
+       picture = "roosevelt"
+       fire_only_once = yes
+       desc = "EVTDESC2921"
+
+       trigger = {
+               tag = USA
+               year = 1933
+	       NOT = {year = 1946}
+	       ruling_party_ideology = conservative
+	       has_global_flag = great_depression
+		NOT = {
+			has_country_flag = fdr_dead
+		}
+       }
+
+       option = {
+              name = "Action! ... and action now!"
+	      set_global_flag = fdr
+	      prestige = 10
+       }
+}
+
+### USA End of The Great Depression ###
+
+country_event = {
+       id = 40085
+       title = "The Great Depression is Over"
+       major = yes
+       fire_only_once = yes
+       desc = "The Great Depression has finally come to an end, and there are brighter days ahead for the American economy to grow and prosper. These were dark times indeed."
+
+       trigger = {
+               tag = USA
+	       year = 1944
+	       has_global_flag = great_depression
+       }
+
+       option = {
+              name = "This must not happen again."
+	      prestige = 5
+	      clr_global_flag = fdr
+	      clr_global_flag = great_depression
+	      remove_country_modifier = new_deal
+	      remove_country_modifier = gd_global	      
+       }
+}
+
+### USA Elvis Presley ###
+
+country_event = {
+       id = 40096
+       title = "Elvis Presley"
+       picture = "elvis"
+       fire_only_once = yes
+       desc = "EVTDESC2926"
+
+       trigger = {
+               tag = USA
+	       year = 1953
+	       punk_music = 1
+	       NOT = { has_country_flag = had_elvis }
+
+       }
+
+       option = {
+              name = "You aint' nothing but a hound dog!"
+	      prestige = 10
+	      set_country_flag = had_elvis	      
+       }
+}
+
+### Revolution in Cuba! ###
+
+country_event = {
+       id = 40121
+       title = "Revolution in Cuba!"
+       picture = "castro"
+       fire_only_once = yes
+       desc = "EVTDESC2936"
+
+       trigger = { 
+	       tag = USA
+	       has_global_flag = castro_in
+	       NOT = { has_country_flag = castro_usa }	      
+       }
+
+       option = {
+              name = "American imperialism?! Never." 
+	      prestige = -5
+	      set_country_flag = castro_usa     
+	      ai_chance = {
+		factor = 10
+		}
+       } 
+       option = {
+              name = "Why that little... get him!"
+	      badboy = 15
+	      set_country_flag = castro_usa  
+	      ai_chance = {
+		factor = 90
+		}
+	      war = {
+		name = "American-Cuban War"
+		target = CUB
+		attacker_goal = {
+			casus_belli = make_puppet
+			}
+		defender_goal = {
+			casus_belli = status_quo
+			}
+		} 
+       }
+}
+
+

@@ -1,0 +1,48 @@
+clipper_transport = {
+	icon = 6
+	naval_icon = 3
+	
+	type = naval
+	sprite = Steam_Transport
+	unit_type = transport
+	active = yes
+	transport = yes
+	move_sound = steam_move
+	select_sound = steam_selected
+	floating_flag = yes
+
+	#Core Abilities
+	priority = 20
+	max_strength = 100
+	default_organisation = 5
+	maximum_speed = 10
+	weighted_value = 5.0
+
+	#Building Costs
+	build_time = 120
+	build_cost = {
+		steamer_convoy = 0.5
+		artillery = 0.2
+		fuel = 0.1
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		steamer_convoy = 0.05
+		fuel = 0.01
+		coal = 0.5
+		
+	}
+	
+
+	#Naval Abilties
+	hull = 10
+	gun_power = 8
+	can_build_overseas = yes
+	fire_range = 0.35
+	evasion = 0.15
+	min_port_level = 1
+	limit_per_port = -1
+	supply_consumption_score = 3
+}
+

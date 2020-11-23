@@ -1,0 +1,8 @@
+owner = KDW
+controller = KDW
+add_core = RUS
+add_core = BYE
+railroad = 2
+add_core = PLC
+trade_goods = cattle
+life_rating = 35

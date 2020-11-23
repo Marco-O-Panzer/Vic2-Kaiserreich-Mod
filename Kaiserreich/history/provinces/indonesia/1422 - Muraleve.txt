@@ -1,0 +1,6 @@
+owner = NET
+controller = NET
+add_core = IDS
+colonial = 2
+trade_goods = grain
+life_rating = 15

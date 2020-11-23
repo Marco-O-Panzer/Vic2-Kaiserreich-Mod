@@ -1,0 +1,6 @@
+owner = NET
+controller = NET
+add_core = ATJ
+add_core = IDS
+trade_goods = tea
+life_rating = 30

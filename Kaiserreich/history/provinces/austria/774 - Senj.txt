@@ -1,0 +1,11 @@
+owner = KUK
+controller = KUK
+add_core = KUK
+add_core = CRO
+add_core = HUN
+add_core = YUG
+trade_goods = iron
+life_rating = 35
+1861.1.1 = { 
+	naval_base = 2
+}

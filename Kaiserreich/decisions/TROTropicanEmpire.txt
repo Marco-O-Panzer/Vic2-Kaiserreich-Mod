@@ -1,0 +1,64 @@
+political_decisions = {
+        imperial_tropico = {
+		picture = "tropico_empire"
+		fire_only_once = yes
+
+                potential = {
+			tag = TRO
+			NOT = { has_country_flag = imperial_tropico }
+		}
+
+                allow = {
+			prestige = 50
+                	}
+
+          effect = {
+		2226 = {
+		    add_core = TRO
+		}
+		2222 = {
+		    add_core = TRO
+		}
+		2236 = {
+		    add_core = TRO
+		}
+		2227 = {
+		    add_core = TRO
+		}
+		2225 = {
+		    add_core = TRO
+		}
+		2230 = {
+		    add_core = TRO
+		}
+		2232 = {
+		    add_core = TRO
+		}
+		2228 = {
+		    add_core = TRO
+		}
+		2231 = {
+		    add_core = TRO
+		}
+		2409 = {
+		    add_core = TRO
+		}
+		2229 = {
+		    add_core = TRO
+		}
+		2233 = {
+		    add_core = TRO
+		}
+		2238 = {
+		    add_core = TRO
+		}
+		2237 = {
+		    add_core = TRO
+		}
+		
+	   	ai_will_do = {
+		factor = 1
+		}
+	}
+}
+}

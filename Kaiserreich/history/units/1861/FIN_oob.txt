@@ -1,0 +1,61 @@
+army = {
+	name = "Finnish National Guard"
+	location = 343
+	regiment = {
+		name= "1. Guards"
+		type = infantry
+		home = 343
+	}
+
+	regiment = {
+		name= "2. Guards"
+		type = infantry
+		home = 340
+	}
+
+	regiment = {
+		name= "3. Guards"
+		type = infantry
+		home = 344
+	}
+
+	regiment = {
+		name= "Northern Engineer Squad"
+		type = engineer
+		home = 338
+	}
+
+	regiment = {
+		name= "1. Guards"
+		type = infantry
+		home = 337
+	}
+
+	regiment = {
+		name= "4. Guards"
+		type = infantry
+		home = 339
+	}
+
+	regiment = {
+		name= "1. Helsinki Artillery"
+		type = artillery
+		home = 343
+	}
+
+	regiment = {
+		name= "Turku Republic Engineers"
+		type = engineer
+		home = 345
+	}
+}
+
+navy= {
+	name = "Civil Defence Fleet"
+	location = 343
+	ship = {
+		name= "O' Finland"
+		type = cruiser
+		home = 345
+	}
+}

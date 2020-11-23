@@ -1,0 +1,6 @@
+owner = NET
+controller = NET
+trade_goods = oil
+add_core = IDS
+life_rating = 30
+colonial = 2

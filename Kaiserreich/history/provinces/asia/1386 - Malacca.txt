@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+add_core = JOH
+trade_goods = rubber
+life_rating = 30
+colonial = 2

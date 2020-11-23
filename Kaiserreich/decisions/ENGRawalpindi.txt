@@ -1,0 +1,24 @@
+political_decisions = {
+        rawalpindi_treaty = {
+		picture = "rawalpindi"
+
+                potential = {
+			tag = ENG
+			NOT = { has_country_flag = rawalpindi_signed }
+			}
+
+                allow = {
+			war = no
+                	}
+
+				effect = {
+					prestige = 2.5
+					AFG = {
+						prestige = -2.5
+					}
+					set_country_flag = rawalpindi_signed
+					release_vassal = AFG
+					
+				}
+		}
+}

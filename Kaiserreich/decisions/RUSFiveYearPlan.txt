@@ -1,0 +1,33 @@
+political_decisions = {
+        five_year_plan = {
+		picture = "five_year_plan"
+
+                potential = {
+			NOT = {year = 1940}	
+			NOT = {has_global_flag = five_year_plans}
+			ruling_party_ideology = communist	
+			tag = RUS
+		}
+                allow = {
+			ruling_party_ideology = communist
+			money = 750000
+                }
+          effect = {
+		money = -750000
+		prestige = 10
+		any_pops = {
+		   militancy = 3
+		}
+		set_global_flag = five_year_plans
+		add_country_modifier = {
+			name = five_year_plan
+			duration = 3650
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+	}
+}

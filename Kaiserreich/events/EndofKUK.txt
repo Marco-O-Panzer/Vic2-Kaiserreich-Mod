@@ -1,0 +1,115 @@
+### Austrian Empire Proclaimed! ###
+
+country_event = {
+       id = 401920
+       title = "End of Austria-Hungary"
+       desc  = "Looks like we got a bit too nasty towards the minorities of the empire. As such, our lovely empire is falling apart."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+		OR = {
+	       		has_global_flag = stfu_hun
+			has_global_flag = aus_no_reform_three
+		}
+       }
+
+       option = {
+		name = "Damn, I thought the Habsburg Empire would make it to 2000."
+		set_global_flag = no_more_kuk
+		change_tag = AUS
+		inherit = SLD
+		release = BOH
+		release = SLO
+		release = BOS
+		release = MON
+		release = RUT
+		release = KRA
+		release = CRO
+		release = VEN
+		release = TRE
+		release_vassal = HUN
+		2584 = {
+			secede_province = KRA
+		}
+		704 = {
+			secede_province = KRA
+		}
+		714 = {
+			secede_province = KRA
+		}
+		705 = {
+			secede_province = KRA
+		}
+		KUK = {
+			all_core = {
+				remove_core = KUK
+			}
+		}
+		AUS = {
+			all_core = {
+				limit = {
+					NOT = {
+						owned_by = AUS
+					}
+				}
+				remove_core = AUS
+			}
+		}
+		HUN = {
+			release = SLV
+			release = SIE
+			release = RUT
+			release = SER
+		}
+       }
+}
+
+### No Reform KUK ###
+
+country_event = {
+	id = 401921
+       title = "Hungarians Upset About Lack of Reforms"
+       desc  = "The Hungarian consulate has informed us that the Hungarians are getting very unhappy about the lack of reforms. He suggests that we try to remedy this."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       	has_global_flag = aus_no_reform
+       }
+
+       option = {
+		name = "He has a point."
+		set_global_flag = kuk_take_two
+       }
+	option = {
+		name = "To hell with that idea, they'll never make us change our stance."
+		set_global_flag = aus_no_reform_two
+	}
+}
+
+### No Reform KUK ###
+
+country_event = {
+	id = 401922
+       title = "The Proposal"
+       desc  = "A group of people from various parts of the empire have come to us with an idea. Their idea is that the empire should be federalized in hopes of preserving the empire."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       	has_global_flag = aus_no_reform
+       }
+
+       option = {
+		name = "Do we have any more unused knighthoods?"
+		set_global_flag = vso_planned
+       }
+	option = {
+		name = "To hell with that idea, they'll never make us change our stance."
+		set_global_flag = aus_no_reform_three
+	}
+}

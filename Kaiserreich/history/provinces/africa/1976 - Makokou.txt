@@ -1,0 +1,4 @@
+owner = MIA
+controller = MIA
+trade_goods = iron
+life_rating = 15

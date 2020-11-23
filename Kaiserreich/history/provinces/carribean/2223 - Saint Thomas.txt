@@ -1,0 +1,6 @@
+owner = TRO
+controller = TRO
+add_core = TRO
+naval_base = 1
+trade_goods = tobacco
+life_rating = 35

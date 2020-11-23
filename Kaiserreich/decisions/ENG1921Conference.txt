@@ -1,0 +1,24 @@
+political_decisions = {
+        imperial_conference_1921 = {
+		picture = "imperial_conference"
+		fire_only_once = yes
+                potential = {
+			year = 1921
+			tag = ENG
+			NOT = {
+			     has_global_flag = ENG_1921_conference
+			}
+		}
+
+                allow = {
+			month = 5
+                }
+          effect = {
+		prestige = 10
+		set_global_flag = ENG_1921_conference
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

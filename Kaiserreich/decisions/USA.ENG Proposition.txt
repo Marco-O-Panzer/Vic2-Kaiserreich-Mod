@@ -1,0 +1,17 @@
+political_decisions = {
+        anglo_usa_treaty = {
+		picture = "british_lion"
+		fire_only_once = yes
+
+                potential = {
+			tag = USA
+			year = 9000
+		}
+
+                allow = {
+
+                }
+          effect = {
+
+	}
+}

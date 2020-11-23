@@ -1,0 +1,96 @@
+political_decisions = {
+
+        restore_britannia = {
+		picture = "roman_britain"
+
+                potential = {
+			NOT = { has_country_flag = restore_britannia }
+			tag = ROE
+			300 = { owner = ENG }	
+			owns = 1748
+			}
+		}
+
+                allow = {
+			is_greater_power = yes
+			war = no
+                }
+
+          effect = {
+		prestige = 5
+		badboy = 15
+		set_country_flag = restore_britannia
+		301 = { add_core = ROE }
+		302 = { add_core = ROE }
+		300 = { add_core = ROE }
+		294 = { add_core = ROE }
+		303 = { add_core = ROE }
+		297 = { add_core = ROE }
+		296 = { add_core = ROE }
+		398 = { add_core = ROE }
+		299 = { add_core = ROE }
+		295 = { add_core = ROE }
+		291 = { add_core = ROE }
+		293 = { add_core = ROE }
+		292 = { add_core = ROE }
+		290 = { add_core = ROE }
+		289 = { add_core = ROE }
+		287 = { add_core = ROE }
+		286 = { add_core = ROE }
+		284 = { add_core = ROE }
+		288 = { add_core = ROE }
+		273 = { add_core = ROE }
+		275 = { add_core = ROE }
+		276 = { add_core = ROE }
+		274 = { add_core = ROE }
+		285 = { add_core = ROE }
+		278 = { add_core = ROE }
+		277 = { add_core = ROE }
+		279 = { add_core = ROE }
+		283 = { add_core = ROE }
+		282 = { add_core = ROE }
+		281 = { add_core = ROE }
+		280 = { add_core = ROE }
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+
+        legend_of_caesar = {
+		picture = "egypt"
+
+                potential = {
+			NOT = { has_country_flag = legend_of_caesar }
+			tag = ROE
+			1745 = { owner = EGY }	
+			}
+		}
+
+                allow = {
+			is_greater_power = yes
+			war = no
+                }
+
+          effect = {
+		prestige = 5
+		badboy = 10
+		set_country_flag = legend_of_caesar
+		war = {
+			name = "The Legend of Caeser"
+			target = EGY
+			attacker_goal = {
+				casus_belli = conquest
+				}
+			defender_goal = {
+				casus_belli = status_quo
+				country = ROE
+				}
+			}
+
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

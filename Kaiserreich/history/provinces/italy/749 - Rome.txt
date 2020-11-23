@@ -1,0 +1,25 @@
+owner = ITA
+controller = ITA
+add_core = PAP
+add_core = ITA
+trade_goods = fruit
+life_rating = 35
+state_building = {
+	level = 2
+	building = coal_power_station
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = steel_factory
+	upgrade = yes
+}
+state_building = {
+	level = 2
+	building = automobile_factory
+	upgrade = yes
+}
+1861.1.1 = {
+	add_core = ITA
+}
+1861.1.1 = { railroad = 2 }

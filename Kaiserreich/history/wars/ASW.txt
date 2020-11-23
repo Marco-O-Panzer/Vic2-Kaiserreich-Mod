@@ -1,0 +1,18 @@
+name = "The Austro-Slavic War"
+
+1935.6.30 = {
+	add_attacker = SLD
+	add_defender = KUK
+	
+	war_goal = {
+		casus_belli = annex_core_country
+		actor = KUK
+		receiver = SLD
+	}
+	war_goal = {
+		casus_belli = become_independent
+		actor = SLD
+		receiver = KUK
+	}
+
+}

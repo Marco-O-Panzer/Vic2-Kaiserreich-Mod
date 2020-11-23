@@ -1,0 +1,22 @@
+name = "Indian War of Independence"
+
+1940.6.21 = {
+	add_attacker = HND
+	add_defender = ENG
+	
+	war_goal = {
+		casus_belli = become_independent
+		actor = HND
+		receiver = ENG
+	}
+	war_goal = {
+		casus_belli = make_puppet
+		actor = ENG
+		receiver = HND
+	}
+
+}
+1946.1.1 = {
+	rem_attacker = HND
+	rem_defender = ENG
+}

@@ -1,0 +1,245 @@
+# IND (India) is HND (Hindustan, presumably)
+
+#### HND Ghandi ####
+
+country_event = {
+       id = 40042
+       title = "Mahatma Gandhi"
+       desc  = "BRJ-GAN-DESC"
+       picture = "ghandi"
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+       }
+
+       option = {
+              name = "Mmm... He might prove a problem in the future"
+	      prestige = 5
+	      add_country_modifier = {
+			name = the_raj
+			duration = 3650
+		}
+	      any_pops = {
+		militancy = 1
+		}
+       }
+}
+
+#### The Last Viceroy ####
+
+country_event = {
+       id = 40151
+       title = "The Last Viceroy"
+       desc  = "BRJ-LAST-VIC"
+       picture = "mountbatten"
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+	       year = 1947
+	       ruling_party_ideology = reactionary
+	       month = 1
+       }
+
+       option = {
+              name = "Interesting fellow!"
+	      prestige = 5
+       }
+}
+
+#### War Congress Dissolved ####
+
+country_event = {
+       id = 40153
+       title = "War Congress Dissolved"
+       desc  = "BRJ-CON-DIS"
+       picture = "ind_congress"
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+	       war = no
+	       has_country_flag india_has_spoken
+       }
+
+       option = {
+              name = "Pre-War Duties Await!"
+	      clr_country_flag = india_has_spoken
+       }
+}
+
+#### No Gradual Independence! ####
+
+country_event = {
+       id = 40155
+       title = "No Gradual Independence!"
+       desc  = "BRJ-1921-REJ"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+	       has_global_flag = conference_no_ind
+       }
+
+       option = {
+              name = "Those Fools!"
+	      prestige = -50
+	      add_country_modifier = {
+			name = ind_independence_refused
+			duration = -1
+		}
+       }
+} 
+
+#### Congress Votes For War! ####
+
+country_event = {
+       id = 40152
+       title = "Congress Votes For War!"
+       desc  = "BRJ-CON-ACT"
+       picture = "ind_congress"
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+	       year = 1925
+	       war = yes
+	       NOT = { has_country_flag india_has_spoken }
+       }
+
+       option = {
+              name = "The Empire Stands United!"
+	      set_country_flag = india_has_spoken
+	      prestige = 5
+       }
+}
+
+#### Congress Votes Against War! ####
+
+country_event = {
+       id = 40154                      
+       title = "Congress Votes Against War!"
+       desc  = "BRJ-CON-REJ"
+       picture = "ind_congress"
+       fire_only_once = yes
+
+       trigger = {
+               tag = BRJ
+	       year = 1925
+	       war = yes
+	       NOT = { has_country_flag india_has_spoken }
+	       ENG = {
+			badboy = 0.45
+		}
+       }
+
+       option = {
+              name = "To hell with the congress!"
+	      set_country_flag = india_has_spoken
+	      prestige = 5
+	      add_country_modifier = {
+			name = ind_congress_ignored
+			duration = 1095
+		}
+	      ai_chance = {
+		    factor = 65
+		}
+       }
+
+       option = {
+              name = "India has spoken!"
+	      set_country_flag = india_has_spoken
+	      prestige = -10
+	      ai_chance = {
+		    factor = 35
+		}
+	      relation = {
+		who = ENG
+		value = -25
+		}
+	      any_country = {
+		  limit = { war_with = THIS }
+		  end_war = THIS
+		}
+       }
+}
+
+#### HND Independence ####
+
+country_event = {
+       id = 40040
+       title = "Dissolving the Raj"
+       desc  = "The mother country, Britannia, is no longer in a position to support us, and thus it is time we established an Indian government in our place to avoid revolution."
+       fire_only_once = yes
+       major = yes
+
+       trigger = {
+               tag = BRJ
+	       OR = {
+	       	has_global_flag = ENG_end_empire
+		is_vassal = no
+		}
+       }
+       option = {
+              name = "We have little choice. We leave India."
+	      remove_country_modifier = ind_independence_refused
+	      set_global_flag = break_india
+	      change_tag = HND
+	      government = democracy
+	      political_reform = wealth_voting
+       }
+}
+
+#### Partition of HND ####
+
+country_event = {
+       id = 40041
+       title = "No Unified India?"
+       desc  = "In conjunction with the dissilution of the Raj, many muslims have started to clash with our army and calls for an independent islamic state are growing, while Ceylon also petitions for independence."
+       fire_only_once = yes
+
+       trigger = {
+               tag = HND
+	       has_global_flag = break_india
+	       OR = {
+		NOT = { exists = PAK }
+		NOT = { exists = SRI }
+		}
+       }
+
+       option = {
+              name = "Civil war will result in total collapse - let them go."
+	      release = PAK
+	      release = SRI
+	      release = BUR
+	      1322 = { remove_core = HND }
+	      1321 = { remove_core = HND }
+	      1323 = { remove_core = HND }
+	      1324 = { remove_core = HND }
+	      1222 = { remove_core = HND }
+	      1221 = { remove_core = HND }
+	      1222 = { remove_core = HND }
+	      1233 = { remove_core = HND }
+	      1234 = { remove_core = HND }
+	      1227 = { remove_core = HND }
+	      1229 = { remove_core = HND }
+	      1230 = { remove_core = HND }
+	      1233 = { remove_core = HND }
+	      1232 = { remove_core = HND }
+	      1227 = { remove_core = HND }
+	      1228 = { remove_core = HND }
+	      1231 = { remove_core = HND }
+	      1289 = { remove_core = HND }
+	      1290 = { remove_core = HND }
+	      1288 = { remove_core = HND }
+	      1251 = { remove_core = HND }
+	      1253 = { remove_core = HND }
+	      1255 = { remove_core = HND }
+	      1256 = { remove_core = HND }
+	      1254 = { remove_core = HND }
+	      1257 = { remove_core = HND }
+       }
+}
+

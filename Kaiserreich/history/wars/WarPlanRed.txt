@@ -1,0 +1,37 @@
+name = "War Plan Red"
+
+1920.12.31 = {
+	add_attacker = USA
+	add_defender = ENG
+	add_defender = BRJ
+	add_defender = CAN
+	add_defender = NZL
+	add_defender = AST
+	add_defender = SAF
+	add_defender = EGY
+	add_defender = NEW
+	
+	war_goal = {
+		casus_belli = conquest
+		actor = USA
+		receiver = CAN
+	}
+	war_goal = {
+		casus_belli = rude_boy
+		actor = ENG
+		receiver = USA
+	}
+
+}
+
+1920.12.31 = {
+	rem_attacker = USA
+	rem_defender = ENG
+	rem_defender = BRJ
+	rem_defender = CAN
+	rem_defender = NZL
+	rem_defender = AST
+	rem_defender = SAF
+	rem_defender = EGY
+	rem_defender = NEW
+}

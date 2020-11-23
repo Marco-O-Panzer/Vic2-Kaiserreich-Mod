@@ -1,0 +1,5 @@
+owner = AST
+controller = AST
+colonial = 2
+trade_goods = rubber
+life_rating = 15

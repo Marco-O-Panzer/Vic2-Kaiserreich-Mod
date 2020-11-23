@@ -1,0 +1,483 @@
+objectTypes = {
+	EMFXActorType = {
+		name = "PrussianGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.1
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GermanMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GermanMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GermanMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}	
+	}
+	
+	EMFXActorType = {
+		name = "AustriaHungaryGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.1
+		
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GermanMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GermanMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GermanMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}	
+	}
+	
+	EMFXActorType = {
+		name = "UsGCMech"
+		actorfile = "gfx\anims\UsMech.xac"
+		scale = 2.1
+		
+				
+		animation = {
+			name = "idle"
+			file = "gfx\anims\UsMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\UsMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\UsMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}	
+	}
+	
+	EMFXActorType = {
+		name = "ConfederateGCMech"
+		actorfile = "gfx\anims\UsMech.xac"
+		scale = 2.1
+		
+				
+		animation = {
+			name = "idle"
+			file = "gfx\anims\UsMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\UsMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\UsMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}	
+	}
+	
+	EMFXActorType = {
+		name = "GenericGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "BritishGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "FrenchGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "RussianGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "OttomanGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "SwedishGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "JapaneseGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "ItalianGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "ChineseGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "SpanishGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "AsianGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "IndianGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "AfricanGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "MiddleEasternGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "SouthAmericanGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+	
+	EMFXActorType = {
+		name = "EuropeanGCMech"
+		actorfile = "gfx\anims\GenericMech.xac"
+		scale = 2.15
+			
+		animation = {
+			name = "idle"
+			file = "gfx\anims\GenericMechIdle.xsm"
+			defaultAnimationTime = 0.0
+		}
+		
+		animation = {
+			name = "move"
+			file = "gfx\anims\GenericMechMove.xsm"
+			defaultAnimationTime = 2.0
+		}
+		
+		animation = {
+			name = "attack"
+			file = "gfx\anims\GenericMechAttack.xsm"
+			defaultAnimationTime = 0.0
+		}		
+	}
+}

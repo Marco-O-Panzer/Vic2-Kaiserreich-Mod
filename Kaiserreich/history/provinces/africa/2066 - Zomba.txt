@@ -1,0 +1,6 @@
+owner = POR
+controller = POR
+add_core = EOM
+trade_goods = tobacco
+colonial = 2
+life_rating = 15

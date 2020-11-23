@@ -1,0 +1,67 @@
+country_event = {
+       id = 40043
+       title = "War of Independence"
+       desc  = "We are tired of being ruled by some distant land that refuses to give us independence. It's time to fight."
+       fire_only_once = yes
+
+       trigger = {
+		year = 1940
+               tag = BRJ
+	       has_global_flag = conference_no_ind
+       }
+
+       option = {
+              name = "We're not gonna take it anymore."
+		set_global_flag = india_independence_war
+		government = presidential_dictatorship
+	      change_tag = HND
+		ENG = {
+			release_vassal = BRJ
+			release_vassal = HND
+		}
+		civilized = yes
+		war = {
+			name = "Indian War of Independence"
+			target = ENG
+			attacker_goal = {
+				casus_belli = become_independent
+			}
+		}
+       }
+}
+country_event = {
+	id = 40044
+	title = "Death of Gandhi"
+       desc  = "The father of our country has passed away. Because of that, there are three major groups vying for power. Which one should rule India?"
+       fire_only_once = yes
+
+       trigger = {
+		year = 1953
+               tag = HND
+		government = presidential_dictatorship
+	       NOT = {
+			has_country_flag = gandhi_dead
+			OR = {
+				government = proletarian_dictatorship
+				government = fascist_dictatorship
+				government = democracy
+			}
+		}
+       }
+
+       option = {
+              name = "Let's go with the liberal group."
+		set_global_flag = gandhi_dead
+		government = democracy
+       }
+	option = {
+              name = "Communism sounds fun."
+		set_global_flag = gandhi_dead
+		government = proletarian_dictatorship
+       }
+	option = {
+              name = "Screw the other two, fascism is the way to go."
+		set_global_flag = gandhi_dead
+		government = fascist_dictatorship
+       }
+}

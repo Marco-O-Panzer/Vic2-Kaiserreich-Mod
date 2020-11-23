@@ -1,0 +1,281 @@
+### CHI Background (Player)###
+
+country_event = {
+       id = 40068
+       title = "The Republic of China Today"
+       desc = "EVTDESC2915"
+       fire_only_once = yes
+
+       trigger = {
+		AND = {
+			ai = no
+			OR = {
+				tag = ZHI
+				tag = YNN
+				tag = GXI
+				tag = SXI
+				tag = IMN
+				tag = SZC
+				tag = HNN
+				tag = XBI
+				tag = TPG
+				tag = XIN
+			}
+		}
+		NOT = {
+			year = 1935
+		}
+       }
+
+       option = {
+              name = "I can see danger ahead..."
+       }
+}
+
+### CHI Background (AI)###
+
+country_event = {
+       id = 400069
+       title = "The Republic of China Today"
+       desc = "EVTDESC2915"
+       fire_only_once = yes
+
+       trigger = {
+		AND = {
+			ai = yes
+			OR = {
+				tag = ZHI
+				tag = YNN
+				tag = GXI
+				tag = SXI
+				tag = IMN
+				tag = SZC
+				tag = HNN
+				tag = XBI
+				tag = TPG
+				tag = XIN
+			}
+		}
+		NOT = {
+			year = 1935
+		}
+       }
+
+       option = {
+              	name = "I can see danger ahead..."
+		set_global_flag = china_ai_controll
+       }
+}
+
+### Mao Zedong ###
+
+country_event = {
+       id = 40091
+       title = "Mao Zedong"
+       desc = "A young communist revolutionary has been growing in prominence in recent months... It seems increasingly like the old order is going to come crashing down when swept away by the growing red tide."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = CHI
+	       year = 1927
+	       NOT = { has_global_flag = mao_zedong }
+       }
+
+       option = {
+              name = "Damned revolutionaries"
+	      set_global_flag = mao_zedong
+		any_pop = {
+			limit = {
+				location = {
+					is_colonial = no
+				}
+			}
+	      		ideology = {
+				value = communist
+				factor = 0.35
+			}
+		}
+	}
+}
+
+### End of Beiyang Government (Player) ###
+
+country_event = {
+       id = 40093
+       title = "China is reunited"
+       desc = "The Kuomintang has stormed Beijing. They declared that they are the true government of China and that all of the independent cliques are to swear an oath of loyalty to the Kuomintang or face dire consequences."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+		AND = {
+			ai = no
+			OR = {
+				tag = ZHI
+				tag = YNN
+				tag = GXI
+				tag = SXI
+				tag = IMN
+				tag = SZC
+				tag = HNN
+				tag = XBI
+				tag = TPG
+				tag = XIN
+			}
+		}
+		year = 1927
+		NOT = { has_global_flag = china_ai_controll }
+		NOT = { has_global_flag = small_china }
+       }
+
+       option = {
+           	name = "Is this a new era?"
+	      	set_global_flag = small_china
+		change_tag = CHI
+		IMN = {
+			all_core = {
+				remove_core = MGL
+				remove_core = IMN
+			}
+		}
+		MGL = {
+			all_core = {
+				remove_core = CHI
+			}
+		}
+		1469 = {
+			add_core = RUS
+			remove_core = MGL
+			remove_core = CHI
+		}
+		1593 = {
+			remove_core = CHI
+		}
+		CHI = {
+			inherit = ZHI
+			inherit = YNN
+			inherit = GXI
+			inherit = SXI
+			inherit = IMN
+			inherit = SZC
+			inherit = HNN
+			inherit = XBI
+			inherit = TPG
+			inherit = XIN
+			capital = 2221
+			primary_culture = beifaren
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = manchu
+			add_accepted_culture = hakka
+			add_accepted_culture = miao
+			add_accepted_culture = min
+			add_accepted_culture = zhuang
+			add_accepted_culture = yi
+			add_accepted_culture = yue
+			add_accepted_culture = mongol
+			add_accepted_culture = tibetan
+			add_accepted_culture = uighur
+		}
+		CHI = {
+			all_core = {
+				remove_core = ZHI
+				remove_core = YNN
+				remove_core = GXI
+				remove_core = SXI
+				remove_core = SZC
+				remove_core = HNN
+				remove_core = XBI
+				remove_core = TPG
+			}
+		}
+		civilized = no
+		
+	}
+}
+
+### End of Beiyang Government (AI) ###
+
+country_event = {
+       id = 400094
+       title = "China is reunited"
+       desc = "The Kuomintang has stormed Beijing. They declared that they are the true government of China and that all of the independent cliques are to swear an oath of loyalty to the Kuomintang or face dire consequences."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+		AND = {
+			ai = yes
+			tag = ZHI
+		}
+		year = 1927
+		has_global_flag = china_ai_controll
+		NOT = { has_global_flag = small_china }
+       }
+
+       option = {
+              	name = "Is this a new era?"
+	      	set_global_flag = small_china
+		change_tag = CHI
+		IMN = {
+			all_core = {
+				remove_core = MGL
+				remove_core = IMN
+			}
+		}
+		MGL = {
+			all_core = {
+				remove_core = CHI
+			}
+		}
+		1469 = {
+			add_core = RUS
+			remove_core = MGL
+			remove_core = CHI
+		}
+		1593 = {
+			remove_core = CHI
+		}
+		CHI = {
+			inherit = ZHI
+			inherit = YNN
+			inherit = GXI
+			inherit = SXI
+			inherit = IMN
+			inherit = SZC
+			inherit = HNN
+			inherit = XBI
+			inherit = TPG
+			inherit = XIN
+			capital = 2221
+			primary_culture = beifaren
+			add_accepted_culture = beifaren
+			add_accepted_culture = nanfaren
+			add_accepted_culture = manchu
+			add_accepted_culture = hakka
+			add_accepted_culture = miao
+			add_accepted_culture = min
+			add_accepted_culture = zhuang
+			add_accepted_culture = yi
+			add_accepted_culture = yue
+			add_accepted_culture = mongol
+			add_accepted_culture = tibetan
+			add_accepted_culture = uighur
+		}
+		CHI = {
+			all_core = {
+				remove_core = ZHI
+				remove_core = YNN
+				remove_core = GXI
+				remove_core = SXI
+				remove_core = SZC
+				remove_core = HNN
+				remove_core = XBI
+				remove_core = TPG
+			}
+		}
+		civilized = no
+		
+	}
+}

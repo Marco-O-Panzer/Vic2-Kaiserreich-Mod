@@ -1,0 +1,44 @@
+cavalry = {
+	icon = 2
+	
+	type = land
+	sprite = Mech
+	active = no
+	unit_type = infantry
+	floating_flag = no
+
+	#Core Abilities
+	priority = 50
+	max_strength = 3
+	default_organisation = 30
+	maximum_speed = 5.00
+	weighted_value = 4.0
+
+
+	#Building Costs
+	build_time = 180
+	build_cost = {
+		steel = 5
+		automobiles = 1
+		barrels = 3
+		artillery = 3
+	}
+	
+	supply_consumption = 1.0
+	supply_cost = {
+		fuel = 0.05
+		artillery = 0.05
+		barrels = 0.05
+		canned_food = 0.05
+	}
+	
+
+	#Land Abilties
+	reconnaissance = 1
+	attack = 10
+	defence = 10
+	discipline = 1.0
+	support = 0.0
+	maneuver = 2
+	
+}

@@ -1,0 +1,30 @@
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = IRE
+trade_goods = grain
+naval_base = 3
+railroad = 3
+life_rating = 35
+1861.1.1 = {
+	state_building = {
+		level = 1
+		building = fabric_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 1
+		building = furniture_factory
+		upgrade = yes
+	}
+	state_building = {
+		level = 2
+		building = canned_food_factory
+		upgrade = yes
+	}
+}
+1923.1.1 = {
+	owner = IRE
+	controller = IRE
+	remove_core = ENG
+}

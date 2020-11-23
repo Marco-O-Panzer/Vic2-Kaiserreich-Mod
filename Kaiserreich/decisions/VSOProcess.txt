@@ -1,0 +1,266 @@
+political_decisions = {
+	embrace_hungarian_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			any_owned_province = { is_core = HUN }
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = hungarian
+				has_country_flag = embraced_hungarians
+				}
+			}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_hungarians
+			add_accepted_culture = hungarian
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	embrace_czech_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			any_owned_province = { is_core = BOH }
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = czech
+				has_country_flag = embraced_czechs
+			}
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_czechs
+			add_accepted_culture = czech
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	embrace_slovene_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			any_owned_province = { is_core = SLO }
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = slovene
+				has_country_flag = embraced_slovenes
+			}
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_slovenes
+			add_accepted_culture = slovene
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	embrace_croat_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			any_owned_province = { is_core = CRO }
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = croat
+				has_country_flag = embraced_croats
+			}
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_croats
+			add_accepted_culture = croat
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	embrace_polish_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = polish
+				has_country_flag = embraced_poles
+			}
+		}
+		
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_poles
+			add_accepted_culture = polish
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_ukrainian_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = ukrainian
+				has_country_flag = embraced_ukrainians
+			}
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_ukrainians
+			add_accepted_culture = ukrainian
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_slovak_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = slovak
+				has_country_flag = embraced_slovaks
+			}		
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_slovaks
+			add_accepted_culture = slovak
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_bosniak_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = bosniak
+				has_country_flag = embraced_bosniaks
+			}		
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_bosniaks
+			add_accepted_culture = bosniak
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	embrace_serb_minority = {
+		picture = embrace_minority
+		potential = {
+			tag = KUK
+			has_global_flag = vso_waiting
+			NOT = {
+				has_country_modifier = six_month_cooldown
+				accepted_culture = serbian
+				has_country_flag = embraced_serbs
+			}			
+		}
+		allow = {
+			year = 1928
+			prestige = 50
+		}
+		effect = {
+			set_country_flag = embraced_serbs
+			add_accepted_culture = serbian
+			prestige = 25
+			add_country_modifier = {
+				name = six_month_cooldown
+				duration = 181
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

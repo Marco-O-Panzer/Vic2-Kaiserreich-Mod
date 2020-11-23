@@ -1,0 +1,7 @@
+add_core = BUR
+trade_goods = grain
+life_rating = 30
+owner = BRJ
+controller = BRJ
+colonial = 2
+naval_base = 3

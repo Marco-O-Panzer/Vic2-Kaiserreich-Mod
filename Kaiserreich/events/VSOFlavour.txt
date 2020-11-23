@@ -1,0 +1,61 @@
+### VSO Plans ###
+
+country_event = {
+       id = 4019250
+       title = "The Goal of the VSO"
+       desc  = "In order to create the United States of Greater Austria, we need to accept all of the minorities within the empire. Considering that the Hungarians and the Slavs are not happy with us, perhaps we can persuade them through proclamations."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = vso_planned
+       }
+
+       option = {
+		name = "Very well."
+		set_global_flag = vso_waiting
+       }
+}
+
+### VSO Done ###
+
+country_event = {
+       id = 4019251
+       title = "Declaration of Federalization"
+       desc  = "Crowds of people from all over the empire have gathered in Vienna to witness the dawn of a new era. One filled with hope, one filled with equality, and one filled with freedom."
+       major = yes
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+	       has_global_flag = vso_waiting
+		accepted_culture = hungarian
+		accepted_culture = czech
+		accepted_culture = slovene
+		accepted_culture = croat
+		accepted_culture = polish
+		accepted_culture = slovak
+		accepted_culture = bosniak
+		accepted_culture = serbian
+		accepted_culture = ukrainian
+		accepted_culture = romanian
+		accepted_culture = north_italian
+       }
+
+       option = {
+		name = "Huzzah!"
+		change_tag = VSO
+		inherit = HUN
+		inherit = SLD
+		any_owned = {
+			limit = {
+				continent = europe
+			}
+			add_core = VSO
+		}
+		set_global_flag = vso_complete
+		clr_global_flag = vso_waiting
+		clr_global_flag = vso_planned
+       }
+}

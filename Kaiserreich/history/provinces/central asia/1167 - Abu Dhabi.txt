@@ -1,0 +1,6 @@
+owner = ABU
+controller = ABU
+add_core = ABU
+add_core = TUR
+trade_goods = oil
+life_rating = 35

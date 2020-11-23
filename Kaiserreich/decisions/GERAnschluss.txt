@@ -1,0 +1,48 @@
+political_decisions = {
+        Inherit_Austria = {
+		title = "EVTNAME2900"
+		desc  = "EVTDESC2900"
+		fire_only_once = yes
+
+                potential = {
+			exists = AUS
+			AUS = {
+				NOT = { owns = 641 }
+				NOT = { owns = 771 }
+				ai = yes
+			}
+                     OR = {
+                           tag = GER
+                	  }
+		}
+
+                allow = {
+                          war = no
+                          is_sphere_leader_of = AUS
+			  year = 1923
+			  AUS = {
+				NOT = { owns = 641 }
+				NOT = { owns = 771 }
+			  }
+                }
+          effect = {
+                    THIS = { inherit = AUS }
+                    prestige = 15
+    		    AUS_622 = { add_core = GER}
+    		    AUS_624 = { add_core = GER}
+    		    AUS_621 = { add_core = GER}
+    		    AUS_620 = { add_core = GER}
+    		    AUS_622 = { add_core = GER}
+    		    AUS_619 = { add_core = GER}
+                    AUS_617 = { add_core = GER}
+                    AUS_616 = { add_core = GER}
+                    AUS_618 = { add_core = GER}
+                    AUS_613 = { add_core = GER}
+                    AUS_615 = { add_core = GER}
+                    AUS_612 = { add_core = GER}
+                    AUS_735 = { add_core = GER}
+                    AUS_614 = { add_core = GER}
+
+                }
+	}
+}

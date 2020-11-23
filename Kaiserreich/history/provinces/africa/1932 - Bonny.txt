@@ -1,0 +1,7 @@
+owner = ENG
+controller = ENG
+add_core = WAU
+naval_base = 2
+colonial = 2
+trade_goods = rubber
+life_rating = 15

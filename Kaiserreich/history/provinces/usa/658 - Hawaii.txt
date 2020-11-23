@@ -1,0 +1,7 @@
+owner = USA
+controller = USA
+add_core = HAW
+add_core = USA
+trade_goods = fish
+life_rating = 35
+naval_base = 3

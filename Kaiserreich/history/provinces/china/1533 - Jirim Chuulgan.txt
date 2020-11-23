@@ -1,0 +1,12 @@
+owner = MCK
+controller = MCK
+add_core = CHI
+add_core = MGL
+add_core = IMN
+add_core = MCK
+trade_goods = timber
+life_rating = 32
+1927.1.1 = {
+	remove_core = IMN
+	remove_core = MGL
+}

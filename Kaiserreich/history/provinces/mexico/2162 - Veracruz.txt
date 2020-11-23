@@ -1,0 +1,6 @@
+owner = MEX
+controller = MEX
+add_core = MEX
+trade_goods = oil
+life_rating = 35
+naval_base = 1

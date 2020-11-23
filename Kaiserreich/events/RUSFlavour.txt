@@ -1,0 +1,105 @@
+### RUS Background ###
+
+country_event = {
+       fire_only_once = yes
+       id = 40015
+       title = "The Soviet Union Today."
+       desc = "We have lost much land to the Germans but this is not our main concern. First we must end this bloody civil war, by destroying the remenants of White forces in Sibera before turning our attention west again."
+
+       trigger = {
+               tag = RUS
+		NOT = {
+			year = 1930
+		}
+       }
+
+       option = {
+              name = "Death to the bourgeois filth. The proletariat masses will rule!"
+ 	      add_country_modifier = {
+		name = ww1_defeat
+		duration = 1825
+		}
+       }
+}
+
+### RUS Civil War - Communist Victory ### 
+
+country_event = {
+       id = 40011
+       title = "Russia is secured! - Communist Victory"
+       desc = "Victory! The foriegn puppets are defeated and Russia is united under one banner - the red banner!"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = RUS
+	       government = proletarian_dictatorship
+	       NOT = {
+			exists = WHI
+			has_global_flag = commies_win_rus
+	       }
+       }
+
+       option = {
+              name = "The Capitalist scum cower against our United Republic!"
+		set_global_flag = commies_win_rus
+	      prestige = 20
+	      any_pop = {
+		militancy = -6
+		}
+       }
+}
+
+### RUS Civil War - White Victory ###
+
+country_event = {
+       id = 40029
+       title = "Russia is secured! - White Victory!"
+       desc = "Victory! The communist dogs have been cast in to the gutter. Democracy and freedom shall reign in Russia!"
+       major = yes
+       fire_only_once = yes
+
+       trigger = {
+               tag = WHI
+	       government = democracy
+	       NOT = {
+			exists = RUS
+			has_global_flag = libbies_win_rus
+	       }
+       }
+
+       option = {
+              name = "Huzzah! The day is ours."
+		set_global_flag = libbies_win_rus
+	      change_tag = RUS
+	      prestige = 40
+	      any_pop = {
+		militancy = -6
+		}
+       }
+}
+
+### General Secretary Stalin ###
+
+country_event = {
+	id = 40061
+	title = "Iosif Vissarionovich Stalin"
+       	desc = "EVTDESC2911"
+	picture = "stalin_in"
+       	fire_only_once = yes
+
+       trigger = {
+               tag = RUS
+	       year = 1922
+	       month = 4
+	       government = proletarian_dictatorship
+       }
+
+       option = {
+              name = "Who's right? Me - Stalin!"
+	      prestige = 5
+	      any_pop = {
+		consciousness = 1
+		}
+       }
+}

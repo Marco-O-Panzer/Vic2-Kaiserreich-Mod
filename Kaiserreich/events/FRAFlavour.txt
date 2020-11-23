@@ -1,0 +1,212 @@
+### FRA Background ###
+
+country_event = {
+       id = 41001
+       title = "The French Republic Today."
+       fire_only_once = yes
+       desc = "EVTDESC2918"
+
+       trigger = {
+               tag = FRA
+	       NOT = { year = 1922 }
+       }
+
+       option = {
+              name = "The legacy of Napoleon is cast into the gutter."
+	      add_country_modifier = {
+		name = ww1_defeat
+		duration = 1825
+		}
+	      add_country_modifier = {
+		name = ww1_debt_give
+		duration = 1825
+		}
+       }
+}
+
+### Rumours of Lost Glory? ###
+
+country_event = {
+       id = 40072
+       title = "Rumors of lost Glory?"
+       fire_only_once = yes
+       picture = "napoleon_returned"
+       desc = "EVTDESC2916"
+
+       trigger = {
+			tag = FRA
+			NOT = {year = 1930}
+			year = 1924
+			war = no
+       }
+
+       option = {
+			name = "La Garde meurt mais ne se rend pas!"
+			prestige = 10
+			set_global_flag = lost_glory
+       }
+}
+
+### Left, Right or ol' Bony? ###
+
+country_event = {
+       id = 40073
+       title = "Left, Right or ol' Bony?"
+       fire_only_once = yes
+       major = yes
+       desc = "EVTDESC2917"
+
+       trigger = {
+	tag = FRA
+	has_global_flag = lost_glory
+	year = 1924
+	NOT = {year = 1930}
+       }
+
+       option = {
+			name = "Ol' Nappy!"
+			prestige = 5
+			change_tag = FRE
+			clr_global_flag = lost_glory
+			ai_chance = {
+				factor = 5
+			}
+			government = absolute_monarchy
+       }
+	   
+       option = {
+			name = "Stand firm on the left!"
+			prestige = 10
+			country_event = 40074
+			clr_global_flag = lost_glory
+			ai_chance = {
+				factor = 47
+			}
+			
+			any_pop = {
+				limit = {
+					location = {
+						is_colonial = no
+					}
+				}
+				militancy = 1
+			}
+			government = proletarian_dictatorship
+		}
+
+       option = {
+		  name = "Stand firm on the right!"
+	      prestige = 15
+			country_event = 40074
+			clr_global_flag = lost_glory
+			ai_chance = {
+				factor = 48
+			}
+			country_event = 40074
+			any_pop = {
+				limit = {
+					location = {
+						is_colonial = no
+					}
+				}
+				militancy = 3
+			}
+		}
+}
+
+### Total Dissaray ###
+
+country_event = {
+       id = 40074
+       title = "Total Dissaray"
+       major = yes
+       desc = "EVTDESC2919"
+		is_triggered_only = yes
+
+       option = {
+              name = "Damn! This is going to be tough..."
+			set_global_flag = french_civil_war
+	      442 = {add_core = FRE}
+	      458 = {add_core = FRE}
+	      449 = {add_core = FRE}
+	      471 = {add_core = FRE}
+	      452 = {add_core = FRE}
+	      459 = {add_core = FRE}
+	      460 = {add_core = FRE}
+	      462 = {add_core = FRE}
+	      472 = {add_core = FRE}
+	      433 = {add_core = FRE}
+	      444 = {add_core = FRE}
+	      443 = {add_core = FRE}
+	      463 = {add_core = FRE}
+	      469 = {add_core = FRE}
+	      428 = {add_core = FRE}
+	      456 = {add_core = FRE}
+	      455 = {add_core = FRE}
+	      464 = {add_core = FRE}
+	      459 = {add_core = FRE}
+	      429 = {add_core = FRE}
+	      457 = {add_core = FRE}
+	      447 = {add_core = FRE}
+	      461 = {add_core = FRE}
+	      466 = {add_core = FRE}
+	      430 = {add_core = FRE}
+	      445 = {add_core = FRE}
+	      446 = {add_core = FRE}
+	      467 = {add_core = FRE}
+	      465 = {add_core = FRE}
+	      448 = {add_core = FRE}
+	      470 = {add_core = FRE}
+	      451 = {add_core = FRE}
+	      450 = {add_core = FRE}
+	      431 = {add_core = FRE}
+	      453 = {add_core = FRE}
+	      468 = {add_core = FRE}
+	      454 = {add_core = FRE}
+	      release = FRE
+		war = {
+			name = "The French Civil War"
+			target = FRE
+			attacker_goal = {
+				casus_belli = civil_war
+			}
+			defender_goal = {
+				casus_belli = civil_war
+			}
+		}
+       	}
+}
+
+### FRA French Civil War - Anti-Bonapartist Victory! ###
+
+country_event = {
+       id = 40077
+       title = "Anti-Bonapartist Victory!"
+       fire_only_once = yes
+       major = yes
+       desc = "We have won! The 'Last Bonaparte' has fled to Africa! France is restored under our dictatorship's rule and we begin the process of rebuilding the country."
+
+       trigger = {
+               tag = FRA
+	       has_global_flag = french_civil_war
+	       NOT = {has_global_flag = fra_won_civil_war}
+       }
+
+       option = {
+              name = "We is da masterrace!"
+	      prestige = 10
+	      clr_global_flag = french_civil_war
+		set_global_flag = fra_won_civil_war
+		FRE = {
+			all_core = {
+				limit = {
+					NOT = {
+						continent = asia
+					}
+				}
+				remove_core = FRE
+			}
+		}
+       }
+}
+

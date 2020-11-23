@@ -1,0 +1,93 @@
+#######   Kaiserreich   #######
+
+alliance=
+	{
+		first="BOL"
+		second="PEU"
+		end_date="1936.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="GER"
+		second="BUL"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="GER"
+		second="TUR"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="GER"
+		second="KUK"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="BUL"
+		second="KUK"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance = {
+	first = GER
+	second = KDU
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+alliance = {
+	first = GER
+	second = KDO
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+alliance = {
+	first = GER
+	second = KDW
+	start_date = 1835.1.1
+	end_date = 2050.1.1
+}
+
+alliance = {
+	first = GER
+	second = JAP
+	start_date = 1934.1.1
+	end_date = 2050.1.1
+}
+
+alliance=
+	{
+		first="KUK"
+		second="TUR"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="BUL"
+		second="TUR"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}
+
+alliance=
+	{
+		first="ENG"
+		second="JAP"
+		end_date="2050.1.1"
+		start_date="1836.1.1"
+	}

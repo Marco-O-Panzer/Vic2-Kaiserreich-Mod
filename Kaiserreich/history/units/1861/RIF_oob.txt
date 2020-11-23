@@ -1,0 +1,55 @@
+USA = {
+	value = 75
+}
+
+army = {
+	name = "Rif Rebel Force"
+	location = 1687
+	regiment = {
+		name= "1st Berber Division"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "2nd Berber Division"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "2nd Berber Division"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "2nd Berber Division"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "2nd Berber Division"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "The Islamic Battalion"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "Tangiers Battalion"
+		type = infantry
+		home = 1687
+	}
+
+	regiment = {
+		name= "Caliphate Guards"
+		type = infantry
+		home = 1687
+	}
+}

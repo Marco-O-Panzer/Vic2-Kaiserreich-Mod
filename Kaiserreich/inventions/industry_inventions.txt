@@ -1,0 +1,1292 @@
+#combustion_engine
+daimlers_automobile = {
+	limit = { combustion_engine = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			electricity = 1
+		}
+		modifier = {
+			factor = 2
+			average_consciousness = 3
+		}
+	}
+	effect = {
+		activate_building = automobile_factory 
+		factory_goods_output = {
+			machine_parts = 0.05 
+		}
+	}
+}
+wright_&_langleys_aeroplanes = {
+	limit = { combustion_engine = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			electricity = 1
+		}
+		modifier = {
+			factor = 2
+			average_consciousness = 4
+		}
+	}
+	effect = {
+		activate_building = aeroplane_factory 
+		factory_goods_output = {
+			machine_parts = 0.05 
+		}
+	}
+}
+tractors = {
+	limit = { combustion_engine = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			average_consciousness = 2
+		}
+		modifier = { 
+			factor = 2
+			economic_policy = laissez_faire
+		}
+	}
+	effect = {
+		farm_rgo_eff = 0.25
+		mine_rgo_eff = 0.25		
+	}
+}
+drilling_rig = {
+                limit = { combustion_engine = 1 }
+				chance = {
+				          base = 2 
+						  modifier = {
+						              factor = 2 
+									  invention = advanced_extractive_metallurgy
+						  }
+						  modifier = {
+						              factor = 2 
+									  organised_factories = 1 
+						  }
+				}
+				effect = {
+				          factory_goods_output = { oil = 1 }
+                }
+}
+#electrical_power_generation
+direct_current = {
+	limit = { electrical_power_generation = 1 }
+	chance = {
+		base = 6
+		modifier = {
+			factor = 2
+			invention = edison_light_bulb
+		}
+		modifier = {
+		            factor = 2 
+					average_consciousness = 2
+		}
+	}
+	effect = {
+		rgo_output = 0.025
+		factory_throughput = 0.05
+	}
+}
+alternating_current = {
+	limit = { electrical_power_generation = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 4
+			invention = direct_current
+		}
+		modifier = {
+			factor = 2
+			invention = edison_light_bulb
+		}
+	}
+	effect = {
+		rgo_output = 0.025
+		factory_throughput = 0.05
+	}
+}
+polyphase_system = {
+	limit = { electrical_power_generation = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 4
+			invention = alternating_current
+		}
+		modifier = {
+		            factor = 2 
+					average_consciousness = 3
+		}		            
+	}
+	effect = {
+		rgo_output = 0.05
+		factory_throughput = 0.05
+	}
+}
+refrigerator_technology = {
+	limit = { electrical_power_generation = 1 }
+	chance = {
+		base = 4
+		modifier = {
+		            factor = 2 
+					assembly_line = 1 
+		}
+		modifier = {
+		            factor = 2 
+					organisational_development = 1 
+		}		            
+	}
+	effect = {
+		rgo_goods_output = {
+			cattle = 0.25
+		}
+		rgo_goods_output = {
+			fruit = 0.25
+		}
+		rgo_goods_output = {
+			fish = 0.25
+		}
+		factory_goods_output = {
+			liquor = 0.025
+		}
+		factory_goods_output = {
+			wine = 0.025
+		}
+	}
+}
+#hydropower
+compressed_air_hydro = {
+                        limit = { hydropower = 1 }
+                        chance = {
+                                  base = 4
+                                  modifier = {
+                                              factor = 2
+                                              average_consciousness = 2
+                                  }
+								  modifier = {
+								              factor = 2 
+											  electrochemical_cell = 1 
+								  }
+                        }
+                        effect = {
+                                  factory_goods_output = { electricity = 0.05 }  
+                        }
+}
+#natural_gas_power_station
+hydraulic_fracturing = {
+                        limit = { natural_gas_power_station = 1 }
+                        chance = {
+                                  base = 2
+                                  modifier = {
+                                              factor = 2
+                                              invention = compressed_air_hydro
+                                  }
+								  modifier = {
+								              factor = 2 
+											  advanced_sub-surface_mining = 1 
+								  }
+								  modifier = {
+								              factor = 2 
+											  automated_production_line = 1 
+								  }
+                        }
+                        effect = {
+                                  factory_goods_output = { oil = 1 }
+                        }
+}
+#nuclear_reactor
+nuclear_power_plant = {
+                       limit = { nuclear_reactor = 1 }
+                       chance = {
+                                 base = 2
+								 modifier = {
+								             factor = 2 
+											 nuclear_weaponry = 1 
+								 }
+								 modifier = {
+								             factor = 2
+                                             government_interventionism = 1
+                                 }
+                                 modifier = {
+                                             factor = 2 
+                                             semiconductor_device = 1 
+ 								 }			 
+                       }
+                       effect = {
+				    activate_building= nuclear_power_station
+                       }
+}
+#renewable_energy
+wind_turbine = {
+              limit = { renewable_energy = 1 }
+              chance = {
+                        base = 4
+						modifier = {
+						            factor = 2 
+									modern_process_control = 1 
+						}
+						modifier = {
+						            factor = 2 
+									modern_institutional_economics = 1 
+						}
+                        modifier = {
+ 						            factor = 2 
+									contract_policy = 1 
+						}
+              }
+              effect = {
+	      	activate_building = wind_farm
+              }
+}
+solar_power = {
+               limit = { renewable_energy = 1 }
+               chance = {
+                         base = 2
+						 modifier = {
+						             factor = 2 
+									 average_consciousness = 2 
+						 }
+						 modifier = {
+						             factor = 2 
+									 naval_integration = 1 
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = satellite
+						 }			 
+               }
+               effect = {
+	      	activate_building = solar_power_station
+               }
+}
+compressed_air_energy_storage = {
+                                 limit = { renewable_energy = 1 }
+                                 chance = {
+                                           base = 2
+										   modifier = {
+										               factor = 2 
+													   modern_competitive_policy
+										   }
+										   modifier = {
+										               factor = 2 
+													   average_consciousness = 2 
+										   }													   
+                                 }
+                                 effect = {
+                                           factory_goods_output = { electricity = 0.10 }
+                                 }
+}
+#assembly_line
+fordism = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			invention = daimlers_automobile
+		}
+		modifier = {
+		            factor = 2 
+					economic_policy = laissez_faire
+		}
+		modifier = {
+		            factor = 2 
+					average_consciousness = 2 
+		}
+	}
+	effect = {
+		factory_goods_output = {
+			automobiles = 0.05
+		}
+		factory_goods_output = {
+			aeroplanes = 0.05
+		}
+	}
+}
+industrialised_armament_industry = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 4
+		modifier = {
+		            factor = 2 
+					organised_factories = 1 
+		}
+		modifier = {
+		            factor = 2 
+					pre_war_small_arms = 1 
+		}
+		modifier = {
+		            factor = 2 
+					pre_war_heavy_arms = 1 
+	    }
+	}
+	effect = {
+		factory_goods_output = {
+			small_arms = 0.05
+		}
+		factory_goods_output = {
+			ammunition = 0.05
+		}
+		factory_goods_output = {
+			artillery = 0.05
+		}
+		factory_goods_output = {
+			explosives = 0.05
+		}
+	}
+}
+industrialised_agricultural_industry = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 4
+		modifier = {
+		            factor = 2 
+					organised_factories = 1 
+		}
+		modifier = {
+		            factor = 2 
+					invention = tractors 
+		}
+		modifier = {
+		            factor = 2 
+					integral_rail_system = 1 
+	    }
+	}
+	effect = {
+		farm_rgo_eff = 0.25
+	}
+}
+industrialised_mining_industry = {
+	limit = { assembly_line = 1 }
+	chance = {
+		base = 4
+		modifier = {
+		            factor = 2 
+					invention = tractors
+		}
+		modifier = {
+		            factor = 2 
+					invention = advanced_extractive_metallurgy
+		}
+		modifier = {
+		            factor = 2 
+					integral_rail_system = 1 
+	    }
+	}
+	effect = {
+		mine_rgo_eff = 0.25
+	}
+}
+#shift_work
+extensive_shift_plan = {
+                        limit = { shift_work = 1 }
+                        chance = {
+                                  base = 4
+								  modifier = {
+								              factor = 2 
+											  organisational_development = 1 
+								  }
+								  modifier = {
+								              factor = 2 
+											  behaviorism = 1 
+								  }
+								  modifier = {
+								              factor = 2 
+											  integral_rail_system = 1 
+								  }
+                        }
+                        effect = {
+                                  factory_throughput = 0.05
+                        }
+}
+#semi-automated_assembly_line
+conveyor_system = {
+                   limit = { semi-automated_assembly_line = 1 }
+                   chance = {
+                             base = 4
+							 modifier = {
+							             factor = 2 
+										 evolutionary_economics = 1 
+							 }
+							 modifier = {
+							             factor = 2 
+										 synthetic_polymers = 1 
+							 }
+							 modifier = {
+							             factor = 2 
+										 average_consciousness = 3
+							 }
+                   }
+                   effect = {
+                             factory_throughput = 0.05
+                   }
+}
+#automated_production_line
+mass_production = {
+                   limit = { automated_production_line = 1 }
+                   chance = {
+                             base = 2
+                             modifier = {
+                                         factor = 2
+                                         institutional_economics = 1 										
+                            }
+                            modifier = {
+                                        factor = 2
+                                        economic_policy = laissez_faire
+                            }
+							modifier = {
+							            factor = 2 
+										public_road_transit_system = 1 
+							}
+                   }
+                   effect = {
+                             factory_throughput = 0.10
+                   }
+}
+#industrial_robotic_machinery
+continuous_production = {
+                         limit = { industrial_robotic_machinery = 1 }
+                         chance = {
+                                   base = 2
+                                   modifier = {
+                                               factor = 2
+                                               electronic_circuit = 1                                      
+                                   }
+                                   modifier = {
+                                               factor = 2
+                                               monetarism = 1 
+                                   }
+                                   modifier = {
+                                               factor = 4
+                                               oee_system = 1 
+                                   }
+                         }
+                         effect = {
+                                   factory_throughput = 0.10
+                         }
+}
+#fully_automated_factories
+lights_out_production = {
+                         limit = { fully_automated_factories = 1 }
+                         chance = {
+                                   base = 2
+                                   modifier = {
+                                               factor = 4
+                                               invention = computer
+                                   }
+								   modifier = {
+								               factor = 2 
+											   average_consciousness = 3
+								   }
+								   modifier = {
+								               factor = 2 
+											   modern_process_control = 1 
+								   }
+								   modifier = {
+								               factor = 2 
+								               modern_institutional_economics = 1 
+								   }
+								   modifier = {
+								               factor = 2 
+											   modern_competitive_policy = 1 
+								   }
+                         }
+                         effect = {
+                                   factory_throughput = 0.10
+                         }
+}                                                                   
+#advanced_metallurgy_&_glassblowing
+electroplating = {
+                  limit = { advanced_metallurgy_&_glassblowing = 1 }
+                  chance = {
+                            base = 4
+							modifier = {
+							            factor = 2 
+										electricity = 1 
+							}
+							modifier = {
+							            factor = 2 
+										invention = advanced_extractive_metallurgy
+							}										 										            
+                  }
+                  effect = {
+                            factory_goods_output = { precious_metal = 0.05 }
+                            factory_goods_output = { iron = 0.05 }
+                            factory_goods_output = { steel = 0.1 }
+                  }
+}
+advanced_extractive_metallurgy = {
+                                  limit = { advanced_metallurgy_&_glassblowing = 1 }
+                                  chance = {
+                                            base = 2
+											modifier = {
+											            factor = 2 
+														combustion_engine = 1 
+											}
+										    modifier = {
+											            factor = 2 
+														electricity = 1 
+											}
+											modifier = {
+											            factor = 2 
+														
+                                  }
+                                  effect = {
+                                            mine_rgo_eff = 0.10
+                                  }
+}
+#electric_furnace
+electric_arc_furnace = {
+                        limit = { electric_furnace = 1 }
+                        chance = {
+                                  base = 2
+                                  modifier = {
+                                              factor = 2
+                                              electrical_power_generation = 1 										
+                                  }
+								  modifier = {
+								              factor = 2 
+											  economic_policy = laissez_faire
+								  }
+								  modifier = {
+								              factor = 2 
+											  average_consciousness = 2 
+								  }
+                        }
+                        effect = {
+                                  factory_goods_output = { steel = 0.05 }
+                                  factory_goods_output = { iron = 0.05 }
+                                  factory_goods_output = { precious_metal = 0.05 }
+                                  factory_goods_output = { glass = 0.05 }                      
+                        }
+}
+flodin_process = {
+                  limit = { electric_furnace = 1 }
+                  chance = {
+                            base = 2
+							modifier = {
+							            factor = 2 
+										electrical_power_generation = 1 
+							}
+							modifier = {
+							            factor = 2 
+										invention = electric_arc_furnace
+							}										
+                  }
+                  effect = {
+                            factory_goods_output = { coal = 0.05 }
+                            factory_goods_output = { steel = 0.1 }
+                  }
+}
+#borosilicate_glass
+fritted_glass = {
+         limit = { borosilicate_glass = 1 }
+         chance = {
+                   base = 2
+				   modifier = {
+				               factor = 2 
+							   average_consciousness = 1 
+				   }
+				   modifier = {
+				               factor = 2 
+							   chemical_arsenal = 1 
+				   }							   
+         }
+         effect = {
+                   factory_goods_output = { glass = 0.05 }
+         }
+}
+pyrex = {
+         limit = { borosilicate_glass = 1 }
+         chance = {
+                   base = 4
+				   modifier = {
+				               factor = 2 							   
+				               economic_policy = laissez_faire
+				   }
+				   modifier = {
+				               factor = 2 
+							   organisational_development = 1 
+				   }
+         }
+         effect = {
+                   factory_goods_output = { glass = 0.10 }
+         }
+}
+#advanced_sub-surface_mining
+longwall_mining = {
+                   limit = { advanced_sub-surface_mining = 1 }
+                   chance = {
+                             base = 4
+							 modifier = {
+							             factor = 2 
+										 automated_production_line = 1 
+							 }
+							 modifier = {
+							             factor = 2 
+										 average_consciousness = 1 
+							 }
+							 modifier = {
+							             factor = 2 
+										 social_determinism = 1 
+							 }
+                   }
+                   effect = {
+                             mine_rgo_eff = 0.05
+                   }
+}
+in-situ_leaching = {
+                    limit = { advanced_sub-surface_mining = 1 }
+                    chance = {
+                              base = 2
+                              modifier = {
+                                          factor = 4
+                                          hydraulic_fracturing
+                              }
+							  modifier = {
+							              factor = 2 
+										  invention = fritted_glass
+							  }							  
+                    }
+                    effect = {
+                              mine_rgo_eff = 0.05
+							  rgo_size = {
+							              tropical_wood = 0.05
+							  }
+                    }
+}
+#advanced_surface_mining
+strip_mining = {
+                limit = { advanced_surface_mining = 1 }
+                chance = {
+                          base = 2
+                          modifier = {
+                                      factor = 2
+                                      contract_policy = 1 
+                          }
+						  modifier = {
+						              factor = 2 
+									  industrial_robotic_machinery = 1
+						  }
+                }
+                effect = {
+                          mine_rgo_eff = 0.05
+                }
+}
+landfill_mining = {
+                   limit = { advanced_surface_mining = 1 }
+                   chance = {
+                             base = 2 
+                             modifier = {
+                                         factor = 2
+                                         contract_policy = 1 
+                             }
+							 modifier = {
+							             factor = 2 
+										 oee_system = 1 
+							 }
+							 modifier = {
+							             factor = 2  
+										 economic_policy = laissez_faire
+							 }
+                   }
+                   effect = {
+                             mine_rgo_eff = 0.05
+                   }
+}
+#modern_mining_&_glassblowing
+stope_&_retreat_mining = {
+                          limit = { modern_mining_&_glassblowing = 1 }
+                          chance = {
+                                    base = 2
+									modifier = {
+									            factor = 2
+												invention = stope_&_fill_mining
+									}
+									modifier = {
+									            factor = 2 
+												modern_process_control = 1 
+									}
+                          }
+                          effect = {
+                                    mine_rgo_eff = 0.05
+                          }
+}
+stope_&_fill_mining = {
+                       limit = { modern_mining_&_glassblowing = 1 }
+                       chance = {
+                                 base = 2
+                                 modifier = {
+                                             factor = 2
+                                             invention = stope_&_retreat_mining
+                                 }
+								 modifier = {
+								             factor = 2 
+											 modern_process_control = 1 
+								 }
+                       }
+                       effect = {
+                                 mine_rgo_eff = 0.05
+                       }
+}
+modern_mine_ventilation = {
+                           limit = { modern_mining_&_glassblowing = 1 }
+                           chance = {
+                                     base = 4
+									 modifier = {
+									             factor = 2 
+												 humanistic_psychology = 1 
+									 }
+									 modifier = {
+									             factor = 2 
+												 modern_competitive_policy = 1 
+									 }
+                           }
+                           effect = {
+                                     pop_growth = 0.0001
+                           }
+}
+#electricity = {
+telegraph = {
+	limit = { electricity = 1 }
+	chance = {
+		base = 4
+		modifier = {
+			factor = 2
+			integral_railroad = 1
+		}
+		modifier = {
+		            factor = 2 
+					military_academy = 1 
+		}
+	}
+	effect = {
+              activate_building = radio_factory	
+        	  pop_growth = 0.00001
+	}
+}
+x_rays = {
+	limit = { electricity = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			average_consciousness = 2
+		}
+		modifier = {
+			factor = 2
+			psychoanalysis = 1
+		}
+		modifier = {
+		            factor = 2 
+					phenomenology_&_hermeneutic = 1 
+		}
+	}
+	effect = {
+		pop_growth = 0.0001
+                soldier_to_pop_loss = 0.02
+		land_attrition = -0.025
+	}
+}
+vacuum_tube = {
+	limit = { electricity = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 4
+			invention = direct_current
+		}
+		modifier = {
+			factor = 4
+			invention = alternating_current
+		}
+        modifier = {
+                    factor = 2 
+					average_consciousness = 1
+		}
+	}
+	effect = {
+		factory_goods_output = { radio = 0.025 } 
+		factory_goods_output = { telephones = 0.025 } 
+		factory_goods_output = { electric_gear = 0.025 } 
+	}
+}
+edison_light_bulb = {
+	limit = { electricity = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			invention = direct_current
+		}
+		modifier = {
+			factor = 2
+			electrical_power_generation = 1
+		}
+		modifier = {
+		            factor = 2 
+					economic_policy = laissez_faire
+		}
+	}
+	effect = {
+		factory_goods_output = { radio = 0.025 } 
+		factory_goods_output = { telephones = 0.025 } 
+		factory_goods_output = { electric_gear = 0.025 } 
+	}
+}
+bell_&_greys_telephones = {
+	limit = { electricity = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			electrical_power_generation = 1
+		}
+		modifier = {
+			factor = 4
+			invention = telegraph
+		}
+	}
+	effect = {
+		activate_building = telephone_factory 
+	}
+}
+#synthetic_polymers = {
+synthetic_fibre = {
+	limit = { synthetic_polymers = 1 }
+	chance = {
+		base = 4
+		modifier = {
+		            factor = 2 
+					organisational_development
+		}
+		modifier = {
+		            factor = 2 
+					average_consciousness = 2 
+		}
+	}
+	effect = {
+              factory_goods_output = { fabric = 0.10 }
+			  factory_goods_output = { rubber = 1.00 }
+	}
+}
+plastic = {
+           limit = { synthetic_polymers = 1 }
+           chance = {
+                     base = 4
+					 modifier = {
+					             factor = 2 
+								 invention = synthetic_fibre
+					}
+					modifier = {
+					            factor = 2
+								international_economics = 1 
+					}
+           }
+           effect = {
+                      factory_goods_output = { oil = 0.10 }
+           }
+}
+velcro = {
+          limit = { synthetic_polymers = 1 }
+          chance = {
+                    base = 2
+                    modifier = {
+                                factor = 4
+                                invention = synthetic_fibre
+                    }
+					modifier = {
+					            factor = 2 
+								economic_policy = laissez_faire
+					}
+          }
+          effect = {
+             	    factory_goods_output = { fabric = 0.05 }
+          }
+}
+#electrochemical_cell
+electric_battery = {
+                    limit = { electrochemical_cell = 1 }
+                    chance = {
+                              base = 4
+							  modifier = {
+							              factor = 2
+										  evolutionary_economics = 1 
+							  }
+							  modifier = {
+							              factor = 2 
+										  radar = 1 
+							  }
+							  modifier = {
+							              factor = 2 
+										  naval_statistics = 1 
+							  }
+                    }
+                    effect = {
+                              factory_goods_output = { electricity = 0.05 } 
+                    }
+}
+rechargeable_battery = {
+                        limit = { electrochemical_cell = 1 }
+                        chance = {
+                                  base = 2
+                                  modifier = {
+                                              factor = 4
+                                              invention = electric_battery
+								  }
+								  modifier = {
+								              factor = 2 
+											  radar = 1 
+								  }
+                        }
+                        effect = {
+                                  factory_goods_output = { electricity = 0.05 } 
+                        }
+}
+#electronic_circuit
+digital_display_device = {
+                          limit = { electronic_circuit = 1 }
+                          chance = {
+                                    base = 4 
+                                    modifier = {
+                                                factor = 2
+												benchmarking = 1 
+									}
+									modifier = {
+									            factor = 2 
+												invention = forward_operating_base
+									}
+                          }
+                          effect = {
+                                    factory_goods_output = { electric_gear = 0.025 } 
+                          }
+}
+television = {
+              limit = { electronic_circuit = 1 }
+              chance = {
+                        base = 2
+                        modifier = {
+                                    factor = 4
+                                    invention = digital_display_device 
+                        }
+                        modifier = {
+                                    factor = 2 
+									automated_production_line = 1 
+						}
+						modifier = {
+						            factor = 2 
+									economic_policy = laissez_faire
+						}
+              }
+              effect = {
+                        activate_building = television_factory
+						factory_goods_output = { electric_gear = 0.05 }
+              }
+}
+trichromatic_field_sequential_system = {
+                                        limit = { electronic_circuit = 1 }
+                                        chance = {
+                                                  base = 2
+                                                  modifier = {
+                                                              factor = 4
+                                                              invention = television
+                                                  }
+												  modifier = {
+												              factor = 2 
+															  average_consciousness = 3
+												  }
+                                        }
+                                        effect = {
+                                                  factory_goods_output = { televisions = 0.05 }
+                                                  factory_goods_output = { electric_gear = 0.025 }  
+                                        }
+}
+#semiconductor_device
+integrated_circuit = {
+                      limit = { semiconductor_device = 1 }
+                      chance = {
+                                base = 2
+								modifier = {
+								            factor = 2 
+											invention = artificial_intelligence
+								}
+                                modifier = {
+       								        factor = 2 
+											cognitivism = 1 
+								}
+								modifier = {
+								            factor = 2 
+											industrial_robotic_machinery = 1 
+								}
+                      }
+                      effect = {
+                                factory_goods_output = { electric_gear = 0.025 } 
+                      }
+}
+computer = {
+            limit = { semiconductor_device = 1 }
+            chance = {
+                      base = 2
+                      modifier = {
+                                  factor = 2
+                                  invention = digital_physics
+                      }
+                      modifier = {
+                                  factor = 4
+                                  invention = integrated_circuit
+                      }
+                      modifier = {
+                                  factor = 2 
+								  average_consciousness = 5
+					  }
+					  modifier = {
+					              factor = 2 
+								  oee_system = 1 
+					  }
+            }
+            effect = {
+                      activate_building = computer_factory
+					  factory_goods_output = { machine_parts = 0.05 }
+            }
+}
+#spaceflight_capability
+space_probe = {
+               limit = { spaceflight_capability = 1 }
+               chance = {
+                         base = 2
+						 modifier = {
+						             factor = 2 
+									 modern_process_control = 1 
+						 }
+						 modifier = {
+						             factor = 2 
+									 fully_automated_factories = 1 
+						 }
+						 modifier = {
+						             factor = 2 
+									 invention = computer
+						 }
+               }
+               effect = {
+			             increase_research = 0.025
+						 factory_goods_output = { electric_gear = 0.025 }
+						 factory_goods_output = { machine_parts = 0.025 }
+               }
+}
+satellite = {
+             limit = { spaceflight_capability = 1 }
+             chance = {
+                       base = 2
+					   modifier = {
+					               factor = 4 
+								   invention = space_probe
+					   }
+					   modifier = {
+					               factor = 4 
+								   invention = solar_power
+					   }
+             }
+             effect = {
+			           increase_research = 0.025
+					   factory_goods_output = { machine_parts = 0.025 }
+					   factory_goods_output = { electric_gear = 0.025 }
+             }
+}
+manned_spacecraft = {
+                     limit = { spaceflight_capability = 1 }
+                     chance = {
+                               base = 0
+							   modifier = {
+							               factor = 4 
+										   invention = satellite
+							   }
+							   modifier = {
+							               factor = 2 
+										   invention = modern_electronic_conduct
+							   }
+                     }
+                     effect = {
+					           increase_research = 0.05
+							   factory_goods_output = { electric_gear = 0.025 }
+							   factory_goods_output = { machine_parts = 0.025 }
+                     }
+}
+space_telescope = {
+                   limit = { spaceflight_capability = 1 }
+                   chance = {
+                             base = 0
+							 modifier = {
+							             factor = 2
+										 invention = space_probe
+							}
+							modifier = {
+							            factor = 4
+										invention = satellite
+							}
+                   }
+                   effect = {
+				             increase_research = 0.05
+							 factory_goods_output = { electric_gear = 0.025 }
+							 factory_goods_output = { machine_parts = 0.025 }
+                   }
+}
+#integral_rail_system
+public_rail_station = {
+                       limit = { integral_rail_system = 1 }
+                       chance = {
+                                 base = 6
+								 modifier = {
+								             factor = 2 
+											 combustion_engine = 1
+								 }
+								 modifier = {
+								             factor = 2 
+											 economic_responsibility = 1 
+								 }
+								 modifier = {
+								             factor = 2 
+											 electricity = 1 
+								 }
+                       }
+                       effect = {
+                                 pop_growth = 0.00001
+                       }
+}
+#limited_Access_road
+roundabout = {
+              limit = { limited_access_road = 1 }
+              chance = {
+                      base = 4
+					  modifier = {
+					              factor = 2 
+								  rationalism = 1 
+					  }
+					  modifier = {
+					              factor = 2
+								  behaviorism = 1 
+					  }
+              }
+              effect = {
+                        mobilisation_size = 0.01
+                        reinforce_rate = 0.01
+              }
+}
+safety_road_signs = {
+                 limit = { limited_access_road = 1 }
+                 chance = {
+                         base = 4
+                         modifier = {
+                                     factor = 2
+                                     invention = roundabout
+                         }
+						 modifier = {
+						             factor = 2 
+									 rationalism = 1 
+						 }
+                 }
+                 effect = {
+                           pop_growth = 0.00001
+                 }
+}
+#street_road
+traffic_light = {
+                     limit = { street_road = 1 }
+                     chance = {
+                         base = 2
+                         modifier = {
+                                     factor = 2
+                                     electrochemical_cell = 1 
+                         }
+                         modifier = {
+                                     factor = 2
+                                     invention = safety_road_signs
+                         }
+                 }
+                 effect = {
+                           pop_growth = 0.00001
+                 }
+}
+road_maintenance_groups = {
+                                  limit = { street_road = 1 }
+                                  chance = {
+                                            base = 4
+                                            modifier = {
+                                                        factor = 2
+                                                        human_resource_management = 1
+                                            }
+											modifier = {
+											            factor = 2
+														invention = traffic_light
+											}
+                                  }
+                                  effect = {
+                                            pop_growth = 0.00001
+                                  }
+}
+#public_road_transit_system 
+bus_transit_groups = {
+                      limit = { public_road_transit_system = 1 }
+                      chance = {
+                                base = 4
+								modifier = {
+								            factor = 2 
+											labour_laws = 1 
+								}
+								modifier = {
+								            factor = 2 
+											invention = extensive_shift_plan
+								}
+                      }
+                      effect = {
+                                mobilisation_size = 0.025
+                                reinforce_rate = 0.025
+                                rgo_throughput = 0.025
+                      }
+}
+#monorail
+rapid_transit = {
+                 limit = { monorail = 1 }
+                 chance = {
+                           base = 4
+                           modifier = {
+                                       factor = 4
+                                       invention = electronic_circuit = 1 
+                           }
+						   modifier = {
+						               factor = 2 
+									   post_structuralism = 1 
+						   }
+                 }
+                 effect = {
+                           mobilisation_size = 0.025
+                           reinforce_rate = 0.025
+                           rgo_throughput = 0.025
+                 }
+}
+#high_speed_rail
+automated_railways = {
+                     limit = { high_speed_rail = 1 }
+                     chance = {
+                               base = 2
+                               modifier = {
+                                           factor = 4
+                                           invention = computer
+                               }
+							   modifier = {
+							               factor = 2 
+										   modern_institutional_economics = 1 
+							   }
+                     }
+                     effect = {
+                               mobilisation_size = 0.025
+                               reinforce_rate = 0.025
+                               rgo_throughput = 0.025
+                               pop_growth = 0.00001
+                     }
+}

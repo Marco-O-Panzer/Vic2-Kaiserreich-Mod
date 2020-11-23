@@ -1,0 +1,12 @@
+owner = BRJ
+controller = BRJ
+add_core = PAN
+add_core = HND
+add_core = PAK
+trade_goods = tea
+life_rating = 32
+1861.1.1 = {
+	owner = BRJ
+	controller = BRJ
+	colonial = 2
+}

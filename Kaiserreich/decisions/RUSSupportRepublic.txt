@@ -1,0 +1,40 @@
+political_decisions = {
+        rus_against_franco = {
+		picture = "franco"
+
+                potential = {
+			tag = RUS
+			has_global_flag = spcw_happening
+			government = proletarian_dictatorship
+			exists = SPF
+			exists = SPA
+			NOT = { has_country_flag = spcw_intervention }
+		}
+
+                allow = {
+			money = 1000000
+			war = no
+                } 
+
+          	effect = {
+			prestige = -5
+			create_alliance = SPA
+			military_access = SPA
+			money = -1000000
+			relation = {	
+				who = SPA
+				value = 200
+			}
+			relation = {
+				who = SPF
+				value = -200
+			}
+			set_global_flag = rus_support_republic
+			set_country_flag = spcw_intervention
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

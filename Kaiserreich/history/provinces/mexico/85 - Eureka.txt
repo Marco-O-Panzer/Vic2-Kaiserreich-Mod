@@ -1,0 +1,12 @@
+add_core = CAL
+trade_goods = fish
+life_rating = 40
+railroad = 2
+owner = USA
+controller = USA
+add_core = USA
+1935.1.1 = {
+	owner = AFA
+	controller = AFA
+	add_core = AFA
+}

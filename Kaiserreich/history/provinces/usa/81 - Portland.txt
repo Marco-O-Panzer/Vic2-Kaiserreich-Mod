@@ -1,0 +1,16 @@
+add_core = COL
+trade_goods = timber
+life_rating = 35
+railroad = 2
+#add_core = USA
+1861.1.1 = {
+owner = USA
+controller = USA
+add_core = USA
+remove_core = COL
+}
+1935.1.1 = {
+	owner = AFA
+	controller = AFA
+	add_core = AFA
+}

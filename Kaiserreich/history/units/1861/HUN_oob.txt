@@ -1,0 +1,73 @@
+AUS = {
+	value = 150
+}
+
+army = {
+	name = "The Budapest Militia"
+	location = 641
+	regiment = {
+		name= "VIII. Battalion"
+		type = infantry
+		home = 635
+	}
+
+	regiment = {
+		name= "VII. Battalion"
+		type = infantry
+		home = 636
+	}
+
+	regiment = {
+		name= "VI. Battalion"
+		type = infantry
+		home = 661
+	}
+
+	regiment = {
+		name= "V. Battalion"
+		type = infantry
+		home = 656
+	}
+
+	regiment = {
+		name= "IV. Battalion"
+		type = infantry
+		home = 791
+	}
+
+	regiment = {
+		name= "III. Battalion"
+		type = infantry
+		home = 639
+	}
+
+	regiment = {
+		name= "II. Battalion"
+		type = infantry
+		home = 623
+	}
+
+	regiment = {
+		name= "I. Battalion"
+		type = infantry
+		home = 657
+	}
+
+	regiment = {
+		name= "Royal Artillery I."
+		type = artillery
+		home = 660
+	}
+
+	regiment = {
+		name= "Budapest Engineering Corps"
+		type = engineer
+		home = 641
+	}
+
+	regiment = {
+		name= "Royal Artillery II."
+		type = artillery
+		home = 641
+	}
+}

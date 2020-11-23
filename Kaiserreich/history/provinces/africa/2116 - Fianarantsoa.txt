@@ -1,0 +1,6 @@
+owner = GER
+controller = GER
+colonial = 2
+add_core = MAD
+trade_goods = coal
+life_rating = 35

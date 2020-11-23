@@ -1,0 +1,6 @@
+owner = ENG
+controller = ENG
+add_core = ETH
+colonial = 2
+trade_goods = cotton
+life_rating = 15

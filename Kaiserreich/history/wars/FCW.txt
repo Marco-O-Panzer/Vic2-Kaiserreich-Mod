@@ -1,0 +1,21 @@
+name = "The French Civil War"
+
+1927.7.14 = {
+	add_attacker = FRA
+	add_defender = FRE
+	
+	war_goal = {
+		casus_belli = civil_war
+		actor = FRA
+		receiver = FRE
+	}
+	war_goal = {
+		casus_belli = civil_war
+		actor = FRE
+		receiver = FRA
+	}
+}
+1930.1.1 = {
+	rem_attacker = FRA
+	rem_defender = FRE
+}

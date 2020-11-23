@@ -1,0 +1,22 @@
+name = "The Russian Civil War"
+
+1920.5.5 = {
+	add_attacker = WHI
+	add_defender = RUS
+	
+	war_goal = {
+		casus_belli = civil_war
+		actor = RUS
+		receiver = WHI
+	}
+	war_goal = {
+		casus_belli = civil_war
+		actor = WHI
+		receiver = RUS
+	}
+
+}
+1927.1.1 = {
+	rem_attacker = WHI
+	rem_defender = RUS
+	}

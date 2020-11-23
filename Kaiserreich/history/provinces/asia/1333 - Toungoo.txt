@@ -1,0 +1,6 @@
+owner = BRJ
+controller = BRJ
+add_core = BUR
+trade_goods = opium
+life_rating = 30
+colonial = 2

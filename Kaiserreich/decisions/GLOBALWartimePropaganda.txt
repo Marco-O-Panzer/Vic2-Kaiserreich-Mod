@@ -1,0 +1,25 @@
+political_decisions = {
+        wartime_propaganda = {
+		picture = "propaganda"
+
+                potential = {
+			war = yes
+			is_greater_power = yes
+		}
+                allow = {
+			money = 250000
+			war_exhaustion = 20
+                }
+          effect = {
+		money = -250000
+		war_exhaustion = -5
+		add_country_modifier = {
+			name = wartime_propaganda_mod
+			duration = 186
+			}
+		}
+	ai_will_do = {
+		factor = 1
+		}
+	}
+}

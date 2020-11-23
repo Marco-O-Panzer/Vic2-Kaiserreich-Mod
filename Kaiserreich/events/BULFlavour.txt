@@ -1,0 +1,33 @@
+##3rd Balkan War Winner##
+
+##country_event = {
+       id = 40157
+       title = "The New Sick Man?"
+       desc  = "KUK-SICK-MAN"
+       picture = "austria_hungary"
+       fire_only_once = yes
+
+       trigger = {                    
+	       tag = KUK
+		NOT = {
+			year = 1927
+		}
+       }
+
+       option = {
+			set_global_flag = aus_start
+			name = "We must not falter!"
+			add_country_modifier = {
+				name = new_sick_man
+				duration = -1
+			}
+	      		add_country_modifier = {
+				name = ww1_victory
+				duration = 1825
+			}
+	      		add_country_modifier = {
+				name = ww1_debt_pay
+				duration = 1825
+			}
+       }
+}

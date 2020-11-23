@@ -1,0 +1,7 @@
+
+ITA = {
+	
+	value = -200         } 
+FRA = {
+	
+	value = 200          } 

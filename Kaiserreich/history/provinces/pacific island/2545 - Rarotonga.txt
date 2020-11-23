@@ -1,0 +1,7 @@
+owner = NZL
+controller = NZL
+colonial = 2
+add_core = JAP
+trade_goods = fish
+life_rating = 15
+terrain = plains
