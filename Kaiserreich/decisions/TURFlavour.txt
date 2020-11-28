@@ -1,0 +1,64 @@
+political_decisions = {
+	islamic_caliphate = {
+		potential = {
+			tag = TUR
+		}
+		allow = {
+			accepted_culture = mashriqi
+			accepted_culture = bedouin
+			accepted_culture = maghrebi
+		}
+		
+		effect = {
+			badboy = 5
+			add_accepted_culture = misri
+			ruling_party_ideology = reactionary
+			government = absolute_monarchy
+			political_reform = none_voting
+			political_reform = party_appointed
+			political_reform = no_meeting
+			political_reform = state_press
+			political_reform = state_controlled
+			political_reform = underground_parties
+			political_reform = limited
+			clr_country_flag = tory_election_win
+			clr_country_flag = socialist_election_win
+			clr_country_flag = liberal_election_win
+			clr_country_flag = communist_election_win
+			clr_country_flag = fascist_election_win
+			clr_country_flag = reactionary_election_win
+			clr_country_flag = anarcho_liberal_election_win
+			clr_country_flag = social_liberal_election_win
+			NEJ_1156 = { add_core = TUR }
+			NEJ_1157 = { add_core = TUR }
+			HDJ_1151 = { add_core = TUR }
+			YEM_1178 = { add_core = TUR }
+			TRI_1735 = { add_core = TUR }
+			TRI_1740 = { add_core = TUR }
+			TRI_1731 = { add_core = TUR }
+			TUN_1726 = { add_core = TUR }
+			EGY = {
+				all_core = { add_core = TUR }
+			}
+			any_pop = {
+				limit = { has_pop_religion = sunni }
+				ideology = {
+					value = reactionary
+					factor = 0.1
+				}
+				dominant_issue = {
+					factor = 0.5
+					value = moralism
+				}
+				scaled_militancy = {
+					ideology = reactionary
+					factor = -6
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

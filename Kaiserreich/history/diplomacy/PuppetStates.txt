@@ -241,7 +241,7 @@ vassal = {
 ################################
 
 # KUK - SLD
-vassal = {
+substate = {
 	first = KUK
 	second = SLD
 	start_date = 1836.1.1
@@ -249,7 +249,7 @@ vassal = {
 }
 
 # KUK - HUN
-vassal = {
+substate = {
 	first = KUK
 	second = HUN
 	start_date = 1836.1.1

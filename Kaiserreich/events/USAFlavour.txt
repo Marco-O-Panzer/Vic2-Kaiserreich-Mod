@@ -13,10 +13,7 @@ country_event = {
 		}
        }
 
-       option = {
-              name = "The American people remain proud."
-       }
-	option = {
+		option = {
 		name = "The American people remain proud."
 		set_country_flag = fdr_dead
 	}
